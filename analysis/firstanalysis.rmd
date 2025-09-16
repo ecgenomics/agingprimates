@@ -1,0 +1,26 @@
+---
+title: "The genetic bases of longevity in Non-Human Primates"
+author: "Fabio Barteri"
+output: html_document
+---
+
+
+
+
+```{r fist, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = TRUE)
+
+library(tidyverse)      #tidyverse
+library(readr)          #readr
+library(ggplot2)        #ggplot    
+
+lqdf <- read_tsv("../dataset/lqdf.tab")
+
+glimpse(lqdf)
+```
+
+
+```{r second, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = TRUE)
+ggplot(data = lqdf, aes(x=LQ)) + geom_density() + theme_minimal()
+```

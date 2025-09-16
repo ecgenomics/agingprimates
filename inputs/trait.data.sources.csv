@@ -1,0 +1,264 @@
+ID,Trait,Description,Description+values,Source,Link
+PTD00001,Body_mass,Body mass,Body mass,Smaers et al. 2021,https://advances.sciencemag.org/content/7/18/eabe2101
+PTD00002,Brain_mass,Brain mass,Brain mass,Smaers et al. 2021,https://advances.sciencemag.org/content/7/18/eabe2101
+PTD00003,Colour_vision,Colour vision,Colour vision,Onstein et al. 2020,https://royalsocietypublishing.org/doi/10.1098/rspb.2019.2731
+PTD00004,Social_organization,Social system,Social system,Kappeler et al. 2019,https://advances.sciencemag.org/content/5/12/eaay1276
+PTD00005,Coenspecific_violence,% intraspecific deaths,% intraspecific deaths,Goméz et al. 2016,https://www.nature.com/articles/nature19758#MOESM215
+PTD00006,Paternal_care,Care for at least 30% infant time,Care for at least 30% infant time (Present/Absent),Opie et al. 2013,https://www.pnas.org/content/110/33/13328/tab-figures-data
+PTD00007,Female_Ranging_patterns,Overlapping ranges > or < 5%,Overlapping ranges > or < 5%  (Overlaping/Discrete),Opie et al. 2013,https://www.pnas.org/content/110/33/13328/tab-figures-data
+PTD00008,Infanticide,Killing of newborn,Killing of newborn (High/Low),Opie et al. 2013,https://www.pnas.org/content/110/33/13328/tab-figures-data
+PTD00009,Mating_system,Mating system,Mating system,Opie et al. 2013,https://www.pnas.org/content/110/33/13328/tab-figures-data
+PTD00010,Gestation_length,Gestation period in days,Gestation period in days,Opie et al. 2013,https://www.pnas.org/content/110/33/13328/tab-figures-data
+PTD00011,Weaning_age,Weaning period in days,Weaning period in days,Opie et al. 2013,https://www.pnas.org/content/110/33/13328/tab-figures-data
+PTD00012,Weaning_prop,Proportion of lactation from breeding cycle,Proportion of lactation from breeding cycle (Lact/Lact+Gestation),Opie et al. 2013,https://www.pnas.org/content/110/33/13328/tab-figures-data
+PTD00013,Seasonal_breeders,Seasonal breeding,Yes/No,Opie et al. 2013,https://www.pnas.org/content/110/33/13328/tab-figures-data
+PTD00014,BodyMass_kg,Body mass,Body mass,Galán-Acedo et al. 2019,https://www.nature.com/articles/s41597-019-0059-9
+PTD00015,BodyMassMale_kg,Body mass in males,Body mass in males,Galán-Acedo et al. 2019,https://www.nature.com/articles/s41597-019-0059-9
+PTD00016,BodyMassFemale_kg,Body mass in females,Body mass in females,Galán-Acedo et al. 2019,https://www.nature.com/articles/s41597-019-0059-9
+PTD00017,DielActivity,Diel Activity patterns,Diel Activity patterns (Diurnal/Nocturnal/Cathemeral),Galán-Acedo et al. 2019,https://www.nature.com/articles/s41597-019-0059-9
+PTD00018,TrophicGuild,Type of diet,Type of diet (Folivore/Frugivore/Folivore-frugivore/Gummivore/Insectivore/Omnivore),Galán-Acedo et al. 2019,https://www.nature.com/articles/s41597-019-0059-9
+PTD00019,Locomotion,Type of locomotion,Type of locomotion (Terrestrial/Arboreal/Both),Galán-Acedo et al. 2019,https://www.nature.com/articles/s41597-019-0059-9
+PTD00020,IUCN_ER,Extinction risk,Extinction risk (Least Concern=1/Near Threatened=2/Vulnerable=3/Endangered=4/Critically endangered=5/Extinct in the wild=6/Extinct=7),Galán-Acedo et al. 2019 (update Feb21),https://www.nature.com/articles/s41597-019-0059-9
+PTD00021,IUCN_Pop_Trend,Population trend,Population trend (Decreasing=1/Stable=2/Increasing=3),Galán-Acedo et al. 2019 (update Feb21),https://www.nature.com/articles/s41597-019-0059-9
+PTD00022,Habitat,Habitat,Habitat,Galán-Acedo et al. 2019,https://www.nature.com/articles/s41597-019-0059-9
+PTD00023,LitterSz,Litter size,Litter size,Kamilar et al. 2013,https://royalsocietypublishing.org/doi/10.1098/rstb.2012.0341
+PTD00024,BrainSizeSpeciesMean,Brain size,Brain size,Kamilar et al. 2013,https://royalsocietypublishing.org/doi/10.1098/rstb.2012.0341
+PTD00025,BrainSizeFemaleMean,Brain size in females,Brain size in females,Kamilar et al. 2013,https://royalsocietypublishing.org/doi/10.1098/rstb.2012.0341
+PTD00026,Body.MassMaleMean,Body mass male,Body mass male,Kamilar et al. 2013,https://royalsocietypublishing.org/doi/10.1098/rstb.2012.0341
+PTD00027,BodyMassFemaleMean,Body mass female,Body mass female,Kamilar et al. 2013,https://royalsocietypublishing.org/doi/10.1098/rstb.2012.0341
+PTD00028,MassDimorphism,Mass dimorphism,Mass dimorphism,Kamilar et al. 2013,https://royalsocietypublishing.org/doi/10.1098/rstb.2012.0341
+PTD00029,MeanGroupSize,Mean group size,Mean group size,Kamilar et al. 2013,https://royalsocietypublishing.org/doi/10.1098/rstb.2012.0341
+PTD00030,AdultMales,Nº of adult males per social group,Nº of adult males per social group,Kamilar et al. 2013,https://royalsocietypublishing.org/doi/10.1098/rstb.2012.0341
+PTD00031,AdultFemale,Nº of adult females per social group,Nº of adult females per social group,Kamilar et al. 2013,https://royalsocietypublishing.org/doi/10.1098/rstb.2012.0341
+PTD00032,AdultSexRatio,Ratio of males to females per group,Ratio of males to females per group,Kamilar et al. 2013,https://royalsocietypublishing.org/doi/10.1098/rstb.2012.0341
+PTD00033,InterbirthInterval_days,Interbith interval in days,Interbith interval in days,Kamilar et al. 2013,https://royalsocietypublishing.org/doi/10.1098/rstb.2012.0341
+PTD00034,Gestation,Gestation period in days,Gestation period in days,Kamilar et al. 2013,https://royalsocietypublishing.org/doi/10.1098/rstb.2012.0341
+PTD00035,WeaningAge_d,Weaning period in days,Weaning period in days,Kamilar et al. 2013,https://royalsocietypublishing.org/doi/10.1098/rstb.2012.0341
+PTD00036,MaxLongevity_m,Maximum longevity in months,Maximum longevity in months,Kamilar et al. 2013,https://royalsocietypublishing.org/doi/10.1098/rstb.2012.0341
+PTD00037,GR_MidRangeLat_dd,Mid-range latitude,Mid-range latitude,Kamilar et al. 2013,https://royalsocietypublishing.org/doi/10.1098/rstb.2012.0341
+PTD00038,Precip_Mean_mm,Mean niche precipitation,Mean niche precipitation,Kamilar et al. 2013,https://royalsocietypublishing.org/doi/10.1098/rstb.2012.0341
+PTD00039,Temp_Mean_degC,Mean niche temperature,Mean niche temperature,Kamilar et al. 2013,https://royalsocietypublishing.org/doi/10.1098/rstb.2012.0341
+PTD00040,AET_Mean_mm,Actual evapotranspiration rate,Actual evapotranspiration rate,Kamilar et al. 2013,https://royalsocietypublishing.org/doi/10.1098/rstb.2012.0341
+PTD00041,PET_Mean_mm,Potential evapotranspiration rate,Potential evapotranspiration rate,Kamilar et al. 2013,https://royalsocietypublishing.org/doi/10.1098/rstb.2012.0341
+PTD00042,HomeRange_km2,Home range size in km2,Home range size in km2,Kamilar et al. 2013,https://royalsocietypublishing.org/doi/10.1098/rstb.2012.0341
+PTD00043,DayLength_km,Daily travel length,Daily travel length,Kamilar et al. 2013,https://royalsocietypublishing.org/doi/10.1098/rstb.2012.0341
+PTD00044,Territoriality,Protection from incursions in species range,Protection from incursions in species range,Kamilar et al. 2013,https://royalsocietypublishing.org/doi/10.1098/rstb.2012.0341
+PTD00045,Fruit,% diet from fruit,% diet from fruit,Kamilar et al. 2013,https://royalsocietypublishing.org/doi/10.1098/rstb.2012.0341
+PTD00046,Leaves,% diet from leaves,% diet from leaves,Kamilar et al. 2013,https://royalsocietypublishing.org/doi/10.1098/rstb.2012.0341
+PTD00047,Fauna,% diet from fauna,% diet from fauna,Kamilar et al. 2013,https://royalsocietypublishing.org/doi/10.1098/rstb.2012.0341
+PTD00048,CanineDimorphism,Canine dimorphism ratio,Canine dimorphism ratio,Kamilar et al. 2013,https://royalsocietypublishing.org/doi/10.1098/rstb.2012.0341
+PTD00049,Feed,% time feeding,% time feeding,Kamilar et al. 2013,https://royalsocietypublishing.org/doi/10.1098/rstb.2012.0341
+PTD00050,Move,% time moving,% time moving,Kamilar et al. 2013,https://royalsocietypublishing.org/doi/10.1098/rstb.2012.0341
+PTD00051,Rest,% time resting,% time resting,Kamilar et al. 2013,https://royalsocietypublishing.org/doi/10.1098/rstb.2012.0341
+PTD00052,Social,% time social activity,% time social activity,Kamilar et al. 2013,https://royalsocietypublishing.org/doi/10.1098/rstb.2012.0341
+PTD00053,Mating.System,Mating system,Mating system,Decasiens2017,https://www.nature.com/articles/s41559-017-0112
+PTD00054,SocialSystem,Social system,Social system,Decasiens2017/Lupold2019/Schultz2011,https://www.nature.com/articles/s41559-017-0112
+PTD00055,NatalDispersal,Natal dispersal,Natal dispersal,Schultz2011,https://www.nature.com/articles/nature10601
+PTD00056,StableGroups,Stable groups,Yes/No,Schultz2011,https://www.nature.com/articles/nature10601
+PTD00057,Body.mass..g.,Body mass,Body mass,VanShaik et al. 2012,https://www.zora.uzh.ch/id/eprint/71056/
+PTD00058,Endocranial.volume..cm3.,Endocranial volume,Endocranial volume,VanShaik et al. 2012/Isler	 K; van Schaik	 C P (2012),https://www.zora.uzh.ch/id/eprint/71056/ / https://www.sciencedirect.com/science/article/abs/pii/S0047248412000577
+PTD00059,Neonatal.mass..g.,Neonatal mass,Neonatal mass,VanShaik et al. 2012,https://www.zora.uzh.ch/id/eprint/71056/
+PTD00060,Offspring.per.litter,Litter size,Litter size,VanShaik et al. 2012,https://www.zora.uzh.ch/id/eprint/71056/
+PTD00061,Interbirth.interval..days.,Interbith interval period length,Interbith interval period in days,VanShaik et al. 2012/Isler	 K; van Schaik	 C P (2012)/,https://www.zora.uzh.ch/id/eprint/71056/ https://www.sciencedirect.com/science/article/abs/pii/S0047248412000577
+PTD00062,Gestation..days.,Gestation period length,Gestation period in days,VanShaik et al. 2012/Isler	 K; van Schaik	 C P (2012)/AnAge DB,https://www.zora.uzh.ch/id/eprint/71056/ / https://www.sciencedirect.com/science/article/abs/pii/S0047248412000577
+PTD00063,Lactation..days.,Lactation period length,Lactation period in days,VanShaik et al. 2012/Isler	 K; van Schaik	 C P (2012)/AnAge DB,https://www.zora.uzh.ch/id/eprint/71056/ / https://www.sciencedirect.com/science/article/abs/pii/S0047248412000577
+PTD00064,Age.of.female.at.first.reproduction..y.,Age of female at first reproduction in years,Age of female at first reproduction in years,VanShaik et al. 2012/Isler	 K; van Schaik	 C P (2012),https://www.zora.uzh.ch/id/eprint/71056/ / https://www.sciencedirect.com/science/article/abs/pii/S0047248412000577
+PTD00065,Maximum.lifespan..y.,Maximum lifespan in years,Maximum lifespan in years,VanShaik et al. 2012/Isler	 K; van Schaik	 C P (2012)/AnAge DB,https://www.zora.uzh.ch/id/eprint/71056/ / https://www.sciencedirect.com/science/article/abs/pii/S0047248412000577
+PTD00066,Maximum.possible.reproductive.success.under.optimal.conditions..rmax.,Maximum possible reproductive success under optimal conditions,Maximum possible reproductive success under optimal conditions,VanShaik et al. 2012,https://www.sciencedirect.com/science/article/abs/pii/S0047248412000577
+PTD00067,SocialMatingSystem,Social system + Mating system,Social system + Mating system,Lupold et al. 2019,https://royalsocietypublishing.org/doi/suppl/10.1098/rspb.2018.2542
+PTD00068,Monopolization,Female monopolization,Female monopolization (Yes/No),Lupold et al. 2019,https://royalsocietypublishing.org/doi/suppl/10.1098/rspb.2018.2542
+PTD00069,FemalesPerMaleInBreedingGroup,Ratio of females to males per breeding group,Ratio of females to males per breeding group,Lupold et al. 2019,https://royalsocietypublishing.org/doi/suppl/10.1098/rspb.2018.2542
+PTD00070,MalesPerBreedingGroup,Nº of adult males per breeding group,Nº of adult males per breeding group,Lupold et al. 2019,https://royalsocietypublishing.org/doi/suppl/10.1098/rspb.2018.2542
+PTD00071,SocialGroupSize,Social group size,Social group size,Lupold et al. 2019,https://royalsocietypublishing.org/doi/suppl/10.1098/rspb.2018.2542
+PTD00072,MaleBodyMass.SexSzeDimorphismDataset..in.g,Body mass male (dimorpshim dataset),Body mass (dimorpshim dataset),Lupold et al. 2019,https://royalsocietypublishing.org/doi/suppl/10.1098/rspb.2018.2542
+PTD00073,FemaleBodyMass.SexSizeDimorphismDataset..in.g,Body mass female (dimorpshim dataset),Body mass (dimorpshim dataset),Lupold et al. 2019,https://royalsocietypublishing.org/doi/suppl/10.1098/rspb.2018.2542
+PTD00074,SexualSizeDimorphism,Mass dimorphism (dimorpshim dataset),Mass dimorphism (dimorpshim dataset),Lupold et al. 2019,https://royalsocietypublishing.org/doi/suppl/10.1098/rspb.2018.2542
+PTD00075,MaleCanineHeight.in.mm,Male Canine Height,MaleCanineHeight.in.mm,Lupold et al. 2019,https://royalsocietypublishing.org/doi/suppl/10.1098/rspb.2018.2542
+PTD00076,FemaleCanineHeight.in.mm,Female Canine Height,FemaleCanineHeight.in.mm,Lupold et al. 2019,https://royalsocietypublishing.org/doi/suppl/10.1098/rspb.2018.2542
+PTD00077,SexualCanineDimorphism,Canine dimorphism (dimorphism dataset),Canine dimorphism (dimorphism dataset),Lupold et al. 2019,https://royalsocietypublishing.org/doi/suppl/10.1098/rspb.2018.2542
+PTD00078,MaleBodyMass.CanineDataset..in.g,Body mass (canine dataset),Body mass (canine dataset),Lupold et al. 2019,https://royalsocietypublishing.org/doi/suppl/10.1098/rspb.2018.2542
+PTD00079,CombinedTestesMass.in.g,CombinedTestesMass.in.g,CombinedTestesMass.in.g,Lupold et al. 2019,https://royalsocietypublishing.org/doi/suppl/10.1098/rspb.2018.2542
+PTD00080,MaleBodyMass.TestesDataset..in.g,Body mass (Testes dataset),Body mass (Testes dataset),Lupold et al. 2019,https://royalsocietypublishing.org/doi/suppl/10.1098/rspb.2018.2542
+PTD00081,meanMaleBodyMass.in.g,Body mass male (Dimorphism dataset),Body mass male (Dimorphism dataset),Lupold et al. 2019,https://royalsocietypublishing.org/doi/suppl/10.1098/rspb.2018.2542
+PTD00082,HeadFlesh,Head flesh dimorphism,Head flesh dimorphism (Absence = 0/Structure OR color = 1/Structure & color = 2),Lupold et al. 2019,https://royalsocietypublishing.org/doi/suppl/10.1098/rspb.2018.2542
+PTD00083,HeadSkin,Head skin dimorphism,Head skin dimorphism (Absence = 0/Structure OR color = 1/Structure & color = 2),Lupold et al. 2019,https://royalsocietypublishing.org/doi/suppl/10.1098/rspb.2018.2542
+PTD00084,HeadHair,Head hair dimorphism,Head hair dimorphism (Absence = 0/Structure OR color = 1/Structure & color = 2),Lupold et al. 2019,https://royalsocietypublishing.org/doi/suppl/10.1098/rspb.2018.2542
+PTD00085,BodyFlesh,Body flesh dimorphism,Body flesh dimorphism (Absence = 0/Structure OR color = 1/Structure & color = 2),Lupold et al. 2019,https://royalsocietypublishing.org/doi/suppl/10.1098/rspb.2018.2542
+PTD00086,BodySkin,Body skin dimorphism,Body skin dimorphism (Absence = 0/Structure OR color = 1/Structure & color = 2),Lupold et al. 2019,https://royalsocietypublishing.org/doi/suppl/10.1098/rspb.2018.2542
+PTD00087,BodyHair,Body hair dimorphism,Body hair dimorphism (Absence = 0/Structure OR color = 1/Structure & color = 2),Lupold et al. 2019,https://royalsocietypublishing.org/doi/suppl/10.1098/rspb.2018.2542
+PTD00088,BodyPelageDichrom,Body pelage dimorphism,Body pelage dimorphism (Absence = 0/Structure OR color = 1/Structure & color = 2),Lupold et al. 2019,https://royalsocietypublishing.org/doi/suppl/10.1098/rspb.2018.2542
+PTD00089,GenitalFlesh,Genital flesh dimorphism,Genital flesh dimorphism (Absence = 0/Structure OR color = 1/Structure & color = 2),Lupold et al. 2019,https://royalsocietypublishing.org/doi/suppl/10.1098/rspb.2018.2542
+PTD00090,GenitalSkin,Genital skin dimorphism,Genital skin dimorphism (Absence = 0/Structure OR color = 1/Structure & color = 2),Lupold et al. 2019,https://royalsocietypublishing.org/doi/suppl/10.1098/rspb.2018.2542
+PTD00091,GenitalHair,Genital hair dimorphism,Genital hair dimorphism (Absence = 0/Structure OR color = 1/Structure & color = 2),Lupold et al. 2019,https://royalsocietypublishing.org/doi/suppl/10.1098/rspb.2018.2542
+PTD00092,SexualOrnamentDimorphism..ExcludingDichromatism.,Sexual ornament dimorphism scale excluding pleage dichromatism,Sexual ornament dimorphism scale excluding pleage dichromatism,Lupold et al. 2019,https://royalsocietypublishing.org/doi/suppl/10.1098/rspb.2018.2542
+PTD00093,SexualOrnamentDimorphism,Sexual ornament dimorphism scale,Sexual ornament dimorphism scale (From 0: No difference in size and colour - to 5: males with prominent visual trait absent in females),Lupold et al. 2019,https://royalsocietypublishing.org/doi/suppl/10.1098/rspb.2018.2542
+PTD00094,TotalOrnamentDimorphism,Sum from all sexual dimorphism scores,Sum from all sexual dimorphism scores,Lupold et al. 2019,https://royalsocietypublishing.org/doi/suppl/10.1098/rspb.2018.2542
+PTD00095,BasalMetabolicRate_ml_O2.h,Nº kcal required to keep body functioning at rest,Nº kcal required to keep body functioning at rest,Isler et al. 2008,https://www.sciencedirect.com/science/article/pii/S0047248408001577?via=ihub#appseca1
+PTD00096,RestingMetabolicRate_kcal.day,Nº kcal burned with body completely at rest,Nº kcal burned with body completely at rest,Snodgrass et al. 2009,https://link.springer.com/chapter/10.1007%2F978-1-4020-9699-0_2
+PTD00097,R_Ratio_MtoF_DLCBirths,Birth sex ratio,Birth sex ratio (#males:1 female) among DLC births.,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00098,R_Mean_LitterSize,Mean litter size,Mean litter size,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00099,R_MostCommon_LitterSize,Most common litter size,Most common litter size,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00100,R_Freq_MostCommon_LitterSize,Frequency most common litter size,Frequency most common litter size,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00101,R_Min_LitterSize,Minimum litter size,Minimum litter size,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00102,R_Max_LitterSize,Maximum litter size,Maximum litter size,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00103,R_Expected_Gestation_d,Expectation gestation length days,Expectation gestation length days,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00104,R_Pattern_Breeding,Seasonality,Seasonality (Yes/No),Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00105,R_Peak_Breeding_Month,Peak breeding month,Peak breeding month,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00106,R_Peak_Birth_Month,Peak birth month,Peak birth month,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00107,R_Min_Dam_AgeAtConcep_y,Minimum female parent age at conception,Minimum female parent age at conception in years,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00108,R_Min_Sire_AgeAtConcep_y,Minimum male parent age at conception,Minimum male parent age at conception in years,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00109,R_Max_Dam_AgeAtConcep_y,Maximum female parent age at conception,Maximum female parent age at conception in years,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00110,R_Max_Sire_AgeAtConcep_y,Maximum male parent age at conception,Maximum male parent age at conception in years,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00111,M_Mean_All_AdultWeight_g,Mean adult body mass,Mean adult body mass	 both sexes combined,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00112,M_Min_All_AdultWeight_g,Minimum adult body mass,Minimum adult body mass	 both sexes combined,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00113,M_Max_All_AdultWeight_g,Maximum adult body mass,Maximum adult body mass	 both sexes combined,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00114,M_Mean_M_AdultWeight_g,Mean adult body mass of males,Mean adult body mass of males,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00115,M_Min_M_AdultWeight_g,Minimum adult body mass of males,Minimum adult body mass of males,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00116,M_Max_M_AdultWeight_g,Maximum adult body mass of males,Maximum adult body mass of males,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00117,M_Mean_F_AdultWeight_g,Mean adult body mass of females,Mean adult body mass of females,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00118,M_Min_F_AdultWeight_g,Minimum adult body mass of females,Minimum adult body mass of females,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00119,M_Max_F_AdultWeight_g,Maximum adult body mass of females,Maximum adult body mass of females,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00120,M_Mean_All_NeonateWeight_g,Mean neonate body mass,Mean neonate body mass	 both sexes combined,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00121,M_Min_All_NeonateWeight_g,Minimum neonate body mass,Minimum neonate body mass	 both sexes combined,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00122,M_Max_All_NeonateWeight_g,Maximum neonate body mass,Maximum neonate body mass	 both sexes combined,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00123,M_Mean_M_NeonateWeight_g,Mean neonate body mass of males,Mean neonate body mass of males,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00124,M_Min_M_NeonateWeight_g,Minimum neonate body mass of males,Minimum neonate body mass of males,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00125,M_Max_M_NeonateWeight_g,Maximum neonate body mass of males,Maximum neonate body mass of males,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00126,M_Mean_All_YngAdultWeight_g,Mean young adult body mass, Mean young adult body mass	 both sexes combined ,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00127,M_Min_All_YngAdultWeight_g,Minimum young adult body mass,Minimum young adult body mass	 both sexes combined,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00128,M_Max_All_YngAdultWeight_g,Maximum young adult body mass,Maximum young adult body mass	 both sexes combined,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00129,M_Mean_M_YngAdultWeight_g,Mean young adult body mass of males,Mean young adult body mass of males,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00130,M_Min_M_YngAdultWeight_g,Minimum young adult body mass of males,Minimum young adult body mass of males,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00131,M_Max_M_YngAdultWeight_g,Maximum young adult body mass of males,Maximum young adult body mass of males,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00132,M_Mean_F_YngAdultWeight_g,Mean young adult body mass of females,Mean young adult body mass of females,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00133,M_Min_F_YngAdultWeight_g,Minimum young adult body mass of females,Minimum young adult body mass of females,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00134,M_Max_F_YngAdultWeight_g,Maximum young adult body mass of females,Maximum young adult body mass of females,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00135,L_Max_All_Age_y,Maximum age attained,Maximum age attained by any individual	 living or dead,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00136,L_Max_M_Age_y,Maximum age attained of males,Maximum age attained by any male	 living or dead,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00137,L_Max_F_Age_y,Maximum age attained of females,Maximum age attained by any female	 living or dead,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00138,L_Median_All_Longevity_gt30d_y,Median longevity,Median longevity of individuals that survived at least 30 days,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00139,L_Median_M_Longevity_gt30d_y,Median longevity of males,Median longevity of males that survived at least 30 days,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00140,L_Median_F_Longevity_gt30d_y,Median longevity of females,Median longevity of females that survived at least 30 days,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00141,L_Pct_All_InfMort_lt30d,% of infant mortality,% of individuals born at the DLC that did not suvive to 30 days,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00142,L_Pct_M_InfMort_lt30d,% of infant mortality in males,% of males born at the DLC that did not survive to 30 days,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00143,L_Pct_F_InfMort_lt30d,% of infant mortality in females,% of females born at the DLC that that did not survive to 30 days,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00144,L_Pct_ND_InfMort_lt30d,% of infant mortaility with undetermined sex,% of individuals where sex was not determined born at the DLC that did not survive to 30 days,Zehr et al. 2014,https://www.nature.com/articles/sdata201419
+PTD00145,Dorsal.Luminance,Brightness of dorsal pelage surface,Brightness of dorsal pelage surface,Kamilar & Bradley	 2011,https://onlinelibrary.wiley.com/doi/10.1111/j.1365-2699.2011.02587.x
+PTD00146,Ventral.Luminance,Brightness of ventral pelage surface,Brightness of ventral pelage surface,Kamilar & Bradley	 2011,https://onlinelibrary.wiley.com/doi/10.1111/j.1365-2699.2011.02587.x
+PTD00147,Actual.evapotranspiraton..mm.,Actual evapotranspiration in mm,Actual evapotranspiration in mm,Kamilar & Bradley	 2011,https://onlinelibrary.wiley.com/doi/10.1111/j.1365-2699.2011.02587.x
+PTD00148,Positional.behaviour,Positional behavior,0 to 2 scale	 with increasing frequency of species in vertical postural position,Kamilar & Bradley	 2011,https://onlinelibrary.wiley.com/doi/10.1111/j.1365-2699.2011.02587.x
+PTD00149,BodyMassForOrganMass_g,Body mass (Organs dataset),Body mass (Organs dataset),Navarrete et al. 2011,https://www.nature.com/articles/nature10629?page=3
+PTD00150,FatFreeBodyMass_g,Fat free body mass,Fat free body mass,Navarrete et al. 2011,https://www.nature.com/articles/nature10629?page=3
+PTD00151,BrainMass_g,Brain relative mass,Brain relative mass,Navarrete et al. 2011,https://www.nature.com/articles/nature10629?page=3
+PTD00152,Heart_Mass_g,Heart relative mass,Heart relative mass,Navarrete et al. 2011,https://www.nature.com/articles/nature10629?page=3
+PTD00153,LungsMass_g,Lungs relative mass,Lungs relative mass,Navarrete et al. 2011,https://www.nature.com/articles/nature10629?page=3
+PTD00154,KidneysMass_g,Kidney relative mass,Kidney relative mass,Navarrete et al. 2011,https://www.nature.com/articles/nature10629?page=3
+PTD00155,LiverMass_g,Liver relative mass,Liver relative mass,Navarrete et al. 2011,https://www.nature.com/articles/nature10629?page=3
+PTD00156,DigestiveTractMass_g,Digestive tract relative mass,Digestive tract relative mass,Navarrete et al. 2011,https://www.nature.com/articles/nature10629?page=3
+PTD00157,StomachMass_g,Stomach relative mass,Stomach relative mass,Navarrete et al. 2011,https://www.nature.com/articles/nature10629?page=3
+PTD00158,IntestineMass_g,Intestine relative mass,Intestine relative mass,Navarrete et al. 2011,https://www.nature.com/articles/nature10629?page=3
+PTD00159,SpleenMass_g,Spleen relative mass,Spleen relative mass,Navarrete et al. 2011,https://www.nature.com/articles/nature10629?page=3
+PTD00160,VisceralOrganMass_g,Visceral organ relative mass,Visceral organ relative mass,Navarrete et al. 2011,https://www.nature.com/articles/nature10629?page=3
+PTD00161,AdiposeDepots_g,Adipose depots relative mass,Adipose depots relative mass,Navarrete et al. 2011,https://www.nature.com/articles/nature10629?page=3
+PTD00162,SemicircularCanalRadiusOfCurvatureMean_mm,Mean semicircular canal radius of curvature,Mean semicircular canal radius of curvature,Kemp & Kirk	 2014,https://anatomypubs.onlinelibrary.wiley.com/doi/full/10.1002/ar.22892
+PTD00163,AxialEyeDiameter_mm,Axial eye diameter in mm,Axial eye diameter in mm,Kemp & Kirk	 2014,https://anatomypubs.onlinelibrary.wiley.com/doi/full/10.1002/ar.22892
+PTD00164,VisualAcuity_cycles.deg,Visual acuity,Visual acuity (cicles/deg),Kemp & Kirk	 2014,https://anatomypubs.onlinelibrary.wiley.com/doi/full/10.1002/ar.22892
+PTD00165,AgilityScore,Agility score,Ranked from 1 (least agile) to 6 (most agile),Kemp & Kirk	 2014,https://anatomypubs.onlinelibrary.wiley.com/doi/full/10.1002/ar.22892
+PTD00166,BV,Brain volume,Brain volume,DeCasiens & Higham	 2019,https://www.nature.com/articles/s41559-019-0969-0#data-availability
+PTD00167,Medulla,Medulla relative size,Medulla relative size,DeCasiens & Higham	 2019,https://www.nature.com/articles/s41559-019-0969-0#data-availability
+PTD00168,Cerebellum,Cerebellum relative size,Cerebellum relative size,DeCasiens & Higham	 2019,https://www.nature.com/articles/s41559-019-0969-0#data-availability
+PTD00169,Mesencephalon,Mesencephalon relative size,Mesencephalon relative size,DeCasiens & Higham	 2019,https://www.nature.com/articles/s41559-019-0969-0#data-availability
+PTD00170,Diencephalon,Diencephalon relative size,Diencephalon relative size,DeCasiens & Higham	 2019,https://www.nature.com/articles/s41559-019-0969-0#data-availability
+PTD00171,Telencephalon,Telencephalon relative size,Telencephalon relative size,DeCasiens & Higham	 2019,https://www.nature.com/articles/s41559-019-0969-0#data-availability
+PTD00172,MOB,Main olfactory bulb relative size,Main olfactory bulb relative size,DeCasiens & Higham	 2019,https://www.nature.com/articles/s41559-019-0969-0#data-availability
+PTD00173,AOB,Accesory olfactory bulb relative size,Accesory olfactory bulb relative size,DeCasiens & Higham	 2019,https://www.nature.com/articles/s41559-019-0969-0#data-availability
+PTD00174,Piriform.Lobe,Piriform lobe relative size,Piriform lobe relative size,DeCasiens & Higham	 2019,https://www.nature.com/articles/s41559-019-0969-0#data-availability
+PTD00175,Septum,Septum relative size,Septum relative size,DeCasiens & Higham	 2019,https://www.nature.com/articles/s41559-019-0969-0#data-availability
+PTD00176,Striatum,Striatum relative size,Striatum relative size,DeCasiens & Higham	 2019,https://www.nature.com/articles/s41559-019-0969-0#data-availability
+PTD00177,Striatum..incl..NAcc.,Striatum including nucleus accumbens relative size,Striatum including nucleus accumbens relative size,DeCasiens & Higham	 2019,https://www.nature.com/articles/s41559-019-0969-0#data-availability
+PTD00178,Schizocortex,Schizocortex relative size,Schizocortex relative size,DeCasiens & Higham	 2019,https://www.nature.com/articles/s41559-019-0969-0#data-availability
+PTD00179,Hippocampus,Hippocampus relative size,Hippocampus relative size,DeCasiens & Higham	 2019,https://www.nature.com/articles/s41559-019-0969-0#data-availability
+PTD00180,Neocortex..GM.WM.,Neocortex grey and white matter relative size,Neocortex grey and white matter relative size,DeCasiens & Higham	 2019,https://www.nature.com/articles/s41559-019-0969-0#data-availability
+PTD00181,Neocortex..GM.,Neocortex relative size,Neocortex relative size,DeCasiens & Higham	 2019,https://www.nature.com/articles/s41559-019-0969-0#data-availability
+PTD00182,Epithalamus,Epithalamus relative size,Epithalamus relative size,DeCasiens & Higham	 2019,https://www.nature.com/articles/s41559-019-0969-0#data-availability
+PTD00183,Thalamus,Thalamus relative size,Thalamus relative size,DeCasiens & Higham	 2019,https://www.nature.com/articles/s41559-019-0969-0#data-availability
+PTD00184,Hypothalamus,Hypothalamus relative size,Hypothalamus relative size,DeCasiens & Higham	 2019,https://www.nature.com/articles/s41559-019-0969-0#data-availability
+PTD00185,Subthalamus,Subthalamus relative size,Subthalamus relative size,DeCasiens & Higham	 2019,https://www.nature.com/articles/s41559-019-0969-0#data-availability
+PTD00186,Pallidum,Pallidum relative size,Pallidum relative size,DeCasiens & Higham	 2019,https://www.nature.com/articles/s41559-019-0969-0#data-availability
+PTD00187,Subthalamic.Nucleus,Subthalamic nucleus relative size,Subthalamic nucleus relative size,DeCasiens & Higham	 2019,https://www.nature.com/articles/s41559-019-0969-0#data-availability
+PTD00188,Optic.Tract,Optic tract relative size,Optic tract relative size,DeCasiens & Higham	 2019,https://www.nature.com/articles/s41559-019-0969-0#data-availability
+PTD00189,V1..GM.,Primary visual cortex grey matter relative size,Primary visual cortex grey matter relative size,DeCasiens & Higham	 2019,https://www.nature.com/articles/s41559-019-0969-0#data-availability
+PTD00190,LGN,Lateral geniculate nucleus relative size,Lateral geniculate nucleus relative size,DeCasiens & Higham	 2019,https://www.nature.com/articles/s41559-019-0969-0#data-availability
+PTD00191,Paleocortex,Paleocortex relative size,Paleocortex relative size,DeCasiens & Higham	 2019,https://www.nature.com/articles/s41559-019-0969-0#data-availability
+PTD00192,Amygdala,Amygdala relative size,Amygdala relative size,DeCasiens & Higham	 2019,https://www.nature.com/articles/s41559-019-0969-0#data-availability
+PTD00193,Vmo,Trigeminal motor relative size,Trigeminal motor relative size,DeCasiens & Higham	 2019,https://www.nature.com/articles/s41559-019-0969-0#data-availability
+PTD00194,VII,Facial brainstem nuclei relative size,Facial brainstem nuclei relative size,DeCasiens & Higham	 2019,https://www.nature.com/articles/s41559-019-0969-0#data-availability
+PTD00195,XII,Hypoglossal brainstem nuclei relative size,Hypoglossal brainstem nuclei relative size,DeCasiens & Higham	 2019,https://www.nature.com/articles/s41559-019-0969-0#data-availability
+PTD00196,Granular.Insula,Granular insula relative size,Granular insula relative size,DeCasiens & Higham	 2019,https://www.nature.com/articles/s41559-019-0969-0#data-availability
+PTD00197,Dysgranular.Insula,Dysgranular insula relative size,Dysgranular insula relative size,DeCasiens & Higham	 2019,https://www.nature.com/articles/s41559-019-0969-0#data-availability
+PTD00198,Agranular.Insula,Agranular insula relative size,Agranular insula relative size,DeCasiens & Higham	 2019,https://www.nature.com/articles/s41559-019-0969-0#data-availability
+PTD00199,Insula..GM.,Insular GM relative size,Insular GM relative size,DeCasiens & Higham	 2019,https://www.nature.com/articles/s41559-019-0969-0#data-availability
+PTD00200,Albumin,Albumin levels,Albumin levels,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00201,Albumin.Globulin.Ratio,Albumin globulin ratio,Albumin globulin ratio,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00202,Albumin.protein.Ratio,Albumin protein ratio,Albumin protein ratio,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00203,Alkaline.Phosphatase,Alkaline phosphatase levels,Alkaline phosphatase levels,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00204,Amylase,Amylase levels,Amylase levels,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00205,Basophils..,Basophils %,Basophils %,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00206,Basophils.Abs,Basophils absolute count,Basophils absolute count,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00207,Bilirubin.Total,Bilirubin total levels,Bilirubin total levels,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00208,Blood.Urea.Nitrogen,Blood urea nitrogen levels,Blood urea nitrogen levels,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00209,Body.Weight,Body weight,Body weight,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00210,Bun.Creat.Ratio,Ratio of blood urea nitrogen and creatinine,Ratio of blood urea nitrogen and creatinine,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00211,Calcium,Calcium levels,Calcium levels,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00212,Chloride,Chloride levels,Chloride levels,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00213,Cholesterol,Cholesterol levels,Cholesterol levels,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00214,CPK,Creatine phosphokinase levels,Creatine phosphokinase levels,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00215,Creatinine,Creatinine levels,Creatinine levels,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00216,Eosinophils..,Eosinophils %,Eosinophils %,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00217,Eosinophils.Abs,Eosinophils absolute count,Eosinophils absolute count,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00218,GGT,Gamma-glutamyl transferase levels,Gamma-glutamyl transferase levels,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00219,Globulin,Globulin levels,Globulin levels,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00220,Glucose,Glucose levels,Glucose levels,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00221,Hematocrit,Hematocrit levels,Hematocrit levels,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00222,Hemoglobin,Hemoglobin levels,Hemoglobin levels,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00223,Lactic.Dehydrogenase,Lactic dehydrogenase levels,Lactic dehydrogenase levels,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00224,Lipase,Lipase levels,Lipase levels,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00225,Lymphocytes..,Lymphocytes %,Lymphocytes %,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00226,Lymphocytes.Abs,Lymphocytes absolute count,Lymphocytes absolute count,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00227,Magnesium,Magnesium levels,Magnesium levels,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00228,Mean.Corpuscular.Hemoglobin,Mean corpuscular hemoglobin,Average quantity of hemoglobin in single red blood cell,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00229,Mean.Corpuscular.Volume,Mean corpuscular volume,Average volume of red cells,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00230,Mean.Corpusuclar.Hemoglobin.C,Mean corpuscular hemoglobin concentration,Mean corpuscular hemoglobin concentration (hemoglobin/hematocrit),National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00231,Monocytes..,Monocytes %,Monocytes %,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00232,Monocytes.Abs,Monocytes absolute count,Monocytes absolute count,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00233,Neutrophil.Band..,Banded neutrophils %,Banded neutrophils %,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00234,Neutrophil.Band.Abs,Banded neutrophils absolute count,Banded neutrophils absolute count,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00235,Neutrophil.Seg..,Segmented neutrophils %,Segmented neutrophils %,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00236,Neutrophil.Seg.Abs,Segmented neutrophils absolute count,Segmented neutrophils absolute count,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00237,Phosphorus,Phosphorus levels,Phosphorus levels,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00238,Platelets,Platelets count,Platelets count,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00239,Potassium,Potassium levels,Potassium levels,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00240,Red.Blood.Cells,Red blood cells count,Red blood cells count,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00241,Ser.Glut.Oxaloacetic.Transamin.,Serum glutamic oxaloacetic transaminase levels,Serum glutamic oxaloacetic transaminase levels,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00242,Ser.Glut.Pyruvic.Transaminase,Serum glutamic pyruvic transaminase levels,Serum glutamic pyruvic transaminase levels,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00243,Sodium,Sodium levels,Sodium levels,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00244,Total.Protein,Total protein levels,Total protein levels,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00245,Triglycerides,Triglycerides levels,Triglycerides levels,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00246,Uric.Acid,Uric acid levels,Uric acid levels,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00247,White.Blood.Cells,White blood cells count,White blood cells count,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00248,Total.T4,Thyroxine levels,Thyroxine levels,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00249,Carbon.Dioxide,Carbon dioxide levels,Carbon dioxide levels,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00250,Bicarbonate,Bicarbonate levels,Bicarbonate levels,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00251,Bilirubin.Direct,Bilirubin direct levels,Bilirubin direct levels,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00252,Diastolic.Blood.Pressure,Diastolic blood pressure,Diastolic blood pressure,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00253,Glycosylated.Hemoglobin,Glycosylated hemoglobin levels,Glycosylated hemoglobin levels,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00254,High.Density.Lipoprotein,High density lipoprotein levels,High density lipoprotein levels,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00255,Iron,Iron levels,Iron levels,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00256,Low.Density.Lipoprotein,Low density lipoprotein levels,Low density lipoprotein levels,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00257,Rectal.Body.Temperature,Rectal body temperature,Rectal body temperature,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00258,Systolic.Blood.Pressure,Systolic blood pressure,Systolic blood pressure,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00259,Fibrinogen,Fibrinogen levels,Fibrinogen levels,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00260,Total.Solids,Total solids levels,Total solids levels,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00261,Axillary.Body.Temperature,Axillary body temperature,Axillary body temperature,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00262,Bone.Thickness,Bone thickness,Bone thickness,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/
+PTD00263,Fingernail.Growth.Rate,Fingernail growth rate,Fingernail growth rate,National Primate Research Center at the University of Wisconsin-Madison (WNPRC) (Accessed Nov2019),https://primatedatabase.org/

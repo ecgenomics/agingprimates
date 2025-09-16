@@ -1,0 +1,527 @@
+Domain	Family	Genus	SpeciesName	SamplesTMB	Maximum.lifespan..y.	Body_mass	BodyMass_kg	LQ	LQ_class
+STR	Cheirogaleidae	Allocebus	Allocebus_trichotis	0			0.08		
+PLA	Aotidae	Aotus	Aotus_azarae	14	21.2	7.094234846	1.21	0.856613955217582	LOW
+PLA	Aotidae	Aotus	Aotus_griseimembra	4			0.51		
+PLA	Aotidae	Aotus	Aotus_nancymaae	2		6.668228248	0.79		
+PLA	Aotidae	Aotus	Aotus_trivirgatus	1	30.1	6.896694332	0.77	1.324693690770587	HIGH
+STR	Indriidae	Avahi	Avahi_laniger	2		7.095893221	1.175		
+STR	Indriidae	Avahi	Avahi_occidentalis	1		6.685860947	0.8		
+PLA	Callitrichidae	Cebuella	Cebuella_pygmaea	7	18.6	4.753590191	0.12	1.1631705772553698	HIGH
+STR	Cheirogaleidae	Cheirogaleus	Cheirogaleus_crossleyi	0			0.29		
+STR	Cheirogaleidae	Cheirogaleus	Cheirogaleus_major	2	13.4	5.991464547	0.505	0.6386728390460764	LOW
+STR	Lemuridae	Eulemur	Eulemur_mongoz	6	36.2	7.100027167	1.375	1.4277924459923135	HIGH
+STR	Lemuridae	Eulemur	Eulemur_rubriventer	5	20.0	7.580699752	1.9975	0.735078485826479	LOW
+STR	Lemuridae	Hapalemur	Hapalemur_aureus	1			1.515		
+APE	Hylobatidae	Hoolock	Hoolock_hoolock	11	41.0		6.88	1.1928212329567771	HIGH
+APE	Hylobatidae	Hylobates	Hylobates_agilis	1	49.0	8.67419694	6.0	1.4629221414285052	HIGH
+APE	Hylobatidae	Hylobates	Hylobates_klossii	1	37.0	8.664750756	5.8	1.111756180877716	HIGH
+APE	Hylobatidae	Hylobates	Hylobates_lar	30	52.0	8.629628621	5.64	1.5707508822256369	HIGH
+APE	Hylobatidae	Hylobates	Hylobates_moloch	0	45.0		6.42	1.3264293189175445	HIGH
+APE	Hylobatidae	Hylobates	Hylobates_muelleri	1	60.0	8.669227347	5.35	1.8305774361662617	HIGH
+APE	Hylobatidae	Hylobates	Hylobates_pileatus	0	38.0	8.607033895	5.47	1.1545153493729547	HIGH
+STR	Indriidae	Indri	Indri_indri	2		8.753845093	6.465		
+PLA	Callitrichidae	Leontopithecus	Leontopithecus_chrysopygus	0	17.9		0.615	0.821961267980258	LOW
+STR	Lepilemuridae	Lepilemur	Lepilemur_edwardsi	0		6.836259277	0.975		
+STR	Lepilemuridae	Lepilemur	Lepilemur_ruficaudatus	2		6.690842277	0.78		
+APE	Hylobatidae	Nomascus	Nomascus_concolor	1	46.1		7.69	1.3132776899388987	HIGH
+APE	Hylobatidae	Nomascus	Nomascus_gabriellae	4		8.904494329	5.2		
+APE	Hylobatidae	Nomascus	Nomascus_leucogenys	1	44.1	8.782629655	6.5	1.2968617594161278	HIGH
+PLA	Pitheciidae	Plecturocebus	Plecturocebus_donacophilus	1	25.0		0.95	1.0574162168842602	EXPECTED
+PLA	Pitheciidae	Plecturocebus	Plecturocebus_moloch	10	26.2	6.774223886	0.99	1.0995676620026176	EXPECTED
+PLA	Callitrichidae	Saguinus	Saguinus_midas	4	21.0	6.333279628	0.56	0.9815388115852617	EXPECTED
+APE	Hylobatidae	Symphalangus	Symphalangus_syndactylus	3	43.0	9.332115429	11.3	1.1390226205679443	HIGH
+PLA	Atelidae	Alouatta	Alouatta_arctoidea	0			6.37		
+PLA	Atelidae	Alouatta	Alouatta_belzebul	10		8.763271714	6.4		
+PLA	Atelidae	Alouatta	Alouatta_discolor	3			6.37		
+PLA	Atelidae	Alouatta	Alouatta_guariba	2		8.551594618	5.54		
+PLA	Atelidae	Alouatta	Alouatta_macconnelli	13			6.37		
+PLA	Atelidae	Alouatta	Alouatta_nigerrima	2			6.45		
+PLA	Atelidae	Alouatta	Alouatta_ululata	0			4.7		
+PLA	Aotidae	Aotus	Aotus_brumbacki	0			0.67		
+PLA	Aotidae	Aotus	Aotus_jorgehernandezi	0					
+PLA	Aotidae	Aotus	Aotus_lemurinus	4	33.8	6.598509029	0.89	1.447363806870924	HIGH
+PLA	Aotidae	Aotus	Aotus_miconax	0			0.8		
+PLA	Aotidae	Aotus	Aotus_nigriceps	5			0.96		
+PLA	Aotidae	Aotus	Aotus_vociferans	5	22.1		0.7	0.9902947198756681	EXPECTED
+PLA	Aotidae	Aotus	Aotus_zonalis	0			0.9		
+PLA	Atelidae	Ateles	Ateles_chamek	42	42.8		9.37	1.1745748721093858	HIGH
+PLA	Atelidae	Ateles	Ateles_hybridus	6		8.969796306	8.6		
+PLA	Atelidae	Ateles	Ateles_marginatus	1	44.0		6.96	1.277306874395723	HIGH
+STR	Indriidae	Avahi	Avahi_betsileo	0			1.0		
+STR	Indriidae	Avahi	Avahi_cleesei	1			0.99		
+STR	Indriidae	Avahi	Avahi_meridionalis	0			1.18		
+STR	Indriidae	Avahi	Avahi_mooreorum	0			0.92		
+STR	Indriidae	Avahi	Avahi_peyrierasi	2			1.055		
+STR	Indriidae	Avahi	Avahi_ramanantsoavanai	0			0.97		
+STR	Indriidae	Avahi	Avahi_unicolor	0			0.85		
+PLA	Atelidae	Brachyteles	Brachyteles_hypoxanthus	2			9.0		
+PLA	Pitheciidae	Cacajao	Cacajao_ayresi	6					
+PLA	Pitheciidae	Cacajao	Cacajao_calvus	20	35.8	8.059908335	3.17	1.2058090676283857	HIGH
+PLA	Pitheciidae	Cacajao	Cacajao_hosomi	4					
+PLA	Pitheciidae	Cacajao	Cacajao_melanocephalus	16		7.984462732	2.94		
+PLA	Pitheciidae	Cacajao	Cacajao_ouakary	0			3.075		
+PLA	Callitrichidae	Callibella	Callibella_humilis	7			0.12		
+PLA	Pitheciidae	Callicebus	Callicebus_barbarabrownae	0			1.15		
+PLA	Pitheciidae	Callicebus	Callicebus_coimbrai	0			1.21		
+PLA	Pitheciidae	Callicebus	Callicebus_melanochir	0			1.37		
+PLA	Pitheciidae	Callicebus	Callicebus_nigrifrons	0					
+PLA	Pitheciidae	Callicebus	Callicebus_personatus	0			1.32		
+PLA	Callitrichidae	Callithrix	Callithrix_flaviceps	0			0.43		
+PLA	Callitrichidae	Cebuella	Cebuella_niveiventris	5					
+PLA	Cebidae	Cebus	Cebus_aequatorialis	0			2.19		
+PLA	Cebidae	Cebus	Cebus_brunneus	0					
+PLA	Cebidae	Cebus	Cebus_cesarae	0					
+PLA	Cebidae	Cebus	Cebus_cuscinus	1			2.875		
+PLA	Cebidae	Cebus	Cebus_imitator	9			3.235		
+PLA	Cebidae	Cebus	Cebus_kaapori	0			2.425		
+PLA	Cebidae	Cebus	Cebus_leucocephalus	0					
+PLA	Cebidae	Cebus	Cebus_malitiosus	0					
+PLA	Cebidae	Cebus	Cebus_olivaceus	4	47.0	7.983098941	2.88	1.612012470143719	HIGH
+PLA	Cebidae	Cebus	Cebus_unicolor	18			2.74		
+PLA	Cebidae	Cebus	Cebus_versicolor	0			2.74		
+PLA	Cebidae	Cebus	Cebus_yuracus	0			3.35		
+OWM	Cercopithecidae	Cercocebus	Cercocebus_chrysogaster	1			9.75		
+OWM	Cercopithecidae	Cercocebus	Cercocebus_lunulatus	1			7.28		
+OWM	Cercopithecidae	Cercocebus	Cercocebus_sanjei	0			8.05		
+OWM	Cercopithecidae	Cercopithecus	Cercopithecus_albogularis	0			5.28		
+OWM	Cercopithecidae	Cercopithecus	Cercopithecus_denti	0			3.54		
+OWM	Cercopithecidae	Cercopithecus	Cercopithecus_doggetti	0					
+OWM	Cercopithecidae	Cercopithecus	Cercopithecus_dryas	0			2.65		
+OWM	Cercopithecidae	Cercopithecus	Cercopithecus_kandti	0			6.2		
+OWM	Cercopithecidae	Cercopithecus	Cercopithecus_lomamiensis	0			5.0		
+OWM	Cercopithecidae	Cercopithecus	Cercopithecus_lowei	1	30.0		3.9	0.9716408456917347	EXPECTED
+OWM	Cercopithecidae	Cercopithecus	Cercopithecus_pogonias	1	27.0	8.183118079	3.58	0.8887417687472127	LOW
+OWM	Cercopithecidae	Cercopithecus	Cercopithecus_roloway	1			4.55		
+OWM	Cercopithecidae	Cercopithecus	Cercopithecus_sclateri	0			3.25		
+STR	Cheirogaleidae	Cheirogaleus	Cheirogaleus_andysabini	0					
+STR	Cheirogaleidae	Cheirogaleus	Cheirogaleus_lavasoensis	0					
+STR	Cheirogaleidae	Cheirogaleus	Cheirogaleus_minusculus	0			0.3		
+STR	Cheirogaleidae	Cheirogaleus	Cheirogaleus_shethi	0					
+STR	Cheirogaleidae	Cheirogaleus	Cheirogaleus_sibreei	0			0.27		
+STR	Cheirogaleidae	Cheirogaleus	Cheirogaleus_thomasi	0					
+PLA	Pitheciidae	Cheracebus	Cheracebus_lucifer	9			1.5		
+PLA	Pitheciidae	Cheracebus	Cheracebus_lugens	13			1.37		
+PLA	Pitheciidae	Cheracebus	Cheracebus_medemi	0			1.18		
+PLA	Pitheciidae	Cheracebus	Cheracebus_purinus	4			1.5		
+PLA	Pitheciidae	Cheracebus	Cheracebus_regulus	4			1.25		
+PLA	Pitheciidae	Cheracebus	Cheracebus_torquatus	1			1.25		
+PLA	Pitheciidae	Chiropotes	Chiropotes_albinasus	7	20.0	7.953845448	2.82	0.6886977014603463	LOW
+PLA	Pitheciidae	Chiropotes	Chiropotes_chiropotes	2		7.915713199	2.74		
+PLA	Pitheciidae	Chiropotes	Chiropotes_israelita	5					
+PLA	Pitheciidae	Chiropotes	Chiropotes_sagulatus	7			3.0		
+PLA	Pitheciidae	Chiropotes	Chiropotes_satanas	2	19.6		2.885	0.6720231456662432	LOW
+PLA	Pitheciidae	Chiropotes	Chiropotes_utahickae	0			3.0		
+OWM	Cercopithecidae	Chlorocebus	Chlorocebus_cynosuros	0			3.98		
+OWM	Cercopithecidae	Chlorocebus	Chlorocebus_djamdjamensis	0			3.98		
+OWM	Cercopithecidae	Colobus	Colobus_satanas	0		9.09492952	8.91		
+OWM	Cercopithecidae	Colobus	Colobus_vellerosus	0		8.964439834	7.68		
+OWM	Cercopithecidae	Erythrocebus	Erythrocebus_poliophaeus	0					
+STR	Lemuridae	Eulemur	Eulemur_cinereiceps	1			2.16		
+STR	Lemuridae	Eulemur	Eulemur_rufifrons	4			2.18		
+STR	Galagidae	Euoticus	Euoticus_pallidus	0		5.703782475	0.253		
+STR	Galagidae	Galago	Galago_matschiei	1		5.347107531	0.21		
+STR	Galagidae	Galagoides	Galagoides_cocos	0			0.14		
+STR	Galagidae	Galagoides	Galagoides_granti	0			0.134		
+STR	Galagidae	Galagoides	Galagoides_kumbirensis	0					
+STR	Galagidae	Galagoides	Galagoides_orinus	0			0.09		
+STR	Galagidae	Galagoides	Galagoides_rondoensis	0			0.675		
+STR	Galagidae	Galagoides	Galagoides_thomasi	1			0.12		
+APE	Hominidae	Gorilla	Gorilla_beringei	17		11.77528973	130.0		
+APE	Hylobatidae	Hoolock	Hoolock_leuconedys	0			7.2		
+APE	Hylobatidae	Hoolock	Hoolock_tianxing	0					
+APE	Hylobatidae	Hylobates	Hylobates_abbotti	1			5.95		
+APE	Hylobatidae	Hylobates	Hylobates_albibarbis	0			5.95		
+APE	Hylobatidae	Hylobates	Hylobates_funereus	0			5.5		
+PLA	Atelidae	Lagothrix	Lagothrix_cana	4		9.01371703	8.31		
+PLA	Atelidae	Lagothrix	Lagothrix_flavicauda	0			7.25		
+PLA	Atelidae	Lagothrix	Lagothrix_poeppigii	0			7.25		
+PLA	Atelidae	Lagotrix	Lagotrix_lugens	0			6.87		
+PLA	Callitrichidae	Leontocebus	Leontocebus_cruzlimai	0					
+PLA	Callitrichidae	Leontocebus	Leontocebus_fuscus	0			0.37		
+PLA	Callitrichidae	Leontocebus	Leontocebus_illigeri	2			0.29		
+PLA	Callitrichidae	Leontocebus	Leontocebus_lagonotus	0			0.37		
+PLA	Callitrichidae	Leontocebus	Leontocebus_leucogenys	0			0.37		
+PLA	Callitrichidae	Leontocebus	Leontocebus_nigricollis	1	20.2	6.165417854	0.48	0.9720587074416338	EXPECTED
+PLA	Callitrichidae	Leontocebus	Leontocebus_nigrifrons	0			0.36		
+PLA	Callitrichidae	Leontocebus	Leontocebus_tripartitus	0			0.4		
+PLA	Callitrichidae	Leontocebus	Leontocebus_weddelli	19			0.36		
+PLA	Callitrichidae	Leontopithecus	Leontopithecus_caissara	0			0.58		
+STR	Lepilemuridae	Lepilemur	Lepilemur_aeeclis	0			0.86		
+STR	Lepilemuridae	Lepilemur	Lepilemur_ahmansonorum	0			0.595		
+STR	Lepilemuridae	Lepilemur	Lepilemur_ankaranensis	5			0.76		
+STR	Lepilemuridae	Lepilemur	Lepilemur_betsileo	0			1.14		
+STR	Lepilemuridae	Lepilemur	Lepilemur_fleuretae	0			0.89		
+STR	Lepilemuridae	Lepilemur	Lepilemur_grewcockorum	0			0.82		
+STR	Lepilemuridae	Lepilemur	Lepilemur_hollandorum	0			1.0		
+STR	Lepilemuridae	Lepilemur	Lepilemur_hubbardi	0			0.99		
+STR	Lepilemuridae	Lepilemur	Lepilemur_jamesorum	0			0.825		
+STR	Lepilemuridae	Lepilemur	Lepilemur_milanoii	0			0.715		
+STR	Lepilemuridae	Lepilemur	Lepilemur_mittermeieri	1			0.86		
+STR	Lepilemuridae	Lepilemur	Lepilemur_otto	0			0.939		
+STR	Lepilemuridae	Lepilemur	Lepilemur_petteri	0			0.62		
+STR	Lepilemuridae	Lepilemur	Lepilemur_randrianasoloi	0			0.855		
+STR	Lepilemuridae	Lepilemur	Lepilemur_sahamalazensis	1			0.69		
+STR	Lepilemuridae	Lepilemur	Lepilemur_scottorum	0			0.88		
+STR	Lepilemuridae	Lepilemur	Lepilemur_seali	0			0.95		
+STR	Lepilemuridae	Lepilemur	Lepilemur_tymerlachsoni	0			0.88		
+STR	Lepilemuridae	Lepilemur	Lepilemur_wrightae	0			1.435		
+OWM	Cercopithecidae	Lophocebus	Lophocebus_johnstoni	0			6.58		
+OWM	Cercopithecidae	Lophocebus	Lophocebus_opdenboschi	0			6.8		
+OWM	Cercopithecidae	Lophocebus	Lophocebus_osmani	0			6.58		
+OWM	Cercopithecidae	Lophocebus	Lophocebus_ugandae	0			6.5		
+OWM	Cercopithecidae	Macaca	Macaca_leucogenys	0					
+OWM	Cercopithecidae	Macaca	Macaca_munzala	0			15.0		
+OWM	Cercopithecidae	Macaca	Macaca_siberu	1			6.165		
+PLA	Callitrichidae	Mico	Mico_acariensis	2			0.42		
+PLA	Callitrichidae	Mico	Mico_chrysoleucos	0			0.295		
+PLA	Callitrichidae	Mico	Mico_humilis	0					
+PLA	Callitrichidae	Mico	Mico_intermedius	1			0.325		
+PLA	Callitrichidae	Mico	Mico_leucippe	0			0.5		
+PLA	Callitrichidae	Mico	Mico_marcai	11			0.55		
+PLA	Callitrichidae	Mico	Mico_mauesi	2			0.37		
+PLA	Callitrichidae	Mico	Mico_melanurus	0			0.22		
+PLA	Callitrichidae	Mico	Mico_nigriceps	5			0.38		
+PLA	Callitrichidae	Mico	Mico_rondoni	0			0.33		
+PLA	Callitrichidae	Mico	Mico_saterei	4			0.44		
+STR	Cheirogaleidae	Microcebus	Microcebus_arnholdi	2			0.05		
+STR	Cheirogaleidae	Microcebus	Microcebus_bongolavensis	0			0.052		
+STR	Cheirogaleidae	Microcebus	Microcebus_boraha	0					
+STR	Cheirogaleidae	Microcebus	Microcebus_danfossi	0			0.06		
+STR	Cheirogaleidae	Microcebus	Microcebus_ganzhorni	0					
+STR	Cheirogaleidae	Microcebus	Microcebus_gerpi	0			0.07		
+STR	Cheirogaleidae	Microcebus	Microcebus_griseorufus	0			0.05		
+STR	Cheirogaleidae	Microcebus	Microcebus_jollyae	0			0.06		
+STR	Cheirogaleidae	Microcebus	Microcebus_lehilahytsara	0			0.045		
+STR	Cheirogaleidae	Microcebus	Microcebus_macarthurii	0			0.05		
+STR	Cheirogaleidae	Microcebus	Microcebus_mamiratra	0			0.06		
+STR	Cheirogaleidae	Microcebus	Microcebus_manitatra	0					
+STR	Cheirogaleidae	Microcebus	Microcebus_margotmarshae	0			0.045		
+STR	Cheirogaleidae	Microcebus	Microcebus_marohita	0			0.06		
+STR	Cheirogaleidae	Microcebus	Microcebus_mittermeieri	0			0.04		
+STR	Cheirogaleidae	Microcebus	Microcebus_sambiranensis	0			0.04		
+STR	Cheirogaleidae	Microcebus	Microcebus_simmonsi	0			0.06825		
+STR	Cheirogaleidae	Microcebus	Microcebus_tanosi	0			0.05		
+STR	Cheirogaleidae	Microcebus	Microcebus_tavaratra	0			0.055		
+OWM	Cercopithecidae	Miopithecus	Miopithecus_ogouensis	1		7.467371067	1.25		
+STR	Cheirogaleidae	Mirza	Mirza_zaza	5			0.29		
+APE	Hylobatidae	Nomascus	Nomascus_annamensis	2			7.0		
+APE	Hylobatidae	Nomascus	Nomascus_hainanus	0			6.59		
+APE	Hylobatidae	Nomascus	Nomascus_nasutus	0					
+APE	Hylobatidae	Nomascus	Nomascus_siki	1			7.56		
+STR	Lorisidae	Nycticebus	Nycticebus_bancanus	0					
+STR	Lorisidae	Nycticebus	Nycticebus_bengalensis	9	25.5	6.966024187	1.26	1.0225060038585325	EXPECTED
+STR	Lorisidae	Nycticebus	Nycticebus_borneanus	0			0.47		
+STR	Lorisidae	Nycticebus	Nycticebus_javanicus	0			0.73		
+STR	Lorisidae	Nycticebus	Nycticebus_kayan	0			0.6		
+STR	Lorisidae	Nycticebus	Nycticebus_menagensis	0			0.285		
+OWM	Cercopithecidae	Papio	Papio_kindae	25			13.0		
+STR	Galagidae	Paragalago 	Paragalago _granti	0					
+STR	Galagidae	Paragalago	Paragalago_cocos	3					
+STR	Galagidae	Paragalago	Paragalago_orinus	0					
+STR	Galagidae	Paragalago	Paragalago_rondoensis	0					
+STR	Galagidae	Paragalago	Paragalago_zanzibaricus	0					
+STR	Lorisidae	Perodicticus	Perodicticus_edwardsi	0			1.19		
+STR	Lorisidae	Perodicticus	Perodicticus_ibeanus	1			0.861		
+STR	Cheirogaleidae	Phaner	Phaner_electromontis	0			0.38		
+STR	Cheirogaleidae	Phaner	Phaner_furcifer	0	25.0	5.789960171	0.37	1.2637047041411806	HIGH
+STR	Cheirogaleidae	Phaner	Phaner_pallescens	0			0.34		
+STR	Cheirogaleidae	Phaner	Phaner_parienti	0			0.36		
+OWM	Cercopithecidae	Piliocolobus	Piliocolobus_badius	1			8.25		
+OWM	Cercopithecidae	Piliocolobus	Piliocolobus_bouvieri	0					
+OWM	Cercopithecidae	Piliocolobus	Piliocolobus_epieni	0					
+OWM	Cercopithecidae	Piliocolobus	Piliocolobus_foai	0			9.5		
+OWM	Cercopithecidae	Piliocolobus	Piliocolobus_gordonorum	1			7.05		
+OWM	Cercopithecidae	Piliocolobus	Piliocolobus_kirkii	1			6.9		
+OWM	Cercopithecidae	Piliocolobus	Piliocolobus_langi	0			6.59		
+OWM	Cercopithecidae	Piliocolobus	Piliocolobus_lulindicus	0					
+OWM	Cercopithecidae	Piliocolobus	Piliocolobus_oustaleti	0			10.35		
+OWM	Cercopithecidae	Piliocolobus	Piliocolobus_parmentieri	0			8.3		
+OWM	Cercopithecidae	Piliocolobus	Piliocolobus_pennantii	0			7.4		
+OWM	Cercopithecidae	Piliocolobus	Piliocolobus_preussi	0			8.3		
+OWM	Cercopithecidae	Piliocolobus	Piliocolobus_rufomitratus	0			9.0		
+OWM	Cercopithecidae	Piliocolobus	Piliocolobus_semlikiensis	0					
+OWM	Cercopithecidae	Piliocolobus	Piliocolobus_temminckii	0			6.175		
+OWM	Cercopithecidae	Piliocolobus	Piliocolobus_tephrosceles	1			8.75		
+OWM	Cercopithecidae	Piliocolobus	Piliocolobus_tholloni	0					
+OWM	Cercopithecidae	Piliocolobus	Piliocolobus_waldronae	0			5.9		
+PLA	Pitheciidae	Pithecia	Pithecia_aequatorialis	0			2.25		
+PLA	Pitheciidae	Pithecia	Pithecia_albicans	3			3.0		
+PLA	Pitheciidae	Pithecia	Pithecia_cazuzai	3					
+PLA	Pitheciidae	Pithecia	Pithecia_chrysocephala	1			1.9		
+PLA	Pitheciidae	Pithecia	Pithecia_hirsuta	6					
+PLA	Pitheciidae	Pithecia	Pithecia_inusta	0					
+PLA	Pitheciidae	Pithecia	Pithecia_irrorata	1			2.16		
+PLA	Pitheciidae	Pithecia	Pithecia_isabela	1					
+PLA	Pitheciidae	Pithecia	Pithecia_milleri	0					
+PLA	Pitheciidae	Pithecia	Pithecia_mittermeieri	1					
+PLA	Pitheciidae	Pithecia	Pithecia_monachus	5	24.6		2.36	0.8760934993705384	LOW
+PLA	Pitheciidae	Pithecia	Pithecia_napensis	0					
+PLA	Pitheciidae	Pithecia	Pithecia_pissinattii	3					
+PLA	Pitheciidae	Pithecia	Pithecia_pithecia	10	36.0	7.473069088	1.76	1.3551779475377612	HIGH
+PLA	Pitheciidae	Pithecia	Pithecia_rylandsi	0					
+PLA	Pitheciidae	Pithecia	Pithecia_vanzolinii	1					
+PLA	Pitheciidae	Plecturocebus	Plecturocebus_aureipalatii	0			0.95		
+PLA	Pitheciidae	Plecturocebus	Plecturocebus_baptista	0			1.16		
+PLA	Pitheciidae	Plecturocebus	Plecturocebus_bernhardi	7			0.95		
+PLA	Pitheciidae	Plecturocebus	Plecturocebus_brunneus	2			0.83		
+PLA	Pitheciidae	Plecturocebus	Plecturocebus_caligatus	3		6.779921907	1.0		
+PLA	Pitheciidae	Plecturocebus	Plecturocebus_caquetensis	0					
+PLA	Pitheciidae	Plecturocebus	Plecturocebus_cinerascens	6			0.74		
+PLA	Pitheciidae	Plecturocebus	Plecturocebus_cupreus	7	26.4	6.975413927	1.07	1.0918075978460042	EXPECTED
+PLA	Pitheciidae	Plecturocebus	Plecturocebus_discolor	0			1.01		
+PLA	Pitheciidae	Plecturocebus	Plecturocebus_hoffmansi	0			1.06		
+PLA	Pitheciidae	Plecturocebus	Plecturocebus_miltoni	9			1.34		
+PLA	Pitheciidae	Plecturocebus	Plecturocebus_modestus	0			0.8		
+PLA	Pitheciidae	Plecturocebus	Plecturocebus_oenanthe	1			0.8		
+PLA	Pitheciidae	Plecturocebus	Plecturocebus_olallae	0			0.8		
+PLA	Pitheciidae	Plecturocebus	Plecturocebus_ornatus	0			1.17		
+PLA	Pitheciidae	Plecturocebus	Plecturocebus_pallescens	0			0.8		
+PLA	Pitheciidae	Plecturocebus	Plecturocebus_stephennashi	0			0.67		
+PLA	Pitheciidae	Plecturocebus	Plecturocebus_toppini	5					
+PLA	Pitheciidae	Plecturocebus	Plecturocebus_urubambensis	0					
+PLA	Pitheciidae	Plecturocebus	Plecturocebus_vieirai	0			0.96		
+APE	Hominidae	Pongo	Pongo_tapanuliensis	1					
+OWM	Cercopithecidae	Presbytis	Presbytis_bicolor	0			6.43		
+OWM	Cercopithecidae	Presbytis	Presbytis_canicrus	0			6.125		
+OWM	Cercopithecidae	Presbytis	Presbytis_chrysomelas	0		8.812694613	7.05		
+OWM	Cercopithecidae	Presbytis	Presbytis_comata	1		8.809116258	6.7		
+OWM	Cercopithecidae	Presbytis	Presbytis_femoralis	0		8.831711918	6.22		
+OWM	Cercopithecidae	Presbytis	Presbytis_frontata	0		8.633196867	5.61		
+OWM	Cercopithecidae	Presbytis	Presbytis_hosei	0			5.9		
+OWM	Cercopithecidae	Presbytis	Presbytis_mitrata	1			5.8		
+OWM	Cercopithecidae	Presbytis	Presbytis_natunae	0			7.05		
+OWM	Cercopithecidae	Presbytis	Presbytis_potenziani	0			6.27		
+OWM	Cercopithecidae	Presbytis	Presbytis_rubicunda	0		8.742893472	6.13		
+OWM	Cercopithecidae	Presbytis	Presbytis_sabana	0			5.9		
+OWM	Cercopithecidae	Presbytis	Presbytis_siamensis	0			7.65		
+OWM	Cercopithecidae	Presbytis	Presbytis_siberu	0			6.45		
+OWM	Cercopithecidae	Presbytis	Presbytis_sumatrana	0			6.42		
+OWM	Cercopithecidae	Presbytis	Presbytis_thomasi	0		8.814330423	6.73		
+OWM	Cercopithecidae	Procolobus	Procolobus_verus	0		8.400659375	4.45		
+STR	Indriidae	Propithecus	Propithecus_candidus	0			5.685		
+STR	Indriidae	Propithecus	Propithecus_coronatus	1			3.9		
+STR	Indriidae	Propithecus	Propithecus_deckenii	0		8.169619562	2.78		
+STR	Indriidae	Propithecus	Propithecus_perrieri	2			4.41		
+OWM	Cercopithecidae	Pygathrix	Pygathrix_cinerea	5			9.98		
+OWM	Cercopithecidae	Pygathrix	Pygathrix_nigripes	4			9.88		
+OWM	Cercopithecidae	Rhinopithecus	Rhinopithecus_strykeri	0			11.25		
+PLA	Callitrichidae	Saguinus	Saguinus_bicolor	1	19.0		0.43	0.933520333916391	EXPECTED
+PLA	Callitrichidae	Saguinus	Saguinus_inustus	4			0.69		
+PLA	Callitrichidae	Saguinus	Saguinus_labiatus	20	20.5	6.253828812	0.51	0.9752564182058844	EXPECTED
+PLA	Callitrichidae	Saguinus	Saguinus_leucopus	0	15.2	6.263398263	0.49	0.7286051693102458	LOW
+PLA	Callitrichidae	Saguinus	Saguinus_martinsi	5			0.5		
+PLA	Callitrichidae	Saguinus	Saguinus_mystax	11	20.0	6.369900983	0.53	0.9445774548623737	EXPECTED
+PLA	Callitrichidae	Saguinus	Saguinus_niger	0		5.926926026	0.42		
+PLA	Callitrichidae	Saguinus	Saguinus_ursulus	0					
+PLA	Cebidae	Saimiri	Saimiri_cassiquiarensis	11			0.88		
+PLA	Cebidae	Saimiri	Saimiri_collinsi	0					
+PLA	Cebidae	Saimiri	Saimiri_macrodon	18			0.99		
+PLA	Cebidae	Saimiri	Saimiri_ustus	15			0.86		
+PLA	Cebidae	Saimiri	Saimiri_vanzolinii	0			0.8		
+PLA	Cebidae	Sapajus	Sapajus_cay	0			3.25		
+PLA	Cebidae	Sapajus	Sapajus_flavius	0			2.35		
+PLA	Cebidae	Sapajus	Sapajus_libidinosus	0			2.54		
+PLA	Cebidae	Sapajus	Sapajus_macrocephalus	35			3.05		
+PLA	Cebidae	Sapajus	Sapajus_nigritus	0		7.912423121	3.7		
+PLA	Cebidae	Sapajus	Sapajus_robustus	0			3.05		
+PLA	Cebidae	Sapajus	Sapajus_xanthosternos	0		7.799753318	2.875		
+STR	Galagidae	Sciurocheirus	Sciurocheirus_cameronensis	0			0.27		
+STR	Galagidae	Sciurocheirus	Sciurocheirus_gabonensis	0			0.26		
+STR	Galagidae	Sciurocheirus	Sciurocheirus_makandensis	0					
+OWM	Cercopithecidae	Semnopithecus	Semnopithecus_ajax	0			20.15		
+OWM	Cercopithecidae	Semnopithecus	Semnopithecus_hector	0			15.3		
+OWM	Cercopithecidae	Semnopithecus	Semnopithecus_hypoleucos	4			13.1		
+OWM	Cercopithecidae	Semnopithecus	Semnopithecus_priam	1					
+OWM	Cercopithecidae	Semnopithecus	Semnopithecus_schistaceus	2			17.0		
+OWM	Cercopithecidae	Semnopithecus	Semnopithecus_vetulus	3	26.1	8.738254577	7.03	0.7562435267733602	LOW
+OWM	Cercopithecidae	Simias	Simias_concolor	0		8.984066928	7.97		
+TAR	Tarsiidae	Tarsius	Tarsius_dentatus	1			0.112		
+TAR	Tarsiidae	Tarsius	Tarsius_fuscus	0			0.12		
+TAR	Tarsiidae	Tarsius	Tarsius_lariang	1			0.11		
+TAR	Tarsiidae	Tarsius	Tarsius_pelengensis	0			0.16		
+TAR	Tarsiidae	Tarsius	Tarsius_pumilus	0			0.051		
+TAR	Tarsiidae	Tarsius	Tarsius_sangirensis	0			0.143		
+TAR	Tarsiidae	Tarsius	Tarsius_spectrumgurskyae	0					
+TAR	Tarsiidae	Tarsius	Tarsius_supriatnai	0					
+TAR	Tarsiidae	Tarsius	Tarsius_tarsier	0	16.0		0.122	0.9974558780501203	EXPECTED
+TAR	Tarsiidae	Tarsius	Tarsius_tumpara	0			0.1		
+TAR	Tarsiidae	Tarsius	Tarsius_wallacei	1			0.107		
+OWM	Cercopithecidae	Trachypithecus	Trachypithecus_barbei	0			6.4		
+OWM	Cercopithecidae	Trachypithecus	Trachypithecus_crepusculus	1			6.65		
+OWM	Cercopithecidae	Trachypithecus	Trachypithecus_delacouri	0			8.175		
+OWM	Cercopithecidae	Trachypithecus	Trachypithecus_ebenus	0			10.3		
+OWM	Cercopithecidae	Trachypithecus	Trachypithecus_geei	6		9.225228984	10.15		
+OWM	Cercopithecidae	Trachypithecus	Trachypithecus_germaini	1			8.83		
+OWM	Cercopithecidae	Trachypithecus	Trachypithecus_hatinhensis	1			7.275		
+OWM	Cercopithecidae	Trachypithecus	Trachypithecus_laotum	1			7.0		
+OWM	Cercopithecidae	Trachypithecus	Trachypithecus_leucocephalus	1			8.285		
+OWM	Cercopithecidae	Trachypithecus	Trachypithecus_margarita	0					
+OWM	Cercopithecidae	Trachypithecus	Trachypithecus_mauritius	0					
+OWM	Cercopithecidae	Trachypithecus	Trachypithecus_selangorensis	0					
+OWM	Cercopithecidae	Trachypithecus	Trachypithecus_shortridgei	0					
+OWM	Cercopithecidae	Allenopithecus	Allenopithecus_nigroviridis	2	27.0	8.44569719	5.3	0.8252230386376472	LOW
+PLA	Atelidae	Ateles	Ateles_belzebuth	5	35.2	9.007856923	8.07	0.9936633798061236	EXPECTED
+PLA	Atelidae	Ateles	Ateles_fusciceps	30	46.0	9.107753783	9.03	1.2712429756308765	HIGH
+PLA	Atelidae	Ateles	Ateles_geoffroyi	3	47.1	8.927314111	7.54	1.346770026054302	HIGH
+PLA	Atelidae	Ateles	Ateles_paniscus	3	46.0	9.021598247	8.28	1.2922478472781653	HIGH
+PLA	Atelidae	Brachyteles	Brachyteles_arachnoides	0	40.0	9.087042156	8.84	1.109880529207232	HIGH
+PLA	Cebidae	Cebus	Cebus_albifrons	15	40.4	7.913886715	2.74	1.3987568554682992	HIGH
+PLA	Cebidae	Cebus	Cebus_capucinus	0	54.0	7.958926493	3.11	1.825398820742833	HIGH
+OWM	Cercopithecidae	Cercocebus	Cercocebus_agilis	0	31.0	8.933268479	7.58	0.8855231785043184	LOW
+OWM	Cercopithecidae	Cercocebus	Cercocebus_atys	17	32.5	9.059517482	8.6	0.906481349377203	EXPECTED
+OWM	Cercopithecidae	Cercocebus	Cercocebus_galeritus	0		8.913953859	7.44		
+OWM	Cercopithecidae	Cercocebus	Cercocebus_torquatus	2	46.0	8.920656297	7.5	1.316639779450848	HIGH
+OWM	Cercopithecidae	Chlorocebus	Chlorocebus_aethiops	0	30.8	8.221478947	4.65	0.9649344853612781	EXPECTED
+OWM	Cercopithecidae	Chlorocebus	Chlorocebus_pygerythrus	26		8.371936179	4.665		
+OWM	Cercopithecidae	Chlorocebus	Chlorocebus_sabaeus	13		8.369157113	4.875		
+OWM	Cercopithecidae	Chlorocebus	Chlorocebus_tantalus	0			5.325		
+OWM	Cercopithecidae	Colobus	Colobus_angolensis	1	35.3	9.062420242	8.6	0.9845782040927774	EXPECTED
+OWM	Cercopithecidae	Colobus	Colobus_polykomos	1	33.9	9.116029693	9.1	0.9354844963284726	EXPECTED
+STR	Daubentoniidae	Daubentonia	Daubentonia_madagascariensis	2	23.3	7.845807503	2.545	0.8180439718394136	LOW
+STR	Lemuridae	Eulemur	Eulemur_albifrons	3		7.756195344	2.04		
+STR	Lemuridae	Eulemur	Eulemur_collaris	6		7.805865747	2.16		
+STR	Lemuridae	Eulemur	Eulemur_coronatus	6	27.0	7.073269717	1.47	1.051565930963229	EXPECTED
+STR	Lemuridae	Eulemur	Eulemur_flavifrons	6			1.83		
+STR	Lemuridae	Eulemur	Eulemur_fulvus	3	35.5	7.737180078	1.84	1.325175822955003	HIGH
+STR	Lemuridae	Eulemur	Eulemur_macaco	5	36.2	7.779048645	2.063	1.3224033348639614	HIGH
+STR	Lemuridae	Eulemur	Eulemur_rufus	1		7.705262475	2.01		
+STR	Lemuridae	Eulemur	Eulemur_sanfordi	5		7.646912572	1.87		
+STR	Galagidae	Euoticus	Euoticus_elegantulus	0		5.613128106	0.27		
+STR	Galagidae	Galago	Galago_gallarum	0			0.2		
+STR	Galagidae	Galago	Galago_moholi	12	16.6	4.997212274	0.2	0.9425602882168603	EXPECTED
+STR	Galagidae	Galago	Galago_senegalensis	5	17.1	5.267858159	0.25	0.9308531400267742	EXPECTED
+PLA	Atelidae	Lagothrix	Lagothrix_lagotricha	18	32.0	8.874867636	7.15	0.9242338186566447	EXPECTED
+STR	Lemuridae	Lemur	Lemur_catta	9	37.3	7.700747795	2.21	1.3449756179539767	HIGH
+STR	Lorisidae	Loris	Loris_lydekkerianus	4	18.7	5.587248658	0.27	1.0032509379711179	EXPECTED
+OWM	Cercopithecidae	Macaca	Macaca_arctoides	8	29.2	9.239899174	10.3	0.7871406395479044	LOW
+OWM	Cercopithecidae	Macaca	Macaca_assamensis	3	31.4	9.116029693	9.0	0.8683074617444644	LOW
+OWM	Cercopithecidae	Macaca	Macaca_cyclopis	2		8.607033895	5.47		
+OWM	Cercopithecidae	Macaca	Macaca_fascicularis	36	38.5	8.354909528	4.03	1.2392353547274253	HIGH
+OWM	Cercopithecidae	Macaca	Macaca_fuscata	1	38.5	9.16062478	9.5	1.053820608655355	EXPECTED
+OWM	Cercopithecidae	Macaca	Macaca_hecki	4			9.0		
+OWM	Cercopithecidae	Macaca	Macaca_leonina	7		8.637993892	6.7		
+OWM	Cercopithecidae	Macaca	Macaca_maura	50	33.0	8.624320545	7.88	0.935763721557057	EXPECTED
+OWM	Cercopithecidae	Macaca	Macaca_mulatta	83	34.0	8.823647949	5.96	1.0163729386983174	EXPECTED
+OWM	Cercopithecidae	Macaca	Macaca_nemestrina	24	37.6	9.084890521	8.89	1.0421761529672382	EXPECTED
+OWM	Cercopithecidae	Macaca	Macaca_nigra	6	34.0	8.946374826	7.68	0.9688161410262606	EXPECTED
+OWM	Cercopithecidae	Macaca	Macaca_nigrescens	1			5.65		
+OWM	Cercopithecidae	Macaca	Macaca_ochreata	4	29.0		3.95	0.936994121350897	EXPECTED
+OWM	Cercopithecidae	Macaca	Macaca_pagensis	3			6.38		
+OWM	Cercopithecidae	Macaca	Macaca_radiata	13	30.0	8.533853632	5.14	0.9222421017997867	EXPECTED
+OWM	Cercopithecidae	Macaca	Macaca_silenus	17	40.0	8.9226583	7.5	1.1449041560442155	HIGH
+OWM	Cercopithecidae	Macaca	Macaca_sinica	3	29.3	8.398409655	4.48	0.9244252407074189	EXPECTED
+OWM	Cercopithecidae	Macaca	Macaca_sylvanus	89	29.1	9.399140895	13.5	0.7453420543532542	LOW
+OWM	Cercopithecidae	Macaca	Macaca_thibetana	1	27.0		15.55	0.673321433159766	LOW
+OWM	Cercopithecidae	Macaca	Macaca_tonkeana	44	28.4	9.00393102	11.95	0.7443745654235423	LOW
+OWM	Cercopithecidae	Mandrillus	Mandrillus_leucophaeus	1	39.0	9.61580548	20.375	0.9241466140755568	EXPECTED
+OWM	Cercopithecidae	Mandrillus	Mandrillus_sphinx	6	40.0	10.06900199	23.6	0.9218820143463087	EXPECTED
+STR	Cheirogaleidae	Microcebus	Microcebus_berthae	0			0.03		
+STR	Cheirogaleidae	Microcebus	Microcebus_murinus	2	18.2	4.17438727	0.06	1.2974675982641257	HIGH
+STR	Cheirogaleidae	Microcebus	Microcebus_myoxinus	0			0.04		
+STR	Cheirogaleidae	Microcebus	Microcebus_ravelobensis	2			0.055		
+STR	Cheirogaleidae	Microcebus	Microcebus_rufus	0		3.761200116	0.04		
+OWM	Cercopithecidae	Miopithecus	Miopithecus_talapoin	0	27.0	7.090076836	1.25	1.0842851029800058	EXPECTED
+STR	Cheirogaleidae	Mirza	Mirza_coquereli	0	17.4	5.743003188	0.31	0.909447445613542	EXPECTED
+STR	Galagidae	Otolemur	Otolemur_crassicaudatus	3	19.6	6.745236349	1.15	0.799613096949982	LOW
+STR	Galagidae	Otolemur	Otolemur_garnettii	9	18.3	6.638567789	0.76	0.8073708033354634	LOW
+APE	Hominidae	Pan	Pan_paniscus	13	54.5	10.57387775	39.1	1.1417494589070314	HIGH
+APE	Hominidae	Pan	Pan_troglodytes	361	59.4	10.71368417	53.7	1.1719714289654743	HIGH
+OWM	Cercopithecidae	Papio	Papio_anubis	92	31.6	9.80642584	16.65	0.7779210278680961	LOW
+OWM	Cercopithecidae	Papio	Papio_cynocephalus	138	34.1	9.749753453	17.05	0.8357072886051321	LOW
+OWM	Cercopithecidae	Papio	Papio_papio	22			17.5		
+OWM	Cercopithecidae	Papio	Papio_ursinus	4	32.6	10.01234196	22.3	0.7594229198630175	LOW
+APE	Hominidae	Pongo	Pongo_abelii	41	59.0	10.94641094	56.75	1.15198860255921	HIGH
+APE	Hominidae	Pongo	Pongo_pygmaeus	21	56.3	10.95343467	57.15	1.0978121823718079	EXPECTED
+STR	Lemuridae	Prolemur	Prolemur_simus	1	17.6	7.673223121	1.98	0.6479457807284796	LOW
+STR	Indriidae	Propithecus	Propithecus_coquereli	3		8.22389538	3.785		
+STR	Indriidae	Propithecus	Propithecus_edwardsi	1		8.645058562	5.74		
+STR	Indriidae	Propithecus	Propithecus_tattersalli	6	20.0		3.5	0.6611452081656268	LOW
+STR	Indriidae	Propithecus	Propithecus_verreauxi	2	30.5	7.99125393	2.91	1.0440463604431744	EXPECTED
+OWM	Cercopithecidae	Rungwecebus	Rungwecebus_kipunji	0			10.0		
+PLA	Cebidae	Saimiri	Saimiri_boliviensis	4	30.3		0.88	1.3002627552799964	HIGH
+PLA	Cebidae	Saimiri	Saimiri_oerstedii	1		6.670766321	0.79		
+PLA	Cebidae	Saimiri	Saimiri_sciureus	9	30.3	6.683360946	0.82	1.3177333265363513	HIGH
+PLA	Cebidae	Sapajus	Sapajus_apella	8	46.0	7.98480339	3.01	1.5646041698116764	HIGH
+STR	Lorisidae	Loris	Loris_tardigradus	4	19.3	5.262690189	0.19	1.1065437709636585	HIGH
+STR	Indriidae	Propithecus	Propithecus_diadema	4	21.0	8.720950029	6.105	0.6249142423836466	LOW
+PLA	Callitrichidae	Saguinus	Saguinus_oedipus	15	26.2	6.06610809	0.41	1.2989153876920394	HIGH
+STR	Lemuridae	Varecia	Varecia_rubra	1	37.5	8.151909873	3.265	1.256038827999181	HIGH
+STR	Lemuridae	Varecia	Varecia_variegata	3	36.0	8.181720455	3.55	1.1868752166903516	HIGH
+OWM	Cercopithecidae	Allochrocebus	Allochrocebus_lhoesti	2	24.1	8.457443187	5.5	0.7314492746807562	LOW
+OWM	Cercopithecidae	Allochrocebus	Allochrocebus_preussi	1	26.0		4.525	0.8187610136796656	LOW
+OWM	Cercopithecidae	Allochrocebus	Allochrocebus_solatus	1			6.35		
+STR	Lorisidae	Arctocebus	Arctocebus_aureus	0		5.347107531	0.21		
+STR	Lorisidae	Arctocebus	Arctocebus_calabarensis	2	13.0	5.733341277	0.31	0.679472229481382	LOW
+OWM	Cercopithecidae	Cercopithecus	Cercopithecus_ascanius	4	31.2	8.219864742	3.24	1.0465435524040456	EXPECTED
+OWM	Cercopithecidae	Cercopithecus	Cercopithecus_campbelli	30	30.0	8.188689124	3.6	0.9864516450749865	EXPECTED
+OWM	Cercopithecidae	Cercopithecus	Cercopithecus_cephus	3	36.0	8.184513753	3.48	1.1913510255044302	HIGH
+OWM	Cercopithecidae	Cercopithecus	Cercopithecus_diana	2	35.1	8.422882512	4.5	1.1064853563790296	HIGH
+OWM	Cercopithecidae	Cercopithecus	Cercopithecus_erythrogaster	0	24.0		3.5	0.7933742497987523	LOW
+OWM	Cercopithecidae	Cercopithecus	Cercopithecus_erythrotis	0			3.4		
+OWM	Cercopithecidae	Cercopithecus	Cercopithecus_hamlyni	1	28.6	8.395025557	4.43	0.9042561022147411	EXPECTED
+OWM	Cercopithecidae	Cercopithecus	Cercopithecus_mitis	9	37.8	8.717518373	4.89	1.173027367998409	HIGH
+OWM	Cercopithecidae	Cercopithecus	Cercopithecus_mona	1	30.0	8.221210094	4.05	0.9647348665241611	EXPECTED
+OWM	Cercopithecidae	Cercopithecus	Cercopithecus_nictitans	2	31.0	8.606119401	5.46	0.9421672494116061	EXPECTED
+OWM	Cercopithecidae	Cercopithecus	Cercopithecus_petaurista	9	29.0	8.191186005	3.65	0.951087263490973	EXPECTED
+OWM	Cercopithecidae	Cercopithecus	Cercopithecus_wolfi	0	24.0		3.34	0.8004217454499103	LOW
+OWM	Cercopithecidae	Colobus	Colobus_guereza	5	35.3	9.058237594	8.89	0.9784260159506251	EXPECTED
+OWM	Cercopithecidae	Erythrocebus	Erythrocebus_patas	5	28.3	9.15377002	9.45	0.7753995471738978	LOW
+APE	Hominidae	Gorilla	Gorilla_gorilla	88	55.0	11.70313252	122.5	0.9285401515426395	EXPECTED
+STR	Lepilemuridae	Lepilemur	Lepilemur_dorsalis	2		6.768493212	0.795		
+STR	Lepilemuridae	Lepilemur	Lepilemur_leucopus	0		6.406879986	0.585		
+STR	Lepilemuridae	Lepilemur	Lepilemur_microdon	0		6.877296071	1.035		
+STR	Lepilemuridae	Lepilemur	Lepilemur_mustelinus	0	12.0	6.65544035	0.98	0.5045860469966207	LOW
+STR	Lepilemuridae	Lepilemur	Lepilemur_septentrionalis	2			0.6275		
+OWM	Cercopithecidae	Nasalis	Nasalis_larvatus	6	25.1	9.586102001	15.75	0.6244295043474718	LOW
+STR	Lorisidae	Nycticebus	Nycticebus_coucang	8	25.8	6.481577129	0.65	1.1723972764874953	HIGH
+STR	Lorisidae	Nycticebus	Nycticebus_pygmaeus	8	19.3	5.726847748	0.42	0.9524866831409482	EXPECTED
+OWM	Cercopithecidae	Papio	Papio_hamadryas	25	37.5	9.557469903	13.4	0.9618429811666882	EXPECTED
+STR	Lorisidae	Perodicticus	Perodicticus_potto	3	26.3	6.727431725	0.83	1.14115781388446	HIGH
+OWM	Cercopithecidae	Rhinopithecus	Rhinopithecus_avunculus	0			11.25		
+OWM	Cercopithecidae	Rhinopithecus	Rhinopithecus_bieti	20		9.116029693	12.48		
+OWM	Cercopithecidae	Rhinopithecus	Rhinopithecus_brelichi	0			11.25		
+OWM	Cercopithecidae	Rhinopithecus	Rhinopithecus_roxellana	1	29.5	9.598998362	14.75	0.7430465866117809	LOW
+STR	Galagidae	Sciurocheirus	Sciurocheirus_alleni	0			0.27		
+OWM	Cercopithecidae	Semnopithecus	Semnopithecus_johnii	2	34.0	9.358760377	11.6	0.8961734562598724	LOW
+OWM	Cercopithecidae	Theropithecus	Theropithecus_gelada	1	35.5	9.638870753	15.35	0.8874616371162459	LOW
+OWM	Cercopithecidae	Trachypithecus	Trachypithecus_auratus	7	31.1				
+OWM	Cercopithecidae	Trachypithecus	Trachypithecus_cristatus	3	28.3	8.76311533	6.25	0.8384184594033078	LOW
+OWM	Cercopithecidae	Trachypithecus	Trachypithecus_francoisi	12	26.3		7.52	0.7523956845648258	LOW
+OWM	Cercopithecidae	Trachypithecus	Trachypithecus_obscurus	2	33.9	8.861633598	6.99	0.9833072274895859	EXPECTED
+OWM	Cercopithecidae	Trachypithecus	Trachypithecus_phayrei	2	28.3	8.919319398	7.44	0.811250299303353	LOW
+OWM	Cercopithecidae	Trachypithecus	Trachypithecus_pileatus	1	25.2	9.375346207	10.93	0.6717335649303504	LOW
+OWM	Cercopithecidae	Trachypithecus	Trachypithecus_poliocephalus	10			7.6		
+PLA	Callitrichidae	Callimico	Callimico_goeldii	2	22.2	6.182084907	0.48	1.0683021438219935	EXPECTED
+PLA	Callitrichidae	Callithrix	Callithrix_aurita	0			0.44		
+PLA	Callitrichidae	Callithrix	Callithrix_geoffroyi	2	17.6		0.24	0.9654915172828963	EXPECTED
+PLA	Callitrichidae	Callithrix	Callithrix_jacchus	6	22.8	5.768320996	0.32	1.1845604283656832	HIGH
+PLA	Callitrichidae	Callithrix	Callithrix_kuhlii	1	20.0	5.922462747	0.38	1.0058810239950566	EXPECTED
+PLA	Callitrichidae	Callithrix	Callithrix_penicillata	0	15.4	5.793013608	0.33	0.7954580944963352	LOW
+TAR	Tarsiidae	Carlito	Carlito_syrichta	5	16.0	4.836281907	0.13	0.9855539625103605	EXPECTED
+TAR	Tarsiidae	Tarsius	Tarsius_bancanus	0	16.3	4.836281907	0.12	1.0193376564119638	EXPECTED
+OWM	Cercopithecidae	Cercopithecus	Cercopithecus_neglectus	3	30.8	8.603370888	5.74	0.9272825522379446	EXPECTED
+STR	Cheirogaleidae	Cheirogaleus	Cheirogaleus_medius	2	23.3	4.941642423	0.176	1.3553446510354628	HIGH
+STR	Galagidae	Galagoides	Galagoides_demidovii	0	13.4	4.317488114	0.06	0.9552783415790815	EXPECTED
+STR	Galagidae	Galagoides	Galagoides_zanzibaricus	0	12.2	4.96284463	0.14	0.7410326632879943	LOW
+STR	Lemuridae	Hapalemur	Hapalemur_alaotrensis	4		7.122866659	1.24		
+STR	Lemuridae	Hapalemur	Hapalemur_griseus	6	23.3	6.563855527	0.823	1.01260734094849	EXPECTED
+STR	Lemuridae	Hapalemur	Hapalemur_meridionalis	1			0.96		
+STR	Lemuridae	Hapalemur	Hapalemur_occidentalis	1			0.9315		
+PLA	Callitrichidae	Leontopithecus	Leontopithecus_chrysomelas	4	21.3	6.484635236	0.58	0.9889798245987159	EXPECTED
+PLA	Callitrichidae	Leontopithecus	Leontopithecus_rosalia	5	31.6	6.411818268	0.64	1.4401734053922015	HIGH
+PLA	Callitrichidae	Mico	Mico_argentatus	9	16.5		0.35	0.842850993680424	LOW
+PLA	Callitrichidae	Mico	Mico_emiliae	0			0.32		
+PLA	Callitrichidae	Mico	Mico_humeralifer	5	15.0		0.42	0.7402746242028094	LOW
+PLA	Callitrichidae	Saguinus	Saguinus_geoffroyi	1	20.5	6.248042875	0.49	0.9826582875565816	EXPECTED
+PLA	Callitrichidae	Leontocebus	Leontocebus_fuscicolis	0	24.9	5.993961427	0.33	1.2861627631791392	HIGH
+PLA	Callitrichidae	Saguinus	Saguinus_imperator	13	23.7		0.47	1.1450318581480299	HIGH
+PLA	Atelidae	Alouatta	Alouatta_caraya	4	32.4	8.591001119	5.38	0.987467656000009	EXPECTED
+PLA	Atelidae	Alouatta	Alouatta_palliata	1	24.0	8.740336743	6.12	0.7138565393323573	LOW
+PLA	Atelidae	Alouatta	Alouatta_pigra	0		9.09549053	6.56		
+PLA	Atelidae	Alouatta	Alouatta_sara	0			6.5		
+PLA	Atelidae	Alouatta	Alouatta_seniculus	38	25.0	8.691146499	6.01	0.7461539678549526	LOW
+OWM	Cercopithecidae	Lophocebus	Lophocebus_albigena	0	29.0	8.846496939	6.95	0.8420901534094132	LOW
+OWM	Cercopithecidae	Lophocebus	Lophocebus_aterrimus	2		8.824677891	6.8		
+OWM	Cercopithecidae	Presbytis	Presbytis_melalophos	0	20.0	8.788745882	6.53	0.5876342814162008	LOW
+OWM	Cercopithecidae	Pygathrix	Pygathrix_nemaeus	13	26.0	9.181940897	9.72	0.7085983606136635	LOW
+OWM	Cercopithecidae	Semnopithecus	Semnopithecus_entellus	8	29.0	9.598455842	11.44	0.7663924163000375	LOW

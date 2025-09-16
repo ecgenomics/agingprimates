@@ -1,0 +1,26 @@
+{
+    "id": "4282E2F9",
+    "path": "~/science/projects/active/mcsa.metagenomics/thetree/maketree.r",
+    "project_path": null,
+    "type": "r_source",
+    "hash": "2404838742",
+    "contents": "",
+    "dirty": false,
+    "created": 1757088651956.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "8,0",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1757088947,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1757088947978,
+    "read_only": false,
+    "read_only_alternatives": []
+}
