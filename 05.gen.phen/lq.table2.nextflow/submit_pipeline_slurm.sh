@@ -2,7 +2,7 @@
 
 #SBATCH --job-name=genphen-driver
 #SBATCH --cpus-per-task=1
-#SBATCH --mem=4G
+#SBATCH --mem=16G
 #SBATCH --time=7-00:00:00
 #SBATCH --partition=std-cpu
 #SBATCH --output=logs/genphen-driver-%j.out
@@ -44,11 +44,15 @@ fi
 source "${conda_init_script}"
 conda activate "${conda_environment}"
 
+# Keep the Nextflow JVM comfortably below the driver's SLURM memory limit.
+export NXF_OPTS="${NXF_OPTS:--Xms512m -Xmx8g}"
+
 echo "GenPhen Nextflow driver"
 echo "SLURM job: ${SLURM_JOB_ID}"
 echo "Host: $(hostname)"
 echo "Started: $(date --iso-8601=seconds)"
 echo "Nextflow config: ${GENPHEN_NEXTFLOW_CONFIG}"
 echo "Conda environment: ${CONDA_DEFAULT_ENV:-${conda_environment}}"
+echo "Nextflow JVM options: ${NXF_OPTS}"
 
 exec bash run_pipeline.sh "$@"

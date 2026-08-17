@@ -20,8 +20,9 @@ The two branches are independent and can be enabled or disabled in
 
 ## Bundled test inputs
 
-The default configuration runs five relaxed-PHYLIP protein alignments copied
-from the reference `traits.evolution.omar/phyloq/bootstrap/fast.run` workflow:
+The default configuration expects five relaxed-PHYLIP protein alignments
+copied from the reference `traits.evolution.omar/phyloq/bootstrap/fast.run`
+workflow:
 
 - `C4A.Homo_sapiens.filter2.phy`;
 - `C4BPA.Homo_sapiens.filter2.phy`;
@@ -29,11 +30,12 @@ from the reference `traits.evolution.omar/phyloq/bootstrap/fast.run` workflow:
 - `C4orf17.Homo_sapiens.filter2.phy`;
 - `C4orf19.Homo_sapiens.filter2.phy`.
 
-The matching five-gene RERconverge manifest, individual gene trees, master
-tree, build summary and taxon-name map are bundled under
-`inputs/rerconverge/`. To analyse another alignment collection, replace the
-three input paths in `conf/cluster.config` and rebuild the RERconverge gene
-trees when necessary.
+The `inputs/alignments/` directory is intentionally Git-ignored, so these files
+must be retained locally or copied into a fresh checkout. The matching
+five-gene RERconverge manifest, individual gene trees, master tree, build
+summary and taxon-name map remain bundled under `inputs/rerconverge/`. To
+analyse another alignment collection, replace the three input paths in
+`conf/cluster.config` and rebuild the RERconverge gene trees when necessary.
 
 ## Configure the cluster run
 
