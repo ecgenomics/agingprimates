@@ -38,7 +38,4 @@ echo "Nextflow config: ${config_file}"
 cd "${script_dir}"
 exec nextflow -c "${config_file}" run main.nf \
     --run_id "${run_id}" \
-    -with-report "logs/${run_id}.report.html" \
-    -with-trace "logs/${run_id}.trace.tsv" \
-    -with-timeline "logs/${run_id}.timeline.html" \
     "$@"
