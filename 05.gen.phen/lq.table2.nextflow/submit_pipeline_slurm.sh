@@ -4,12 +4,12 @@
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=4G
 #SBATCH --time=7-00:00:00
+#SBATCH --partition=std-cpu
 #SBATCH --output=genphen-driver-%j.out
 #SBATCH --error=genphen-driver-%j.err
 
 # Uncomment and edit the directives required by the cluster.
 ##SBATCH --account=YOUR_ACCOUNT
-##SBATCH --partition=YOUR_PARTITION
 ##SBATCH --qos=YOUR_QOS
 ##SBATCH --constraint=YOUR_CONSTRAINT
 
