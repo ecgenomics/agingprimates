@@ -19,16 +19,26 @@ The two branches are independent and can be enabled or disabled in
 
 ## Configure the cluster run
 
-1. Edit `conf/cluster.config`:
+1. Create or update the Conda environment once on the cluster login node:
+
+   ```bash
+   bash create_conda_environment.sh
+   ```
+
+   The script uses Correfoc's Miniconda installation and creates the `phyloq`
+   environment from `environment.yml`. It also installs RERconverge from its
+   official GitHub repository when it is missing.
+2. Edit `conf/cluster.config`:
    - replace all `/ABSOLUTE/CLUSTER/PATH/...` entries;
    - set account, partition, QoS or constraint when required;
-   - set module-loading commands in `caas_before_script` and
-     `rer_before_script`;
+   - change `conda_init_script` or `conda_environment` if the cluster setup is
+     different;
    - adjust resources and analytical parameters.
-2. Edit the `#SBATCH` header in `submit_pipeline_slurm.sh` for the small
+3. Edit the `#SBATCH` header in `submit_pipeline_slurm.sh` for the small
    Nextflow driver job. Optional account, partition, QoS and constraint lines
    are provided as inactive `##SBATCH` examples.
-3. Ensure `nextflow` is available on the driver node.
+4. Submit the driver job. It initializes Miniconda and activates `phyloq`
+   before invoking Nextflow; each analysis task repeats the same activation.
 
 CAAStools requires Python with Biopython, SciPy and NumPy. RERconverge requires
 R with `ape` and `RERconverge`. Gene-tree construction additionally requires
@@ -73,6 +83,5 @@ written as `genphen-driver-JOB_ID.out` and `genphen-driver-JOB_ID.err`.
 - `bin/rerconverge/run_rerconverge.R`;
 - `bin/rerconverge/build_gene_trees.R`.
 
-The bundled files are snapshots copied from the reference workflow; they are
-not installed automatically and their language/package dependencies must be
-provided by the cluster environment.
+The bundled files are snapshots copied from the reference workflow. Their
+language and package dependencies are defined in `environment.yml`.

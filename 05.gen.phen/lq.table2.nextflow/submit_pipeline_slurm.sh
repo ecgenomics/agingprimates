@@ -26,14 +26,22 @@ fi
 
 export GENPHEN_NEXTFLOW_CONFIG="${GENPHEN_NEXTFLOW_CONFIG:-${script_dir}/conf/cluster.config}"
 
+# Initialize the Correfoc Miniconda installation and activate the environment
+# shared by the Nextflow driver and all submitted analysis tasks.
+conda_init_script="${GENPHEN_CONDA_SH:-/homes/aplic/noarch/software/Miniconda3/23.9.0-0/etc/profile.d/conda.sh}"
+conda_environment="${GENPHEN_CONDA_ENV:-phyloq}"
+if [[ ! -r "${conda_init_script}" ]]; then
+    echo "Cannot read Conda initialization script: ${conda_init_script}" >&2
+    exit 1
+fi
+source "${conda_init_script}"
+conda activate "${conda_environment}"
+
 echo "GenPhen Nextflow driver"
 echo "SLURM job: ${SLURM_JOB_ID}"
 echo "Host: $(hostname)"
 echo "Started: $(date --iso-8601=seconds)"
 echo "Nextflow config: ${GENPHEN_NEXTFLOW_CONFIG}"
-
-# If Nextflow/Java are provided as modules, load them here. For example:
-# source /etc/profile.d/modules.sh
-# module load nextflow
+echo "Conda environment: ${CONDA_DEFAULT_ENV:-${conda_environment}}"
 
 exec bash run_pipeline.sh "$@"
