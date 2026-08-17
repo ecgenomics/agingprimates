@@ -28,7 +28,7 @@ fi
 
 conda activate "${conda_environment}"
 
-python3 -c 'import Bio, numpy, scipy; print("CAAStools Python dependencies: OK")'
+python3 -c 'import Bio, dendropy, numpy, scipy; print("CAAStools Python dependencies: OK")'
 nextflow -version
 
 echo "Conda environment ${conda_environment} is ready."
