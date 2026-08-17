@@ -1,0 +1,2 @@
+trait	source_column	transformed	matched_species	pair_count	selected_model	min_final_score	max_final_score
+LQ	LQ_mammal	FALSE	126	7875	OU	6.51140558272927e-09	31.1644980800809

@@ -1,0 +1,10 @@
+.last_run_id
+.nextflow/
+.nextflow.log*
+logs/
+results/
+work/
+genphen-driver-*.out
+genphen-driver-*.err
+__pycache__/
+*.py[cod]

@@ -1,0 +1,14 @@
+group	species	superfamily	family	LQ_mammal	selection_criterion	top_1pct_pair_count	bottom_1pct_pair_count
+FG	Ateles_geoffroyi	PLA	Atelidae	1.34677002605	LQ > 1.3	1	1
+FG	Lemur_catta	STR	Lemuridae	1.34497561795	LQ > 1.3	1	1
+FG	Eulemur_fulvus	STR	Lemuridae	1.32517582296	LQ > 1.3	1	1
+FG	Aotus_trivirgatus	PLA	Aotidae	1.32469369077	LQ > 1.3	2	2
+FG	Eulemur_macaco	STR	Lemuridae	1.32240333486	LQ > 1.3	1	2
+FG	Cercocebus_torquatus	OWM	Cercopithecidae	1.31663977945	LQ > 1.3	6	2
+FG	Nomascus_concolor	APE	Hylobatidae	1.31327768994	LQ > 1.3	1	1
+BG	Trachypithecus_pileatus	OWM	Cercopithecidae	0.67173356493	LQ < 0.8	1	1
+BG	Macaca_thibetana	OWM	Cercopithecidae	0.67332143316	LQ < 0.8	7	1
+BG	Eulemur_rubriventer	STR	Lemuridae	0.735078485826	LQ < 0.8	3	1
+BG	Mico_humeralifer	PLA	Callitrichidae	0.740274624203	LQ < 0.8	6	1
+BG	Macaca_tonkeana	OWM	Cercopithecidae	0.744374565424	LQ < 0.8	7	2
+BG	Alouatta_seniculus	PLA	Atelidae	0.746153967855	LQ < 0.8	1	2

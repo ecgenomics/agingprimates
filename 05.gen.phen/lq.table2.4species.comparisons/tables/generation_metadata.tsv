@@ -1,0 +1,14 @@
+source_table	/Users/fabio/pCloud Drive/Bio/Projects/active.research/aging.update/agingprimates/03.phenotype.shift.detection.lq/tables/table2.tsv
+seed	260811
+n_caas_comparisons	100
+n_rerconverge_comparisons	35
+fg_pool_n	7
+bg_pool_n	6
+possible_fg_quartets	35
+possible_bg_quartets	15
+possible_unique_caas_comparisons	525
+unique_caas_comparisons_generated	100
+unique_rerconverge_fg_combinations_generated	35
+caas_design	4 sampled FG vs 4 sampled BG; all generated configurations unique
+rerconverge_design	all 35 unique 4-species FG combinations vs fixed complete 6-species BG
+cfg_format	tab-separated species and binary state, no header; FG=1, BG=0

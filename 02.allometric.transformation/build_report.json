@@ -1,0 +1,25 @@
+{
+  "exact_tree_tip_matches_in_dataset": 126,
+  "exclusion_counts": {
+    "missing_or_nonpositive_MLS": 303,
+    "missing_or_nonpositive_MLS_and_body_mass": 60,
+    "missing_or_nonpositive_body_mass": 1
+  },
+  "formula": "expected_MLS_years = 6.47 * body_mass_g^0.189",
+  "genome_available_in_dataset": 140,
+  "historical_comparison": {
+    "differences_above_1e-12": 0,
+    "historical_file_present": true,
+    "maximum_absolute_LQ_difference": 8.881784197001252e-16,
+    "overlapping_species": 140
+  },
+  "input_md5": {
+    "nhp.phenomic.dataset.csv": "36a045c2d65e42cf476300adc75d4ed1",
+    "science.abn7829_data_s4.nex.tree": "e6793ca5602c702b81ca255d329ee01b",
+    "tmb.sample.count.tab": "7f49213b1367c18e371d791afe27e392",
+    "trait.data.sources.csv": "5642a715305460f5b0d2d8274f9213c4"
+  },
+  "records_excluded": 364,
+  "records_included": 162,
+  "records_total": 526
+}
