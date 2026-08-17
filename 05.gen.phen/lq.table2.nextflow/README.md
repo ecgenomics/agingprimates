@@ -75,7 +75,10 @@ The output root is controlled by `params.results_root` in
 - `RUN_ID/rerconverge/CONFIG_ID/`.
 
 Reports, traces and timelines are written to `logs/`. SLURM driver logs are
-written as `genphen-driver-JOB_ID.out` and `genphen-driver-JOB_ID.err`.
+written as `logs/genphen-driver-JOB_ID.out` and
+`logs/genphen-driver-JOB_ID.err`. The versioned `logs/.gitkeep` ensures that
+Slurm can open these files before the batch script starts; generated log files
+remain Git-ignored.
 
 ## Bundled executables
 
