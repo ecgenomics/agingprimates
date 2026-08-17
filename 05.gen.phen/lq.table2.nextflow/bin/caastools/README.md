@@ -696,6 +696,24 @@ The bootstrap tool is designed to repeat the CAAS discovery on a large number of
 
 `-a $MSA`
 
+### 5.2.1 Optional hypergeometric significance filter
+
+By default, the bootstrap tool evaluates every alignment position retained by
+the standard alignment and gap filters. The `--filter_significant` option can
+be used to exclude positions whose hypergeometric CAAS p-value is greater than
+a user-defined threshold:
+
+`--filter_significant 0.05`
+
+The foreground and background sizes are inferred from the resampled traits
+file. All resampling cycles must contain the same non-zero FG/BG sizes, unique
+species within each group, and no overlap between foreground and background.
+The p-value is calculated once per alignment position using those nominal
+group sizes, before the bootstrap cycles are evaluated.
+
+The default value is the string `no`, which preserves the unfiltered bootstrap
+behaviour. The aliases `--filter-significant` and `-fs` are also accepted.
+
 
 ## 5.3 Output
 
@@ -719,6 +737,10 @@ Column 5: Cycles with positive CAAS
 
 `ct bootstrap -s test/resample/random.resampling.tab -t examples/config.tab -a examples/MSA/primates.msa.pr -o examples/random.bootstrap.tab --fmt phylip-relaxed`
 
+### Bootstrap restricted to hypergeometrically significant positions.
+
+`ct bootstrap -s test/resample/random.resampling.tab -t examples/config.tab -a examples/MSA/primates.msa.pr -o examples/random.bootstrap.significant.tab --fmt phylip-relaxed --filter_significant 0.05`
+
 5. License
 
 This software is licensed under GNU General Public License. The kind of license is to be decided with UPF.
@@ -732,4 +754,3 @@ Barteri, F., Valenzuela, A., Farré, X., de Juan, D., Muntané, G., Esteve-Altav
 # 7. Questions and troubleshooting 
 
 You can ask your questions through the [discussions section](https://github.com/linudz/caastools/discussions) of CAAStools github. Also, you can contact Fabio Barteri at Pompeu Fabra University / BBRC [fabio.barteri@upf.edu](mailto:fabio.barteri@upf.edu)
-

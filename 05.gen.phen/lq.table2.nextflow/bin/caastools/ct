@@ -451,6 +451,14 @@ if tool.lower() == "resample":
 
 if tool.lower() == "bootstrap":
 
+    # optparse does not recognise multi-character short options. Normalise the
+    # documented -fs alias before initialising the parser.
+    for argument_index, argument in enumerate(sys.argv):
+        if argument == "-fs":
+            sys.argv[argument_index] = "--filter_significant"
+        elif argument.startswith("-fs="):
+            sys.argv[argument_index] = "--filter_significant=" + argument.split("=", 1)[1]
+
     ### 3.1 Check the dependencies
     check_dependencies("discovery", ["biopython", "scipy", "numpy"])
 
@@ -490,7 +498,13 @@ if tool.lower() == "bootstrap":
                     help="Limit the result to some patterns. Patterns are indicated with numbers from 1 to 4 and must \
                         be provided as comma separated (e.g.: -s 1,2,3). See documentation for more details on the patterns", default = "1,2,3")
 
-    ###     3.4.2 filter per gaps 
+    ###     3.4.2 filter positions by hypergeometric significance
+
+    parser.add_option("--filter_significant", "--filter-significant", dest="filter_significant",
+                    help="Exclude positions with a hypergeometric p-value greater than this threshold. FG/BG sizes are inferred from the resampled traits file. Use 'no' to disable the filter (default). Alias: -fs.",
+                    metavar="PVALUE", default = "no")
+
+    ###     3.4.3 filter per gaps
 
     # Max background gaps
     parser.add_option("--max_bg_gaps", dest="max_bg_gaps_string",
@@ -511,19 +525,19 @@ if tool.lower() == "bootstrap":
     parser.add_option("--max_gaps_per_position", dest="max_gaps_pos_string",
                     help="Max gap ratio admitted in a single alignment position.", default = "0.5")
 
-    ###     3.4.3 filter for missing species
+    ###     3.4.4 filter for missing species
 
     # Max background missing species
     parser.add_option("--max_bg_miss", dest="max_bg_miss_string",
                     help="Filter by number of miss in the background\
                         e.g. --max_bg_miss 3 will accept positions with less than 3 miss in bg. Default = nofilter (all miss accepted).", default = "NO")
 
-    ###     3.4.4 Max foreground missing species
+    ###     3.4.5 Max foreground missing species
     parser.add_option("--max_fg_miss", dest="max_fg_miss_string",
                     help="Filter by number of miss in the foreground.\
                         e.g. --max_bg_miss 3 will accept positions with less than 3 miss in fg. Default = nofilter (all miss accepted).", default = "NO")
 
-    ###     3.4.5 Max overall missing species (fg + bg)
+    ###     3.4.6 Max overall missing species (fg + bg)
     parser.add_option("--max_miss", dest="max_miss_string",
                     help="Filter by number of miss in foreground and background.\
                         e.g. --max_bg_miss 3 will accept positions with less than 3 miss in fg and bg. Default = nofilter (all miss accepted).", default = "NO")
@@ -564,6 +578,21 @@ if tool.lower() == "bootstrap":
         print("")
         exit()
 
+    significance_threshold = "no"
+
+    if str(options.filter_significant).lower() != "no":
+        try:
+            significance_threshold = float(options.filter_significant)
+        except ValueError:
+            print("\n\n****ERROR: --filter_significant must be 'no' or a numeric p-value threshold between 0 and 1")
+            print("")
+            sys.exit(1)
+
+        if not 0 <= significance_threshold <= 1:
+            print("\n\n****ERROR: --filter_significant must be between 0 and 1")
+            print("")
+            sys.exit(1)
+
     ### 3.8 Import the modules
 
     from modules.boot import *
@@ -585,7 +614,30 @@ if tool.lower() == "bootstrap":
 
     bootstrap_object = simtrait_revive(options.simtraits)
 
-    ###     3.9.3 - Boot on the alignment file
+    ###     3.9.3 - Optionally filter positions by hypergeometric significance
+
+    if significance_threshold != "no":
+        try:
+            fg_size, bg_size = infer_resampled_group_sizes(bootstrap_object)
+            positions_before_filtering, positions_after_filtering = filter_positions_by_hypergeometric_pvalue(
+                sliced_object = sliced_alignment,
+                fg_size = fg_size,
+                bg_size = bg_size,
+                threshold = significance_threshold
+            )
+        except ValueError as filter_error:
+            print("\n\n****ERROR: cannot apply --filter_significant:", str(filter_error))
+            print("")
+            sys.exit(1)
+
+        print("[BOOTSTRAP TOOL] - Hypergeometric significance filter")
+        print("Threshold:", significance_threshold)
+        print("Resampled group sizes: FG=" + str(fg_size) + ", BG=" + str(bg_size))
+        print("Positions before filtering:", positions_before_filtering)
+        print("Positions retained:", positions_after_filtering)
+        print("")
+
+    ###     3.9.4 - Boot on the alignment file
     boot_on_single_alignment(
                     trait_config_file= options.config_file,
                     resampled_traits= bootstrap_object,
@@ -603,8 +655,6 @@ if tool.lower() == "bootstrap":
                     output_file = options.output_file
                     )
     
-    ###     3.9.4 Final output
+    ###     3.9.5 Final output
     print("\n\nBootstrap information available in", options.output_file)
-
-
 

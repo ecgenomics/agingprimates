@@ -29,6 +29,7 @@ from modules.init_bootstrap import *
 from modules.disco import process_position
 from modules.caas_id import iscaas
 from modules.alimport import *
+from modules.hyper import calcpval_random
 
 from os.path import exists
 import functools
@@ -36,6 +37,67 @@ import functools
 
 # FUNCTION fetch_caas():
 # fetches caas per each thing
+
+
+# FUNCTION infer_resampled_group_sizes()
+# Infers and validates the nominal FG/BG sizes from resampled traits.
+
+def infer_resampled_group_sizes(resampled_traits):
+
+    fg_traits = set(resampled_traits.trait2fg.keys())
+    bg_traits = set(resampled_traits.trait2bg.keys())
+    trait_names = fg_traits.union(bg_traits)
+
+    if len(trait_names) == 0:
+        raise ValueError("the resampled traits file contains no valid cycles")
+
+    if fg_traits != bg_traits:
+        raise ValueError("each resampling cycle must contain both foreground and background species")
+
+    if len(trait_names) != resampled_traits.cycles:
+        raise ValueError("resampling cycle names must be unique and every line must define a valid cycle")
+
+    group_sizes = set()
+
+    for trait in trait_names:
+        fg_species = resampled_traits.trait2fg[trait]
+        bg_species = resampled_traits.trait2bg[trait]
+
+        if len(fg_species) == 0 or len(bg_species) == 0:
+            raise ValueError("foreground and background groups cannot be empty")
+
+        if len(fg_species) != len(set(fg_species)) or len(bg_species) != len(set(bg_species)):
+            raise ValueError("a species cannot occur more than once in the same resampling group")
+
+        if len(set(fg_species).intersection(set(bg_species))) > 0:
+            raise ValueError("foreground and background groups must not overlap within a resampling cycle")
+
+        group_sizes.add((len(fg_species), len(bg_species)))
+
+    if len(group_sizes) != 1:
+        formatted_sizes = ", ".join([str(x[0]) + "/" + str(x[1]) for x in sorted(group_sizes)])
+        raise ValueError("all resampling cycles must have the same FG/BG sizes; found " + formatted_sizes)
+
+    return list(group_sizes)[0]
+
+
+# FUNCTION filter_positions_by_hypergeometric_pvalue()
+# Excludes alignment positions whose random CAAS p-value exceeds the threshold.
+
+def filter_positions_by_hypergeometric_pvalue(sliced_object, fg_size, bg_size, threshold):
+
+    positions_before_filtering = len(sliced_object.d)
+    retained_positions = []
+
+    for position in sliced_object.d:
+        pvalue = calcpval_random(position, sliced_object.genename, fg_size, bg_size)
+
+        if pvalue <= threshold:
+            retained_positions.append(position)
+
+    sliced_object.d = retained_positions
+
+    return positions_before_filtering, len(retained_positions)
 
 # FUNCTION filter_for_gaps()
 # filters a trait for its gaps
