@@ -5,7 +5,8 @@ SLURM-ready workflow for the comparison configurations in
 
 It follows the architecture of `traits.evolution.omar/phyloq/bootstrap` while
 remaining self-contained: the CAAStools program and the RERconverge helper
-scripts are copied into `bin/`.
+scripts are copied into `bin/`, and a five-gene test input set is bundled in
+`inputs/`.
 
 ## What it runs
 
@@ -16,6 +17,23 @@ scripts are copied into `bin/`.
 
 The two branches are independent and can be enabled or disabled in
 `conf/cluster.config`.
+
+## Bundled test inputs
+
+The default configuration runs five relaxed-PHYLIP protein alignments copied
+from the reference `traits.evolution.omar/phyloq/bootstrap/fast.run` workflow:
+
+- `C4A.Homo_sapiens.filter2.phy`;
+- `C4BPA.Homo_sapiens.filter2.phy`;
+- `C4BPB.Homo_sapiens.filter2.phy`;
+- `C4orf17.Homo_sapiens.filter2.phy`;
+- `C4orf19.Homo_sapiens.filter2.phy`.
+
+The matching five-gene RERconverge manifest, individual gene trees, master
+tree, build summary and taxon-name map are bundled under
+`inputs/rerconverge/`. To analyse another alignment collection, replace the
+three input paths in `conf/cluster.config` and rebuild the RERconverge gene
+trees when necessary.
 
 ## Configure the cluster run
 
@@ -29,7 +47,7 @@ The two branches are independent and can be enabled or disabled in
    environment from `environment.yml`. It also installs RERconverge from its
    official GitHub repository when it is missing.
 2. Edit `conf/cluster.config`:
-   - replace all `/ABSOLUTE/CLUSTER/PATH/...` entries;
+   - optionally replace the bundled five-gene inputs with cluster paths;
    - set account, partition, QoS or constraint when required;
    - change `conda_init_script` or `conda_environment` if the cluster setup is
      different;
@@ -69,7 +87,8 @@ Additional Nextflow arguments can be appended to either command.
 ## Outputs
 
 The output root is controlled by `params.results_root` in
-`conf/cluster.config`. Each launch receives a timestamped `run_id` and writes:
+`conf/cluster.config` and defaults to the Git-ignored local `results/`
+directory. Each launch receives a timestamped `run_id` and writes:
 
 - `RUN_ID/caas/CONFIG_ID/`;
 - `RUN_ID/rerconverge/CONFIG_ID/`.
