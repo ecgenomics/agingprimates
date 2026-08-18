@@ -542,6 +542,18 @@ if tool.lower() == "bootstrap":
                     help="Filter by number of miss in foreground and background.\
                         e.g. --max_bg_miss 3 will accept positions with less than 3 miss in fg and bg. Default = nofilter (all miss accepted).", default = "NO")
 
+    ###     3.4.7 Minimum observed species per group
+
+    parser.add_option("--min_fg_observed", "--min-fg-observed", dest="min_fg_observed",
+                    type="int",
+                    help="Minimum number of foreground species that must be present in the alignment and non-gapped at a position for a bootstrap cycle to be evaluated. Default: 1.",
+                    default=1)
+
+    parser.add_option("--min_bg_observed", "--min-bg-observed", dest="min_bg_observed",
+                    type="int",
+                    help="Minimum number of background species that must be present in the alignment and non-gapped at a position for a bootstrap cycle to be evaluated. Default: 1.",
+                    default=1)
+
 
     ### 3.5 Usage
 
@@ -566,6 +578,12 @@ if tool.lower() == "bootstrap":
 
     if options.output_file == "none":
         missing_option_messages.append("Output not specified")
+
+    if options.min_fg_observed < 1:
+        missing_option_messages.append("--min_fg_observed must be at least 1")
+
+    if options.min_bg_observed < 1:
+        missing_option_messages.append("--min_bg_observed must be at least 1")
     
     if len(missing_option_messages) > 0:
         print("\n" + application_info)
@@ -576,7 +594,7 @@ if tool.lower() == "bootstrap":
         print("")
         print("For further info: ct bootstrap --help")
         print("")
-        exit()
+        sys.exit(1)
 
     significance_threshold = "no"
 
@@ -614,11 +632,32 @@ if tool.lower() == "bootstrap":
 
     bootstrap_object = simtrait_revive(options.simtraits)
 
+    try:
+        fg_size, bg_size = infer_resampled_group_sizes(bootstrap_object)
+    except ValueError as group_size_error:
+        print("\n\n****ERROR: invalid resampled traits file:", str(group_size_error))
+        print("")
+        sys.exit(1)
+
+    if options.min_fg_observed > fg_size:
+        print("\n\n****ERROR: --min_fg_observed cannot exceed the foreground group size (" + str(fg_size) + ")")
+        print("")
+        sys.exit(1)
+
+    if options.min_bg_observed > bg_size:
+        print("\n\n****ERROR: --min_bg_observed cannot exceed the background group size (" + str(bg_size) + ")")
+        print("")
+        sys.exit(1)
+
+    print("[BOOTSTRAP TOOL] - Minimum observed species per cycle")
+    print("Foreground:", options.min_fg_observed, "of", fg_size)
+    print("Background:", options.min_bg_observed, "of", bg_size)
+    print("")
+
     ###     3.9.3 - Optionally filter positions by hypergeometric significance
 
     if significance_threshold != "no":
         try:
-            fg_size, bg_size = infer_resampled_group_sizes(bootstrap_object)
             positions_before_filtering, positions_after_filtering = filter_positions_by_hypergeometric_pvalue(
                 sliced_object = sliced_alignment,
                 fg_size = fg_size,
@@ -651,10 +690,12 @@ if tool.lower() == "bootstrap":
                     max_bg_miss = options.max_bg_miss_string,
                     max_overall_miss = options.max_miss_string,
 
+                    min_fg_observed = options.min_fg_observed,
+                    min_bg_observed = options.min_bg_observed,
+
                     the_admitted_patterns = options.patterns_string,
                     output_file = options.output_file
                     )
     
     ###     3.9.5 Final output
     print("\n\nBootstrap information available in", options.output_file)
-

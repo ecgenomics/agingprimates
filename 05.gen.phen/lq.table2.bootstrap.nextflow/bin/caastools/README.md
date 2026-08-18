@@ -714,10 +714,28 @@ group sizes, before the bootstrap cycles are evaluated.
 The default value is the string `no`, which preserves the unfiltered bootstrap
 behaviour. The aliases `--filter-significant` and `-fs` are also accepted.
 
+### 5.2.2 Minimum observed foreground and background species
+
+Bootstrap cycles can be required to have a minimum number of usable species
+in each group at every evaluated alignment position:
+
+`--min_fg_observed 3 --min_bg_observed 3`
+
+An observed species is a member of the resampled FG or BG group that is
+present in the alignment and non-gapped at that position. If either group is
+below its requested minimum, that cycle is not counted as a CAAS at the
+position. The position remains in the bootstrap output and may still be
+positive for other cycles with sufficient coverage.
+
+Both options default to `1` for backwards compatibility. Their hyphenated
+aliases, `--min-fg-observed` and `--min-bg-observed`, are also accepted. A
+minimum must be a positive integer and cannot exceed the corresponding group
+size inferred from the resampled traits file.
+
 
 ## 5.3 Output
 
-The output consists in a tabbed file with three columns
+The output consists of a headerless, tab-separated file with seven columns.
 
 Column 1: Position
 
@@ -728,6 +746,14 @@ Column 3: Number of cycles
 Column 4: Bootstrap value
 
 Column 5: Cycles with positive CAAS
+
+Column 6: Hypergeometric p-value for the alignment position and the nominal
+foreground/background group sizes
+
+Column 7: Trait-template filename
+
+The p-value in column 6 belongs to the position, so one value follows the
+complete comma-separated cycle field even when several cycles are positive.
 
 
 ## 5.4 Examples
@@ -740,6 +766,10 @@ Column 5: Cycles with positive CAAS
 ### Bootstrap restricted to hypergeometrically significant positions.
 
 `ct bootstrap -s test/resample/random.resampling.tab -t examples/config.tab -a examples/MSA/primates.msa.pr -o examples/random.bootstrap.significant.tab --fmt phylip-relaxed --filter_significant 0.05`
+
+### Bootstrap requiring at least three observed species per group.
+
+`ct bootstrap -s test/resample/random.resampling.tab -t examples/config.tab -a examples/MSA/primates.msa.pr -o examples/random.bootstrap.minimum3.tab --fmt phylip-relaxed --min_fg_observed 3 --min_bg_observed 3`
 
 5. License
 

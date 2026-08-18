@@ -142,7 +142,7 @@ def filter_for_missings(max_m_bg, max_m_fg, max_m_all, mfg, mbg):
 
 
 
-def caasboot(processed_position, genename, list_of_traits, maxgaps_fg, maxgaps_bg, maxgaps_all, maxmiss_fg, maxmiss_bg, maxmiss_all, cycles, admitted_patterns):
+def caasboot(processed_position, genename, list_of_traits, maxgaps_fg, maxgaps_bg, maxgaps_all, maxmiss_fg, maxmiss_bg, maxmiss_all, minobserved_fg, minobserved_bg, cycles, admitted_patterns):
 
     a = set(list_of_traits)
     b = set(processed_position.trait2aas_fg.keys())
@@ -150,13 +150,22 @@ def caasboot(processed_position, genename, list_of_traits, maxgaps_fg, maxgaps_b
 
     valid_traits = list(a.intersection(b).intersection(c))
 
-    def filter_trait(trait, the_processed_position, max_bg_gaps, max_fg_gaps, max_all_gaps, max_bg_miss, max_fg_miss, max_all_miss):
+    def filter_trait(trait, the_processed_position, max_bg_gaps, max_fg_gaps, max_all_gaps, max_bg_miss, max_fg_miss, max_all_miss, min_observed_fg, min_observed_bg):
 
         the_gfg = the_processed_position.trait2gaps_fg[trait]
         the_gbg = processed_position.trait2gaps_bg[trait]
 
         the_mfg = the_processed_position.trait2miss_fg[trait]
         the_mbg = processed_position.trait2miss_bg[trait]
+
+        ### Minimum observed species filtering.
+
+        # Observed species are members of the resampled FG/BG group that are
+        # present in the alignment and do not carry a gap at this position.
+        if len(the_processed_position.trait2ungapped_fg[trait]) < int(min_observed_fg):
+            return False
+        if len(the_processed_position.trait2ungapped_bg[trait]) < int(min_observed_bg):
+            return False
     
 
         ### GAPS filtering.
@@ -203,6 +212,9 @@ def caasboot(processed_position, genename, list_of_traits, maxgaps_fg, maxgaps_b
         max_bg_miss = maxmiss_bg,
         max_fg_miss = maxmiss_fg,
         max_all_miss = maxmiss_all,
+
+        min_observed_fg = minobserved_fg,
+        min_observed_bg = minobserved_bg,
     ),
                     valid_traits)
 
@@ -218,7 +230,11 @@ def caasboot(processed_position, genename, list_of_traits, maxgaps_fg, maxgaps_b
     traitline = ",".join(output_traits)
     empval = str(int(count)/cycles)
 
-    outline = "\t".join([position_name, count, str(cycles), empval, traitline])
+    # The hypergeometric p-value describes the alignment position for the
+    # nominal FG/BG group sizes. It is shared by all positive bootstrap cycles
+    # reported in traitline and is printed immediately after that field.
+    pvalue_string = str(processed_position.hypergeometric_pvalue)
+    outline = "\t".join([position_name, count, str(cycles), empval, traitline, pvalue_string])
 
     return outline
         
@@ -226,13 +242,25 @@ def caasboot(processed_position, genename, list_of_traits, maxgaps_fg, maxgaps_b
 # FUNCTION disco_bootstrap()
 # Launches the bootstrap in several lines. Returns a dictionary gene@position --> pvalue
 
-def boot_on_single_alignment(trait_config_file, resampled_traits, sliced_object, max_fg_gaps, max_bg_gaps, max_overall_gaps, max_fg_miss, max_bg_miss, max_overall_miss, the_admitted_patterns, output_file):
+def boot_on_single_alignment(trait_config_file, resampled_traits, sliced_object, max_fg_gaps, max_bg_gaps, max_overall_gaps, max_fg_miss, max_bg_miss, max_overall_miss, min_fg_observed, min_bg_observed, the_admitted_patterns, output_file):
 
 
     # Step 3: processes the positions from imported alignment (process_position() from caas_id.py)
-    processed_positions = map(functools.partial(process_position, multiconfig = resampled_traits, species_in_alignment = sliced_object.species), sliced_object.d)
+    processed_positions = list(map(functools.partial(process_position, multiconfig = resampled_traits, species_in_alignment = sliced_object.species), sliced_object.d))
     the_genename = sliced_object.genename
     print("caastools found", resampled_traits.cycles, "resamplings")
+
+    # Calculate the same positional hypergeometric p-value used by
+    # --filter_significant, including when that prefilter is disabled. The
+    # value is attached to the processed position so caasboot can serialize it.
+    fg_size, bg_size = infer_resampled_group_sizes(resampled_traits)
+    for raw_position, processed_position in zip(sliced_object.d, processed_positions):
+        processed_position.hypergeometric_pvalue = calcpval_random(
+            raw_position,
+            the_genename,
+            fg_size,
+            bg_size,
+        )
 
     # Step 4: extract the raw caas
 
@@ -248,6 +276,9 @@ def boot_on_single_alignment(trait_config_file, resampled_traits, sliced_object,
             maxmiss_fg = max_fg_miss,
             maxmiss_bg = max_bg_miss,
             maxmiss_all = max_overall_miss,
+
+            minobserved_fg = min_fg_observed,
+            minobserved_bg = min_bg_observed,
 
             admitted_patterns = the_admitted_patterns,
             cycles = resampled_traits.cycles) ,processed_positions

@@ -26,6 +26,19 @@ caas_filter_significant = '0.05'
 Set it to `'no'` in `conf/cluster.config` to scan all otherwise eligible
 alignment positions.
 
+Each four-versus-four cycle also requires at least three observed species in
+each group at the position being evaluated:
+
+```groovy
+caas_min_fg_observed = 3
+caas_min_bg_observed = 3
+```
+
+Here, *observed* means that the species belongs to that cycle, is present in
+the alignment, and has a non-gap amino acid at the position. A cycle with only
+one or two observed FG or BG species cannot contribute a positive CAAS count,
+even though the broader gap and missing-species limits remain set to `NO`.
+
 ## Inputs
 
 - `inputs/longevity.100-comparisons.resampling.tsv`: the 100 longevity
@@ -51,7 +64,8 @@ All user-editable analytical and cluster settings are in
 `conf/cluster.config`, including:
 
 - alignment path;
-- significance threshold and CAAStools gap/missing-data filters;
+- significance threshold, minimum observed FG/BG species, and CAAStools
+  gap/missing-data filters;
 - SLURM partition, account, QoS and constraint;
 - Conda initialization and environment name;
 - process resources and optional pre-task commands.
@@ -100,5 +114,6 @@ results/RUN_ID/caas-bootstrap/GENE.bootstrap.caas.tsv
 ```
 
 Each row contains the alignment position, number of resampling cycles with a
-CAAS, total cycles, bootstrap value, positive cycle identifiers and the
-template config path, following the native CAAStools bootstrap format.
+CAAS, total cycles, bootstrap value, positive cycle identifiers, the positional
+hypergeometric p-value, and the template config path. The p-value is written
+immediately after the cycle field (for example, after `b_89`).

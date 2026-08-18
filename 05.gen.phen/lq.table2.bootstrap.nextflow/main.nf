@@ -29,7 +29,9 @@ process CAASTOOLS_BOOTSTRAP {
         --max_gaps_per_position "${params.caas_max_gaps_per_position}" \
         --max_bg_miss "${params.caas_max_bg_miss}" \
         --max_fg_miss "${params.caas_max_fg_miss}" \
-        --max_miss "${params.caas_max_miss}"
+        --max_miss "${params.caas_max_miss}" \
+        --min_fg_observed "${params.caas_min_fg_observed}" \
+        --min_bg_observed "${params.caas_min_bg_observed}"
     """
 }
 
