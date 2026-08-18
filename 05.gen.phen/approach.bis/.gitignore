@@ -1,0 +1,9 @@
+.last_run_id
+.nextflow/
+.nextflow.log*
+logs/*
+!logs/.gitkeep
+results/
+work/
+__pycache__/
+*.py[cod]
