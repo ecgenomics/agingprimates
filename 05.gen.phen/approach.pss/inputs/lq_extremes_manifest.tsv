@@ -1,0 +1,11 @@
+group	group_rank	source_extreme_rank	species	lq_mammal	genome_samples	genome_available	observed_in_local_alignments
+FG_high_lq	1	1	Hylobates_muelleri	1.830577436170	1	True	True
+FG_high_lq	2	2	Cebus_capucinus	1.825398820740	0	False	False
+FG_high_lq	3	5	Sapajus_apella	1.564604169810	8	True	True
+FG_high_lq	4	7	Aotus_lemurinus	1.447363806870	4	True	False
+FG_high_lq	5	8	Leontopithecus_rosalia	1.440173405390	5	True	True
+BG_low_lq	1	1	Lepilemur_mustelinus	0.504586046997	0	False	False
+BG_low_lq	2	2	Presbytis_melalophos	0.587634281416	0	False	False
+BG_low_lq	3	3	Nasalis_larvatus	0.624429504347	6	True	True
+BG_low_lq	4	4	Propithecus_diadema	0.624914242384	1	True	True
+BG_low_lq	5	5	Cheirogaleus_major	0.638672839046	2	True	True
