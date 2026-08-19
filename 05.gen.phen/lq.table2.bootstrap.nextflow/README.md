@@ -100,8 +100,12 @@ All user-editable analytical and cluster settings are in
 
 The default partition is `std-cpu`. The one-time preparation task requests one
 CPU, 1 GB RAM and ten minutes. Each gene task requests one CPU, 2 GB RAM and
-two hours. At most 100 tasks are submitted concurrently. The driver requests
-one CPU and 16 GB RAM through `submit_pipeline_slurm.sh`.
+30 minutes. At most 100 tasks are submitted concurrently. A failed or
+time-limited gene is ignored by Nextflow so that the remaining alignments can
+finish; the failed gene has no result and can be identified in the Nextflow
+log. Failure of the shared hypothesis-preparation task still terminates the
+workflow. The driver requests one CPU and 16 GB RAM through
+`submit_pipeline_slurm.sh`.
 
 ## Conda environment
 
