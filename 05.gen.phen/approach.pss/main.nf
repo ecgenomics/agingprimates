@@ -61,7 +61,7 @@ process MERGE_CONFIG_RESULTS {
 }
 
 process MERGE_AND_FILTER_RESULTS {
-    tag 'all hypotheses | merge and significance filter'
+    tag 'both active 4v4 hypotheses | merge and significance filter'
 
     publishDir path: { "${params.results_root}/${params.run_id}/merged" },
                mode: 'copy', overwrite: true

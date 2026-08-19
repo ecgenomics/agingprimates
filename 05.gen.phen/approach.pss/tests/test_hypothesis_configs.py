@@ -14,6 +14,15 @@ PSS_CONFIGS = {
     "max_delta_lq_within_top_1pct_pss": ROOT / "configs/01.max-delta-lq.caas.cfg",
     "max_pss_final_score": ROOT / "configs/02.max-pss-score.caas.cfg",
 }
+ACTIVE_4V4_CONFIGS = {
+    "max_delta_lq_within_top_1pct_pss": ROOT
+    / "configs/01.max-delta-lq.4v4.caas.cfg",
+    "max_pss_final_score": ROOT / "configs/02.max-pss-score.4v4.caas.cfg",
+}
+ACTIVE_4V4_RANKS = {
+    "max_delta_lq_within_top_1pct_pss": [1, 2, 3, 5],
+    "max_pss_final_score": [1, 2, 3, 4],
+}
 EXTREMES_CONFIG = ROOT / "configs/03.absolute-lq-extremes.caas.cfg"
 
 
@@ -34,6 +43,53 @@ class HypothesisConfigTests(unittest.TestCase):
             "r", encoding="utf-8", newline=""
         ) as handle:
             return list(csv.DictReader(handle, delimiter="\t"))
+
+    def read_active_4v4_manifest(self) -> list[dict[str, str]]:
+        with (ROOT / "inputs/pss_pair_manifest.4v4.tsv").open(
+            "r", encoding="utf-8", newline=""
+        ) as handle:
+            return list(csv.DictReader(handle, delimiter="\t"))
+
+    def test_active_4v4_configs_match_manifest_and_group_sizes(self) -> None:
+        expected = {criterion: {} for criterion in ACTIVE_4V4_CONFIGS}
+        observed_ranks = {criterion: [] for criterion in ACTIVE_4V4_CONFIGS}
+        for row in self.read_active_4v4_manifest():
+            criterion = row["criterion"]
+            expected[criterion][row["high_lq_species"]] = 1
+            expected[criterion][row["low_lq_species"]] = 0
+            observed_ranks[criterion].append(int(row["criterion_rank"]))
+
+        for criterion, config_path in ACTIVE_4V4_CONFIGS.items():
+            with self.subTest(criterion=criterion):
+                observed = read_config(config_path)
+                self.assertEqual(observed, expected[criterion])
+                self.assertEqual(sum(state == 1 for state in observed.values()), 4)
+                self.assertEqual(sum(state == 0 for state in observed.values()), 4)
+                self.assertEqual(observed_ranks[criterion], ACTIVE_4V4_RANKS[criterion])
+
+    def test_active_glob_selects_only_two_4v4_configs(self) -> None:
+        expected_paths = set(ACTIVE_4V4_CONFIGS.values())
+        self.assertEqual(set((ROOT / "configs").glob("*.4v4.caas.cfg")), expected_paths)
+
+        expected_setting = 'caas_config_glob = "${projectDir}/configs/*.4v4.caas.cfg"'
+        for config_path in (ROOT / "nextflow.config", ROOT / "conf/cluster.config"):
+            with self.subTest(config=config_path.name):
+                self.assertIn(
+                    expected_setting,
+                    config_path.read_text(encoding="utf-8"),
+                )
+
+    def test_active_4v4_manifest_is_subset_of_validated_pair_manifest(self) -> None:
+        historical_rows = {
+            (row["criterion"], row["criterion_rank"]): row
+            for row in self.read_pair_manifest()
+        }
+        active_rows = self.read_active_4v4_manifest()
+        self.assertEqual(len(active_rows), 8)
+        for row in active_rows:
+            key = (row["criterion"], row["criterion_rank"])
+            self.assertIn(key, historical_rows)
+            self.assertEqual(row, historical_rows[key])
 
     def test_pss_configs_match_pair_manifest(self) -> None:
         expected = {criterion: {} for criterion in PSS_CONFIGS}

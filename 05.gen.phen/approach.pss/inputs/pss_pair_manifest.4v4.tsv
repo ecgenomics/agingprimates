@@ -1,0 +1,9 @@
+criterion	criterion_rank	high_lq_species	high_lq	low_lq_species	low_lq	absolute_lq_difference	pss_final_score
+max_delta_lq_within_top_1pct_pss	1	Cebus_olivaceus	1.612012470140	Mico_humeralifer	0.740274624203	0.871737845937	2.095528393375
+max_delta_lq_within_top_1pct_pss	2	Hylobates_muelleri	1.830577436170	Hylobates_klossii	1.111756180880	0.718821255290	16.152878451287
+max_delta_lq_within_top_1pct_pss	3	Cheirogaleus_medius	1.355344651040	Cheirogaleus_major	0.638672839046	0.716671811994	3.306365891443
+max_delta_lq_within_top_1pct_pss	5	Lemur_catta	1.344975617950	Prolemur_simus	0.647945780728	0.697029837222	2.608588375640
+max_pss_final_score	1	Leontopithecus_rosalia	1.440173405390	Leontopithecus_chrysomelas	0.988979824599	0.451193580791	31.164498080081
+max_pss_final_score	2	Saguinus_oedipus	1.298915387690	Saguinus_geoffroyi	0.982658287557	0.316257100133	29.184454703281
+max_pss_final_score	3	Nycticebus_coucang	1.172397276490	Nycticebus_bengalensis	1.022506003860	0.149891272630	17.996283147410
+max_pss_final_score	4	Callithrix_jacchus	1.184560428370	Callithrix_kuhlii	1.005881024000	0.178679404370	17.543258574209

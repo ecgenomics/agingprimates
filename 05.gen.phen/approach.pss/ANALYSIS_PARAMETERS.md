@@ -4,10 +4,44 @@
 
 Eseguire CAAStools sugli stessi allineamenti proteici delle altre analisi di
 `05.gen.phen`, confrontando specie con longevity quotient alto (foreground,
-`1`) e basso (background, `0`) secondo tre ipotesi alternative.
+`1`) e basso (background, `0`). La run attiva contiene due ipotesi PSS in
+formato 4-vs-4.
 
 Il fenotipo usato è `LQ_mammal` non trasformato. In ogni coppia PSS, la specie
 con LQ maggiore è assegnata al foreground e quella con LQ minore al background.
+
+## Decisione attiva: analisi 4-vs-4
+
+Le precedenti configurazioni 5-vs-5 sono risultate restrittive. La nuova run
+mantiene soltanto i primi due criteri PSS e usa esattamente quattro FG e quattro
+BG per ciascun confronto:
+
+- `configs/01.max-delta-lq.4v4.caas.cfg`;
+- `configs/02.max-pss-score.4v4.caas.cfg`.
+
+Per la massima ΔLQ vengono mantenute le coppie di rango 1, 2, 3 e 5. La coppia
+di rango 4 (`Leontopithecus_rosalia` vs `Mico_humeralifer`) è esclusa perché
+riutilizza `Mico_humeralifer`, già BG nel rango 1, e produrrebbe soltanto tre BG
+distinti. In questo modo ogni specie FG conserva la propria controparte BG
+della coppia originale.
+
+Per il massimo `FinalScore` vengono mantenute direttamente le coppie di rango
+1–4.
+
+Il manifest numerico della selezione attiva è
+`inputs/pss_pair_manifest.4v4.tsv`. Le configurazioni precedenti e i relativi
+manifest restano nel repository come provenienza, ma il glob attivo è
+`configs/*.4v4.caas.cfg`. In particolare,
+`configs/03.absolute-lq-extremes.caas.cfg` è esplicitamente escluso.
+
+### Ripresa della run esistente
+
+`sbatch submit_pipeline_slurm.sh -resume` riusa il `RUN_ID` registrato in
+`.last_run_id` e la cache in `work/`. I nomi nuovi dei config 4-vs-4 fanno sì
+che Nextflow generi task distinti senza confonderli con le vecchie analisi.
+I due file complessivi in `results/RUN_ID/merged/` vengono rigenerati usando
+soltanto i due config attivi. Le vecchie cartelle per-config già pubblicate non
+vengono cancellate automaticamente e vanno considerate risultati storici.
 
 ## Dati di origine
 
@@ -28,7 +62,7 @@ con LQ maggiore è assegnata al foreground e quella con LQ minore al background.
 
 ## Ipotesi 1: massima differenza di LQ nel top 1% PSS
 
-Config: `configs/01.max-delta-lq.caas.cfg`.
+Config storico: `configs/01.max-delta-lq.caas.cfg`.
 
 Procedura:
 
@@ -54,7 +88,7 @@ La provenienza numerica completa è in `inputs/pss_pair_manifest.tsv`.
 
 ## Ipotesi 2: massimo FinalScore PSS
 
-Config: `configs/02.max-pss-score.caas.cfg`.
+Config storico: `configs/02.max-pss-score.caas.cfg`.
 
 Procedura:
 
@@ -76,7 +110,8 @@ Il config contiene 5 FG e 5 BG. La provenienza numerica completa è in
 
 ## Ipotesi 3: estremi assoluti di LQ
 
-Config: `configs/03.absolute-lq-extremes.caas.cfg`.
+Config storico, escluso dalla run attiva:
+`configs/03.absolute-lq-extremes.caas.cfg`.
 
 Gruppo BG: le cinque specie con `LQ_mammal` più basso nell'intera tabella
 fenotipica.
@@ -205,7 +240,7 @@ omessi dal merge senza interrompere il workflow.
 
 Il workflow produce:
 
-1. un merge per ciascuno dei tre config;
+1. un merge per ciascuno dei due config 4-vs-4 attivi;
 2. un merge complessivo con un solo header;
 3. un file complessivo filtrato per `Pvalue <= 0.05`.
 
@@ -223,6 +258,8 @@ I test verificano:
 - deduplicazione delle specie ripetute nei config PSS;
 - selezione degli estremi LQ con il vincolo di una specie per genere nel FG;
 - corrispondenza fra config e manifest;
+- presenza di esattamente 4 FG e 4 BG in ciascun config attivo;
+- esclusione dei config storici dal glob attivo;
 - merge con un solo header;
 - filtro inclusivo a `Pvalue <= 0.05`.
 
