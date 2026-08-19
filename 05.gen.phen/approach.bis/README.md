@@ -13,6 +13,8 @@ alignment against the four genus-reduced configurations in `configs/`.
 - Configurations: all four `configs/*.caas.cfg` files.
 - Discovery settings: patterns 1, 2 and 3; no explicit per-group gap or
   missing-species maximum; maximum total gap ratio 0.5.
+- Per-job timeout: SLURM stops CAAStools after 10 minutes. Timed-out or failed
+  jobs are ignored by Nextflow, so the remaining jobs and merges continue.
 - Significance: raw CAAStools hypergeometric `Pvalue <= 0.05`.
 
 The paths and thresholds can be changed in `conf/cluster.config`.
@@ -45,13 +47,16 @@ sbatch submit_pipeline_slurm.sh -resume
 ```
 
 The Nextflow driver and every worker activate the dedicated Conda environment.
-Individual CAAStools jobs request 1 CPU, 2 GB and 2 hours. Merge jobs request
-1 CPU, 4 GB and 2 hours.
+Individual CAAStools jobs request 1 CPU, 2 GB and 10 minutes. A timeout or
+other worker failure is ignored rather than terminating the workflow. Merge
+jobs request 1 CPU, 4 GB and 2 hours.
 
 ## Merge and significance filter
 
-Each gene/config task emits a headered result, including a header-only result
-when no CAAS is found. After every discovery task has completed, Nextflow:
+Each successful gene/config task emits a headered result, including a
+header-only result when no CAAS is found. A timed-out or failed job has no
+result and is omitted from the merge, but does not terminate the workflow.
+After every discovery task has completed or been ignored, Nextflow:
 
 1. merges all genes separately for each configuration;
 2. merges the four per-configuration tables into one table;
