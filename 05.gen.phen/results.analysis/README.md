@@ -712,6 +712,63 @@ Useful aggregate tables would include:
 
 ## Development history
 
+### 19 August 2026
+
+- replaced the interpretation of bootstrap-cycle counts as independent
+  evidence with an optional species- and amino-acid-aware event summary in the
+  bundled local CAAStools copy;
+- retained `b_N` identifiers for traceability but refer to them as hypotheses
+  in the event output;
+- inferred the complete FG and BG discovery pools from the resampling table and
+  required stable group membership when species aggregation is requested;
+- recorded the non-gap amino acid of every observed discovery species at each
+  positive position;
+- collapsed identical and compatible amino-acid signatures into maximal
+  compatible events without an order-dependent greedy merge;
+- replaced the list of input hypothesis patterns with one `event_pattern`
+  calculated from the final merged signature, including pattern 4 for a
+  many-vs-many amino-acid result;
+- kept incompatible signatures as distinct events at the same position and
+  ranked a primary event using balanced discovery support, total support, and
+  nominal p-value;
+- counted every supporting species once per event and emitted FG/BG support
+  over both observed and complete discovery denominators;
+- reported all-support and event-support amino-acid counts plus species whose
+  amino acids conflict with each event signature;
+- added `fg_dominant_amino_acid` and `bg_dominant_amino_acid` immediately after
+  the corresponding event amino-acid sets; proportions use unique supporting
+  species and preserve all co-dominant residues in a tie;
+- introduced `ct pooled-discovery`, which accepts one complete fixed FG/BG
+  pool file, generates unique subset hypotheses internally, saves the realized
+  resampling-format table, and invokes the event summarizer without requiring
+  an externally built 100-row input;
+- added `--comparisons max|N` with `max` as the default, four-species FG/BG
+  subset-size options, a seed, and automatic hypotheses output; the longevity
+  design has 525 possible four-vs-four pairings and will be run with 100;
+- made smaller pooled selections reproducible through seeded SHA-256 candidate
+  ranking and retained the complete 7-FG/6-BG pools as event denominators even
+  if a selected hypothesis set omits a species;
+- implemented an exact conditional event-separation p-value and labelled it
+  nominal because the amino-acid signature is data-selected;
+- preserved the legacy headerless bootstrap output and added the new analysis
+  as an optional companion long-format table;
+- added integration and unit tests for compatible merges, incompatible events,
+  fixed-side validation, exact p-values, unique-species counting, and legacy
+  compatibility; all 18 bundled CAAStools tests pass;
+- created a local C4BPA demonstration under
+  `../caastools.bootstrap.events.local-test/` using the 100 longevity
+  hypotheses and the 3/4 observed-species thresholds;
+- converted the production Nextflow pipeline to pooled discovery: one initial
+  process now prepares the shared deterministic 100-hypothesis table and its
+  provenance metadata, after which one SLURM process per alignment reuses that
+  exact table;
+- separated the per-gene legacy and event-level products into
+  `caas-pooled/` and `caas-pooled-events/`, while publishing the shared table,
+  seed, design size, and SHA-256 checksum under `metadata/`;
+- validated the complete two-stage workflow locally on the real C4BPA
+  alignment, including a successful resumed run in which both preparation and
+  analysis were recovered from the Nextflow cache.
+
 ### 18 August 2026
 
 - inspected the real legacy six-column CAAStools bootstrap format;

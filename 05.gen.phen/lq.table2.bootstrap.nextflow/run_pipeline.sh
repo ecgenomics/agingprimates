@@ -32,7 +32,7 @@ fi
 
 mkdir -p "${script_dir}/logs"
 
-echo "GenPhen CAAStools bootstrap run: ${run_id}"
+echo "GenPhen CAAStools pooled-discovery run: ${run_id}"
 echo "Nextflow config: ${config_file}"
 
 cd "${script_dir}"

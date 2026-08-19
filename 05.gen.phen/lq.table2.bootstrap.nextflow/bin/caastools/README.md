@@ -732,6 +732,54 @@ aliases, `--min-fg-observed` and `--min-bg-observed`, are also accepted. A
 minimum must be a positive integer and cannot exceed the corresponding group
 size inferred from the resampled traits file.
 
+### 5.2.3 Species- and amino-acid-aware event summaries
+
+The historical bootstrap count treats every positive resampling row as one
+positive cycle. This is useful for discovery, but the resampling rows may
+overlap strongly and should not automatically be interpreted as independent
+biological observations. The optional event summary retains the positive
+resampling identifiers as **hypotheses** and collapses compatible hypotheses
+into species-level amino-acid events:
+
+`--summarize_species yes`
+
+The companion table is written to `OUTPUT.events.tsv`. An explicit path can be
+provided with `--event_output FILE`; providing that option also enables the
+summary. Hyphenated aliases (`--summarize-species` and `--event-output`) are
+accepted.
+
+An event signature contains the set of FG amino acids and the disjoint set of
+BG amino acids observed among its positive hypotheses. Two signatures are
+compatible when the union of their FG amino acids remains disjoint from the
+union of their BG amino acids. Compatible signatures are combined using all
+maximal compatible groups, rather than a greedy and order-dependent merge.
+Incompatible signatures at the same position remain separate events. Events
+are ranked by balanced FG/BG discovery support, total unique-species support,
+nominal event p-value, and signature; the first is marked as primary.
+
+Each species is counted once per event even if it occurs in many positive
+hypotheses. Counts are reported against two denominators:
+
+- **observed species**: discovery-pool species present in the alignment with a
+  non-gap amino acid at that position;
+- **discovery species**: the complete fixed FG or BG pool inferred from all
+  hypotheses in the resampling file.
+
+The event summary requires fixed sides: a species may occur in many
+hypotheses, but it cannot be FG in one hypothesis and BG in another. This
+constraint is checked only when event output is requested, so ordinary random
+bootstrap analyses remain backwards compatible.
+
+For each event, CAAStools also reports species whose amino acid conflicts with
+the event signature (a BG species carrying an event FG amino acid or an FG
+species carrying an event BG amino acid). The nominal event p-value is an
+exact conditional label test. It preserves the observed FG/BG sample sizes
+and evaluates the minimum of the two oriented signature-match fractions. Its
+calculation is reduced to three sufficient amino-acid categories, avoiding an
+expensive enumeration of individual permutations. Because the event signature
+was selected from the same data, this p-value is explicitly nominal;
+proteome-wide correction and alignment-cluster filtering remain downstream.
+
 
 ## 5.3 Output
 
@@ -755,6 +803,29 @@ Column 7: Trait-template filename
 The p-value in column 6 belongs to the position, so one value follows the
 complete comma-separated cycle field even when several cycles are positive.
 
+When event summaries are enabled, a second headered, tab-separated long table
+contains one row per position/event. Its fields include:
+
+- event identifier and primary-event flag;
+- merged FG and BG amino-acid signature;
+- dominant FG and BG amino acid and its proportion among the unique species
+  supporting that side of the event (for example `A=0.7`); all co-dominant
+  residues are retained when their counts are tied;
+- positive hypothesis identifiers and the CAAS pattern of the final merged
+  event (1 for one-vs-one, 2 for one-vs-many, 3 for many-vs-one, and 4 for
+  many-vs-many amino acids);
+- unique supporting species and their amino acids for FG and BG;
+- amino-acid counts based on unique species, never hypothesis occurrences;
+- observed and complete discovery species, counts, and denominators;
+- support fractions over observed and discovery species;
+- balanced FG/BG support and total unique-species support;
+- species and amino acids conflicting with the event signature;
+- nominal event p-value, positional hypergeometric p-value, and trait template.
+
+Only positive positions appear in the event table. The original bootstrap
+table still contains all positions that reached the bootstrap stage, including
+rows with zero positive hypotheses.
+
 
 ## 5.4 Examples
 
@@ -770,6 +841,81 @@ complete comma-separated cycle field even when several cycles are positive.
 ### Bootstrap requiring at least three observed species per group.
 
 `ct bootstrap -s test/resample/random.resampling.tab -t examples/config.tab -a examples/MSA/primates.msa.pr -o examples/random.bootstrap.minimum3.tab --fmt phylip-relaxed --min_fg_observed 3 --min_bg_observed 3`
+
+### Bootstrap with a species/amino-acid event companion table.
+
+`ct bootstrap -s fixed-sides.resampling.tsv -t examples/config.tab -a examples/MSA/primates.msa.pr -o examples/fixed.bootstrap.tsv --fmt phylip-relaxed --min_fg_observed 3 --min_bg_observed 3 --summarize_species yes`
+
+## 5.5 Pooled discovery
+
+`pooled-discovery` is the species-aware successor to the fixed-side bootstrap
+workflow. Instead of requiring an externally generated resampling table, it
+accepts one complete discovery-pool config through `-t`. The input contains
+one species and one binary side per line:
+
+```text
+species_A	1
+species_B	1
+species_C	0
+species_D	0
+```
+
+CAAStools validates unique species and non-empty FG/BG pools, enumerates all
+unique combinations of the requested FG and BG subset sizes, selects the
+requested number of paired comparisons, saves those realized hypotheses, and
+runs the existing position scanner and event summarizer in one command.
+
+The principal options are:
+
+- `--fg_size` / `--fg-size`: number of FG species per hypothesis (default 4);
+- `--bg_size` / `--bg-size`: number of BG species per hypothesis (default 4);
+- `--comparisons max|N`: number of unique paired hypotheses. The default
+  `max` uses every possible comparison;
+- `--seed`: seed controlling a smaller deterministic selection (default
+  260811);
+- `--hypotheses_output auto|none|FILE`: where to save the realized headerless
+  resampling-format table. `auto`, the default, creates
+  `OUTPUT.hypotheses.tsv`;
+- `--event_output FILE`: optional explicit event-table location. Species event
+  summarization is enabled by default for `pooled-discovery`.
+
+For seven FG and six BG species with four selected from each side, there are:
+
+```text
+choose(7, 4) * choose(6, 4) = 35 * 15 = 525
+```
+
+Thus `--comparisons max` generates 525 hypotheses, while
+`--comparisons 100` generates 100 unique hypotheses without replacement. For
+a selection smaller than the maximum, candidates are ranked by a SHA-256 key
+constructed from the seed and the two species subsets. This is deterministic
+across runs and independent of Python's `random.sample` implementation. It
+does not reproduce an older R `sample()` selection merely because the numeric
+seed is the same; the realized hypotheses file is therefore always saved for
+provenance.
+
+The complete pools, not only the species occurring in a selected subset, are
+retained as the FG/BG discovery denominators in the event table. The alignment
+slicer still uses the per-hypothesis subset sizes, making its candidate-position
+behavior equivalent to an external four-vs-four resampling table.
+
+Example using 100 of the 525 possible longevity comparisons:
+
+```bash
+ct pooled-discovery \
+  -a GENE.phy \
+  -t longevity.full-pools.caas.cfg \
+  -o GENE.pooled100.caas.tsv \
+  --event-output GENE.pooled100.caas.events.tsv \
+  --hypotheses-output longevity.pooled100.hypotheses.tsv \
+  --fmt phylip-relaxed \
+  --fg-size 4 --bg-size 4 \
+  --comparisons 100 --seed 260811 \
+  --min-fg-observed 3 --min-bg-observed 3
+```
+
+The original `bootstrap` command remains available and unchanged for analyses
+that already have a resampling table or allow species to change sides.
 
 5. License
 

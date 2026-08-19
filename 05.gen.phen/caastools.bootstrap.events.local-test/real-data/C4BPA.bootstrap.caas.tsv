@@ -1,0 +1,334 @@
+C4BPA@0	0	100	0.0		0.0012983435567379999	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@1	1	100	0.01	b_74	0.0025149078155669927	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@2	0	100	0.0		0.00011914460513519874	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@3	0	100	0.0		0.002255424509683502	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@5	0	100	0.0		0.005715690441255767	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@6	0	100	0.0		1.088676683231874e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@7	0	100	0.0		0.007391598088487905	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@8	0	100	0.0		1.745480573905519e-06	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@9	0	100	0.0		0.0014558825407959828	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@10	0	100	0.0		9.113867182898278e-06	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@11	0	100	0.0		5.840018361063955e-07	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@12	0	100	0.0		3.9199355460202656e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@13	3	100	0.03	b_20,b_38,b_47	0.002664399467498013	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@14	0	100	0.0		5.515259361297089e-06	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@15	0	100	0.0		1.7066018279308245e-07	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@16	0	100	0.0		0.0003115657155737103	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@17	0	100	0.0		1.7066018279308245e-07	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@18	0	100	0.0		0.0017251158768589172	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@19	0	100	0.0		0.00012882212965350384	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@20	0	100	0.0		0.006376414983585359	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@21	3	100	0.03	b_20,b_38,b_47	0.003155590791145	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@22	0	100	0.0		8.804145660892218e-09	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@23	0	100	0.0		8.648320073973771e-08	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@24	0	100	0.0		1.7608291321784436e-08	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@28	0	100	0.0		1.9659556900010345e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@29	0	100	0.0		0.0016373465433172324	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@30	0	100	0.0		1.0689198357008016e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@32	0	100	0.0		5.175693092199472e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@33	0	100	0.0		8.096014342584647e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@34	0	100	0.0		5.1191918943401274e-06	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@36	0	100	0.0		3.712268882642396e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@37	0	100	0.0		0.0007738767515953004	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@38	0	100	0.0		8.804145660892218e-09	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@40	0	100	0.0		1.0689198357008016e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@41	0	100	0.0		0.002033873994307763	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@42	3	100	0.03	b_20,b_38,b_47	0.002971698233700203	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@43	0	100	0.0		0.005331152651452556	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@46	0	100	0.0		0.00011569742585591404	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@48	0	100	0.0		0.002142198170279461	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@52	0	100	0.0		0.0019308508014174493	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@54	0	100	0.0		0.002005996312779191	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@57	1	100	0.01	b_83	0.003081860507637818	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@59	0	100	0.0		7.424964742241799e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@60	0	100	0.0		0.0058883426066524336	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@61	0	100	0.0		0.0022891757711785738	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@62	0	100	0.0		0.00010107817977196043	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@63	0	100	0.0		0.007172677316229933	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@64	0	100	0.0		5.91134758170666e-07	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@65	0	100	0.0		8.804145660892218e-09	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@66	0	100	0.0		0.00586974198589052	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@68	1	100	0.01	b_38	0.003437980288412345	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@69	0	100	0.0		0.00029356829271810243	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@71	0	100	0.0		0.0019308419972717881	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@72	0	100	0.0		0.006685639535344495	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@73	0	100	0.0		3.317994746331563e-06	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@74	0	100	0.0		0.00022936533705048142	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@76	0	100	0.0		0.0003177326305401595	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@82	0	100	0.0		0.0050142519936853805	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@83	0	100	0.0		1.468902741963037e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@84	3	100	0.03	b_20,b_38,b_47	0.001704607263964523	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@85	3	100	0.03	b_20,b_38,b_47	0.006165821576575262	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@87	0	100	0.0		0.006628813140214274	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@88	0	100	0.0		8.648320073973771e-08	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@89	1	100	0.01	b_74	0.0027309038788473064	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@90	0	100	0.0		8.648320073973771e-08	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@93	0	100	0.0		0.00042697383792759816	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@94	0	100	0.0		0.0007176055502496118	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@96	0	100	0.0		0.00016049775745035366	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@98	1	100	0.01	b_74	0.0030053719254539424	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@99	0	100	0.0		8.648320073973771e-08	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@100	2	100	0.02	b_47,b_66	0.005577348635028383	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@101	0	100	0.0		8.804733671015457e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@104	0	100	0.0		0.007646381593264917	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@105	1	100	0.01	b_38	0.003147036497770377	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@106	0	100	0.0		0.000260795201058191	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@109	0	100	0.0		0.0003075778583009414	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@110	0	100	0.0		0.0019308508014174491	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@113	0	100	0.0		0.000294929130932627	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@115	0	100	0.0		2.6727441551094803e-06	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@118	0	100	0.0		0.005307694325917063	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@120	0	100	0.0		5.515259361297089e-06	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@121	0	100	0.0		0.0010903602210561403	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@125	0	100	0.0		0.0006738573990582176	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@126	0	100	0.0		0.006809037033870842	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@127	0	100	0.0		1.0689198357008016e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@130	0	100	0.0		0.005641237528680226	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@132	0	100	0.0		7.19796912280438e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@136	0	100	0.0		0.0015729764289597605	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@137	0	100	0.0		7.009450492720951e-07	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@139	0	100	0.0		0.00672351225253606	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@140	0	100	0.0		0.007233808466633624	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@142	0	100	0.0		5.175693092199472e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@144	0	100	0.0		4.194195004764113e-07	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@145	0	100	0.0		0.0004516620088545279	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@146	0	100	0.0		4.324160036986885e-08	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@148	0	100	0.0		3.1331224140189455e-06	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@150	1	100	0.01	b_83	0.00045169785125508935	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@151	0	100	0.0		0.006843668485827909	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@154	0	100	0.0		0.0018225178213000905	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@157	0	100	0.0		0.006917214966786775	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@160	0	100	0.0		0.0017869497289309253	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@162	0	100	0.0		8.804145660892218e-09	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@164	0	100	0.0		1.786415955588995e-06	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@166	0	100	0.0		0.0020325973336605112	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@167	0	100	0.0		3.317994746331563e-06	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@168	0	100	0.0		4.670172461230596e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@169	0	100	0.0		4.783014786337971e-06	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@171	0	100	0.0		0.0004345927424415211	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@172	0	100	0.0		0.0011235064675502759	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@175	0	100	0.0		5.645404242218097e-06	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@177	0	100	0.0		0.007209782840393377	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@178	0	100	0.0		3.317994746331563e-06	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@180	0	100	0.0		0.007794817908467776	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@182	0	100	0.0		0.0001388578855004808	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@183	0	100	0.0		0.005072480436358548	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@184	1	100	0.01	b_83	0.0024722785354085427	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@185	0	100	0.0		6.173713686011663e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@186	0	100	0.0		0.006291052105035386	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@187	1	100	0.01	b_83	0.002243737071420687	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@188	0	100	0.0		2.548371648464271e-07	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@189	0	100	0.0		0.0002762714191811592	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@192	0	100	0.0		0.007522517801151714	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@200	0	100	0.0		0.004339359678027924	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@201	0	100	0.0		0.0010193179172334717	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@205	0	100	0.0		0.001773094097741697	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@207	0	100	0.0		0.007018524101653056	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@213	0	100	0.0		5.895213362878268e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@215	0	100	0.0		1.7066018279308245e-07	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@217	0	100	0.0		0.00042354428173898987	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@219	3	100	0.03	b_12,b_38,b_83	0.007007332533110224	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@223	0	100	0.0		0.004555229921701486	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@224	0	100	0.0		7.538536008788544e-06	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@225	0	100	0.0		5.1191918943401274e-06	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@228	0	100	0.0		3.3524251842306665e-07	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@230	0	100	0.0		0.00010946708061689367	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@231	0	100	0.0		0.0007772112714005551	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@232	0	100	0.0		0.0052024071282372065	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@233	0	100	0.0		0.00048061100784526576	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@235	0	100	0.0		0.003356158773302877	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@236	0	100	0.0		0.0005862954839886486	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@238	0	100	0.0		0.0013842951682620035	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@239	0	100	0.0		1.7608291321784436e-08	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@240	0	100	0.0		0.007391716702924667	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@242	0	100	0.0		5.840018361063955e-07	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@243	0	100	0.0		0.00709342852132047	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@244	0	100	0.0		8.648320073973771e-08	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@245	0	100	0.0		0.0008369386275240158	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@249	0	100	0.0		2.269231025125225e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@250	0	100	0.0		0.0041013315161093035	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@251	0	100	0.0		3.7206865808477304e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@253	0	100	0.0		0.001699938567737604	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@255	0	100	0.0		1.06579252797446e-06	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@256	0	100	0.0		8.804145660892218e-09	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@257	2	100	0.02	b_47,b_66	0.0065436444064924945	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@258	0	100	0.0		1.1470529336977631e-06	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@259	0	100	0.0		0.001439572259609839	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@261	0	100	0.0		0.0005441044424894709	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@263	0	100	0.0		9.028953028774929e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@264	0	100	0.0		0.0006299793312505887	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@267	0	100	0.0		0.003875482834180517	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@269	0	100	0.0		0.004041599270005981	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@272	0	100	0.0		0.00012882212965350384	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@273	0	100	0.0		0.000947540652882046	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@275	0	100	0.0		0.005201816543905552	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@277	0	100	0.0		0.006889762387905918	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@278	1	100	0.01	b_38	0.00647357120252996	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@279	0	100	0.0		0.005072480436358548	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@280	0	100	0.0		0.007575056091907036	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@281	0	100	0.0		0.00014061317973226883	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@283	0	100	0.0		0.007886649744128966	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@285	0	100	0.0		4.16465183026172e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@288	0	100	0.0		0.006986589938547224	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@291	0	100	0.0		0.0006172713504633176	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@292	0	100	0.0		0.0012982488582009401	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@293	0	100	0.0		4.1607868097925124e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@295	0	100	0.0		5.645404242218097e-06	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@296	0	100	0.0		0.0020143525102677045	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@298	0	100	0.0		3.317994746331563e-06	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@299	0	100	0.0		1.7066018279308245e-07	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@304	0	100	0.0		0.004214089233559723	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@306	0	100	0.0		9.073804124597178e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@307	0	100	0.0		0.007087277117932295	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@308	0	100	0.0		8.648320073973771e-08	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@310	0	100	0.0		0.005067946480822122	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@312	1	100	0.01	b_74	0.00572192448306313	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@315	0	100	0.0		0.0017524779170005294	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@316	0	100	0.0		0.0005137185837422875	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@317	0	100	0.0		0.0026040303430047936	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@318	0	100	0.0		0.002565234910603886	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@319	0	100	0.0		0.0002213209956412108	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@322	0	100	0.0		0.005262981437894623	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@323	0	100	0.0		1.0689198357008016e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@324	1	100	0.01	b_80	0.005559052643954499	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@326	0	100	0.0		0.0016760751850487348	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@328	0	100	0.0		0.0006738573990582176	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@329	0	100	0.0		1.664060395130224e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@332	0	100	0.0		0.000647955928456147	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@334	0	100	0.0		0.007800059806792768	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@335	0	100	0.0		0.0015755847517775912	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@336	0	100	0.0		4.8240685046274765e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@337	0	100	0.0		0.004144336289252505	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@338	0	100	0.0		3.317994746331563e-06	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@339	0	100	0.0		9.220245153409287e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@340	0	100	0.0		1.5872732487925806e-06	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@341	0	100	0.0		0.005331152651452556	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@342	0	100	0.0		0.007181196008180463	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@345	0	100	0.0		3.3011673997449364e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@347	0	100	0.0		1.1470529336977631e-06	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@348	0	100	0.0		2.873006232622062e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@351	0	100	0.0		2.9991587759467288e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@352	0	100	0.0		0.000371633759178533	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@353	0	100	0.0		0.00198167409682522	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@356	0	100	0.0		0.0023252024467640183	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@357	1	100	0.01	b_47	0.006220176465266966	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@358	0	100	0.0		1.0446546517223923e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@362	0	100	0.0		0.0016985482091954264	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@364	0	100	0.0		0.0010351050669520573	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@366	0	100	0.0		0.0035197759068320016	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@367	3	100	0.03	b_12,b_38,b_83	0.0069483055654050285	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@368	0	100	0.0		0.0058057365742150745	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@369	1	100	0.01	b_74	0.007293640123096775	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@371	0	100	0.0		0.0011628195720902665	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@372	0	100	0.0		0.00483172421934638	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@373	0	100	0.0		7.538536008788544e-06	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@374	0	100	0.0		1.4168279501243973e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@375	0	100	0.0		1.7608291321784436e-08	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@376	0	100	0.0		0.005964301059280078	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@377	0	100	0.0		0.005491110842476926	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@378	0	100	0.0		0.004462927611014151	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@379	1	100	0.01	b_83	0.0025094302469951	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@381	0	100	0.0		0.006083088256295243	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@383	0	100	0.0		0.0006471576476091026	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@389	0	100	0.0		0.0004158478913069521	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@390	0	100	0.0		0.003871795360616396	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@391	0	100	0.0		0.0007675183554544716	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@392	0	100	0.0		0.007181196008180463	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@393	0	100	0.0		7.076941078719963e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@395	0	100	0.0		0.004869274867491929	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@396	0	100	0.0		0.00671313198048978	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@397	0	100	0.0		0.004960530418413246	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@398	0	100	0.0		8.648320073973771e-08	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@399	0	100	0.0		1.400958473494484e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@400	0	100	0.0		0.004521691956590283	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@402	0	100	0.0		1.7608291321784436e-08	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@403	0	100	0.0		0.006151954590283509	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@408	0	100	0.0		6.167680672187505e-07	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@410	0	100	0.0		0.002318357079933022	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@411	0	100	0.0		2.305578299132327e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@413	0	100	0.0		1.5174377628509183e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@415	0	100	0.0		0.006892175701054812	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@416	0	100	0.0		0.0002378281792123351	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@417	0	100	0.0		0.0007146292621573519	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@419	0	100	0.0		0.005610475390938466	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@420	0	100	0.0		0.0017194858242641153	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@423	0	100	0.0		0.00529247562631783	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@425	0	100	0.0		1.7608291321784436e-08	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@428	0	100	0.0		0.000294929130932627	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@429	0	100	0.0		0.004471909963760038	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@430	0	100	0.0		0.00012537186688224873	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@431	0	100	0.0		0.006232935509904216	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@432	0	100	0.0		0.0077899614776115525	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@436	0	100	0.0		1.9659556900010345e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@437	0	100	0.0		0.007825005838457034	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@440	0	100	0.0		0.005969285372744817	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@442	0	100	0.0		0.0037990309961941126	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@444	0	100	0.0		0.005377160121503044	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@445	0	100	0.0		1.0569883823135678e-06	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@446	1	100	0.01	b_74	0.006575989225158589	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@447	0	100	0.0		0.00012882212965350384	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@448	0	100	0.0		1.5872732487925806e-06	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@450	0	100	0.0		0.0057704189087565	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@451	1	100	0.01	b_38	0.0058203803885407725	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@453	0	100	0.0		0.004855549801158618	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@455	0	100	0.0		0.0005378736915157936	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@456	0	100	0.0		0.002804966017751058	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@457	0	100	0.0		0.0017703179238175472	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@458	0	100	0.0		5.496980995494627e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@460	0	100	0.0		0.005331152651452556	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@464	0	100	0.0		2.1251482797445906e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@466	0	100	0.0		0.0026680717256019706	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@470	0	100	0.0		0.002142198170279461	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@471	0	100	0.0		0.0008143029527403367	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@474	0	100	0.0		0.0017194858242641153	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@475	0	100	0.0		0.00015038182033060433	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@478	0	100	0.0		0.005879309801596517	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@480	0	100	0.0		0.004422340018260361	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@481	0	100	0.0		2.611641693200825e-06	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@483	0	100	0.0		2.6978695443680794e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@485	1	100	0.01	b_74	0.0028197052135677807	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@487	6	100	0.06	b_22,b_41,b_43,b_63,b_80,b_83	0.0015135596141633571	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@488	0	100	0.0		0.0012547941566193304	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@489	0	100	0.0		2.6211099930182483e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@490	0	100	0.0		7.691033762112138e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@491	0	100	0.0		0.00033328144505558	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@496	0	100	0.0		1.0689198357008016e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@497	0	100	0.0		0.0009669023868887426	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@498	0	100	0.0		0.005832849575068289	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@499	0	100	0.0		4.609168343842908e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@501	0	100	0.0		1.7608291321784436e-08	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@502	0	100	0.0		0.005735434445566782	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@503	0	100	0.0		0.0057048911759024065	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@507	0	100	0.0		1.0689198357008016e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@508	0	100	0.0		0.0009386507000041548	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@511	0	100	0.0		1.7608291321784436e-08	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@515	0	100	0.0		0.0001973144595580983	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@516	0	100	0.0		3.9206780339788484e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@518	1	100	0.01	b_43	0.007089422555952799	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@523	0	100	0.0		0.0012947800637494766	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@524	0	100	0.0		0.0008177552174190952	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@531	0	100	0.0		1.2741858242321358e-07	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@532	1	100	0.01	b_74	0.0019268736785157446	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@534	3	100	0.03	b_20,b_38,b_47	0.0024335266227357155	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@535	0	100	0.0		0.006749979618387509	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@537	0	100	0.0		7.538536008788544e-06	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@538	0	100	0.0		8.648320073973771e-08	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@540	0	100	0.0		0.0002005505962149938	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@542	0	100	0.0		8.111783995631596e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@543	0	100	0.0		4.324160036986885e-08	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@544	0	100	0.0		2.548371648464271e-07	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@548	0	100	0.0		0.00015342983825385458	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@552	0	100	0.0		0.0001464197654749132	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@560	0	100	0.0		0.0005610220971661042	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@561	0	100	0.0		0.002142198170279461	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@566	0	100	0.0		1.717429215982036e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@567	0	100	0.0		2.185924032288958e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@568	0	100	0.0		0.0032722729412440026	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@569	0	100	0.0		8.354917065706104e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@570	0	100	0.0		5.428265377560053e-06	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@571	3	100	0.03	b_20,b_38,b_47	0.0037460932070691668	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@572	0	100	0.0		0.000749676805081947	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@573	0	100	0.0		6.63708672636318e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@574	0	100	0.0		0.0010208896348786038	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@575	0	100	0.0		0.0033766161005755572	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg
+C4BPA@576	0	100	0.0		6.173713686011662e-05	../lq.table2.bootstrap.nextflow/inputs/longevity.template.001.caas.cfg

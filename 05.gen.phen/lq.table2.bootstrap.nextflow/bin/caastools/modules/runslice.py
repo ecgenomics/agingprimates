@@ -46,6 +46,15 @@ def runslice(options_object):
     fg_species = values.count("1")
     bg_species = values.count("0")
 
+    # Pooled discovery reads a complete discovery pool from the config, but
+    # each internally generated hypothesis uses smaller FG/BG subsets. The
+    # slicer must use those hypothesis sizes to preserve the same candidate
+    # position logic as an equivalent external resampling table.
+    if getattr(options_object, "slice_fg_size_override", None) is not None:
+        fg_species = int(options_object.slice_fg_size_override)
+    if getattr(options_object, "slice_bg_size_override", None) is not None:
+        bg_species = int(options_object.slice_bg_size_override)
+
 
     # Alignment slicing: sum the null values (allowed_gaps + allowed_missing_species)
 

@@ -28,6 +28,8 @@ import random
 import os
 import sys
 import dendropy
+import hashlib
+from itertools import combinations, product
 
 
 # FUNCTION readtree(). Reads a tree and releases an object with some information (list of species, patristic distances matrix, bins)
@@ -334,55 +336,214 @@ def simtrait(fg_len, bg_len, template, tree_file, mode, groupfile, phenotype_val
         ])
         os.system(r_line)
 
+# CLASS bootstrap_traits
+# Shared in-memory representation for imported or internally pooled
+# hypotheses.
+
+class bootstrap_traits():
+
+    def __init__(self):
+        self.s2t = {}
+        self.alltraits = []
+        self.trait2fg = {}
+        self.trait2bg = {}
+        self.cycles = 0
+        self.discovery_fg = []
+        self.discovery_bg = []
+
+    def update_dictionary(self, traitname, species, group):
+        try:
+            self.s2t[species].append(traitname + "_" + group)
+        except:
+            self.s2t[species] = [traitname + "_" + group]
+
+        if group == "1":
+            try:
+                self.trait2fg[traitname].append(species)
+            except:
+                self.trait2fg[traitname] = [species]
+
+        if group == "0":
+            try:
+                self.trait2bg[traitname].append(species)
+            except:
+                self.trait2bg[traitname] = [species]
+
+        self.alltraits.append(traitname)
+
+    def print_traits(self, outfile):
+        with open(outfile, "w") as output_handle:
+            for trait in self.trait2bg.keys():
+                print("\t".join([
+                    trait,
+                    ",".join(self.trait2fg[trait]),
+                    ",".join(self.trait2bg[trait]),
+                ]), file=output_handle)
+
+
+# FUNCTION read_discovery_pools()
+# Reads a complete fixed-side discovery config (species<TAB>1/0).
+
+def read_discovery_pools(pool_file):
+
+    foreground = []
+    background = []
+    observed_species = set()
+
+    with open(pool_file) as pool_handle:
+        lines = pool_handle.read().splitlines()
+
+    for line_number, line in enumerate(lines, start=1):
+        if not line.strip():
+            continue
+
+        fields = line.split("\t")
+        if len(fields) != 2 or fields[1] not in ("0", "1") or not fields[0]:
+            raise ValueError(
+                str(pool_file) + ":" + str(line_number)
+                + " must contain species<TAB>1 for FG or species<TAB>0 for BG"
+            )
+
+        species, group = fields
+        if species in observed_species:
+            raise ValueError("duplicate species in discovery pools: " + species)
+        observed_species.add(species)
+
+        if group == "1":
+            foreground.append(species)
+        else:
+            background.append(species)
+
+    if not foreground or not background:
+        raise ValueError("the discovery pool file must contain both FG and BG species")
+
+    return sorted(foreground), sorted(background)
+
+
+# FUNCTION pool_discovery_hypotheses()
+# Generates unique FG/BG subset comparisons from complete discovery pools.
+
+def pool_discovery_hypotheses(
+    pool_file,
+    fg_size=4,
+    bg_size=4,
+    comparisons="max",
+    seed=260811,
+):
+
+    foreground, background = read_discovery_pools(pool_file)
+
+    if int(fg_size) < 1 or int(bg_size) < 1:
+        raise ValueError("pooled FG/BG subset sizes must be positive integers")
+    if int(fg_size) > len(foreground):
+        raise ValueError(
+            "pooled FG size " + str(fg_size)
+            + " exceeds the complete FG pool size " + str(len(foreground))
+        )
+    if int(bg_size) > len(background):
+        raise ValueError(
+            "pooled BG size " + str(bg_size)
+            + " exceeds the complete BG pool size " + str(len(background))
+        )
+
+    candidates = list(product(
+        combinations(foreground, int(fg_size)),
+        combinations(background, int(bg_size)),
+    ))
+    maximum_comparisons = len(candidates)
+
+    if str(comparisons).lower() == "max":
+        selected = candidates
+    else:
+        try:
+            requested_comparisons = int(comparisons)
+        except (TypeError, ValueError):
+            raise ValueError("--comparisons must be 'max' or a positive integer")
+
+        if requested_comparisons < 1:
+            raise ValueError("--comparisons must be at least 1")
+        if requested_comparisons > maximum_comparisons:
+            raise ValueError(
+                "requested " + str(requested_comparisons)
+                + " pooled comparisons, but only " + str(maximum_comparisons)
+                + " unique comparisons are possible"
+            )
+
+        # Rank candidates by a seeded SHA-256 key. This gives a deterministic
+        # pseudo-random subset that does not depend on Python's random.sample
+        # implementation or modify the process-wide random state.
+        def seeded_candidate_key(candidate):
+            foreground_subset, background_subset = candidate
+            candidate_text = "\t".join([
+                str(int(seed)),
+                ",".join(foreground_subset),
+                ",".join(background_subset),
+            ])
+            return hashlib.sha256(candidate_text.encode("utf-8")).hexdigest()
+
+        selected = sorted(candidates, key=seeded_candidate_key)[:requested_comparisons]
+
+    pooled_traits = bootstrap_traits()
+    pooled_traits.cycles = len(selected)
+    pooled_traits.discovery_fg = list(foreground)
+    pooled_traits.discovery_bg = list(background)
+    pooled_traits.pool_maximum_comparisons = maximum_comparisons
+    pooled_traits.pool_seed = int(seed)
+    pooled_traits.pool_fg_size = int(fg_size)
+    pooled_traits.pool_bg_size = int(bg_size)
+
+    for comparison_index, comparison in enumerate(selected, start=1):
+        hypothesis = "b_" + str(comparison_index)
+        foreground_subset, background_subset = comparison
+        for species in foreground_subset:
+            pooled_traits.update_dictionary(hypothesis, species, "1")
+        for species in background_subset:
+            pooled_traits.update_dictionary(hypothesis, species, "0")
+
+    return pooled_traits
+
+
+# FUNCTION validate_pooled_hypotheses()
+# Validates a saved hypothesis table against complete fixed discovery pools.
+
+def validate_pooled_hypotheses(pooled_traits, pool_file):
+
+    foreground, background = read_discovery_pools(pool_file)
+    foreground_set = set(foreground)
+    background_set = set(background)
+    hypothesis_names = set(pooled_traits.trait2fg).union(pooled_traits.trait2bg)
+
+    if not hypothesis_names:
+        raise ValueError("the saved hypothesis table contains no valid hypotheses")
+
+    for hypothesis in hypothesis_names:
+        if hypothesis not in pooled_traits.trait2fg or hypothesis not in pooled_traits.trait2bg:
+            raise ValueError("saved hypothesis " + hypothesis + " must contain both FG and BG species")
+
+        invalid_fg = set(pooled_traits.trait2fg[hypothesis]).difference(foreground_set)
+        invalid_bg = set(pooled_traits.trait2bg[hypothesis]).difference(background_set)
+        if invalid_fg:
+            raise ValueError(
+                "saved hypothesis " + hypothesis + " contains species outside the complete FG pool: "
+                + ",".join(sorted(invalid_fg))
+            )
+        if invalid_bg:
+            raise ValueError(
+                "saved hypothesis " + hypothesis + " contains species outside the complete BG pool: "
+                + ",".join(sorted(invalid_bg))
+            )
+
+    pooled_traits.discovery_fg = list(foreground)
+    pooled_traits.discovery_bg = list(background)
+    return pooled_traits
+
+
 # FUNCTION simtrait_revive() revive resampled trait from
 
 def simtrait_revive(traitfile):
-    
-    # Class multicfg
-
-    class multicfg():
-
-        def __init__(self):
-            self.s2t = {}
-            self.alltraits = []
-            self.trait2fg = {}
-            self.trait2bg = {}
-            self.cycles = 0
-
-        def update_dictionary(self, traitname, species, group):
-            try:
-                self.s2t[species].append(traitname + "_" + group)
-            except:
-                self.s2t[species] = [traitname + "_" + group]
-                
-            if group == "1":
-                try:
-                    self.trait2fg[traitname].append(species)
-                except:
-                    self.trait2fg[traitname] = [species]
-
-            if group == "0":
-                try:
-                    self.trait2bg[traitname].append(species)
-                except:
-                    self.trait2bg[traitname] = [species]
-            
-            self.alltraits.append(traitname)
-        
-        
-        def print_traits(self, outfile):
-            o = open(outfile, "w")
-            for x in self.trait2bg.keys():
-                print("\t".join([   x,
-                                    ",".join(self.trait2fg[x]),
-                                    ",".join(self.trait2bg[x])
-                                    ]), file = o)
-            o.close()
-
-        
     # Declare multicfg instance
 
-    z = multicfg()
+    z = bootstrap_traits()
 
     # Open the traitfile
 
@@ -410,6 +571,17 @@ def simtrait_revive(traitfile):
 
         except:
             pass
+
+    z.discovery_fg = sorted(set(
+        species
+        for foreground in z.trait2fg.values()
+        for species in foreground
+    ))
+    z.discovery_bg = sorted(set(
+        species
+        for background in z.trait2bg.values()
+        for species in background
+    ))
 
     return z
 

@@ -30,6 +30,13 @@ from modules.disco import process_position
 from modules.caas_id import iscaas
 from modules.alimport import *
 from modules.hyper import calcpval_random
+from modules.bootstrap_events import (
+    EVENT_HEADER,
+    infer_fixed_discovery_groups,
+    natural_key,
+    serialize_position_events,
+    summarize_position_events,
+)
 
 from os.path import exists
 import functools
@@ -142,85 +149,109 @@ def filter_for_missings(max_m_bg, max_m_fg, max_m_all, mfg, mbg):
 
 
 
+def evaluate_bootstrap_hypothesis(
+    trait,
+    processed_position,
+    maxgaps_fg,
+    maxgaps_bg,
+    maxgaps_all,
+    maxmiss_fg,
+    maxmiss_bg,
+    maxmiss_all,
+    minobserved_fg,
+    minobserved_bg,
+    admitted_patterns,
+):
+    """Return structured details for one positive hypothesis, else ``None``."""
+
+    if trait not in processed_position.trait2aas_fg:
+        return None
+    if trait not in processed_position.trait2aas_bg:
+        return None
+
+    if len(processed_position.trait2ungapped_fg[trait]) < int(minobserved_fg):
+        return None
+    if len(processed_position.trait2ungapped_bg[trait]) < int(minobserved_bg):
+        return None
+
+    if maxgaps_fg != "NO" and processed_position.trait2gaps_fg[trait] > int(maxgaps_fg):
+        return None
+    if maxgaps_bg != "NO" and processed_position.trait2gaps_bg[trait] > int(maxgaps_bg):
+        return None
+    if maxgaps_all != "NO" and (
+        processed_position.trait2gaps_fg[trait]
+        + processed_position.trait2gaps_bg[trait]
+        > int(maxgaps_all)
+    ):
+        return None
+
+    if maxmiss_fg != "NO" and processed_position.trait2miss_fg[trait] > int(maxmiss_fg):
+        return None
+    if maxmiss_bg != "NO" and processed_position.trait2miss_bg[trait] > int(maxmiss_bg):
+        return None
+    if maxmiss_all != "NO" and (
+        processed_position.trait2miss_fg[trait]
+        + processed_position.trait2miss_bg[trait]
+        > int(maxmiss_all)
+    ):
+        return None
+
+    fg_amino_acids = sorted(set(processed_position.trait2aas_fg[trait]), key=natural_key)
+    bg_amino_acids = sorted(set(processed_position.trait2aas_bg[trait]), key=natural_key)
+    check = iscaas("/".join(["".join(fg_amino_acids), "".join(bg_amino_acids)]))
+    if not check.caas or check.pattern not in admitted_patterns:
+        return None
+
+    species_to_amino_acid = {
+        species: tagged_amino_acid.split("@", 1)[0]
+        for species, tagged_amino_acid in processed_position.d.items()
+    }
+    fg_species_amino_acids = {
+        species: species_to_amino_acid[species]
+        for species in processed_position.trait2ungapped_fg[trait]
+    }
+    bg_species_amino_acids = {
+        species: species_to_amino_acid[species]
+        for species in processed_position.trait2ungapped_bg[trait]
+    }
+
+    return {
+        "hypothesis": trait,
+        "pattern": check.pattern,
+        "fg_amino_acids": fg_amino_acids,
+        "bg_amino_acids": bg_amino_acids,
+        "fg_species_amino_acids": fg_species_amino_acids,
+        "bg_species_amino_acids": bg_species_amino_acids,
+    }
+
+
 def caasboot(processed_position, genename, list_of_traits, maxgaps_fg, maxgaps_bg, maxgaps_all, maxmiss_fg, maxmiss_bg, maxmiss_all, minobserved_fg, minobserved_bg, cycles, admitted_patterns):
 
-    a = set(list_of_traits)
-    b = set(processed_position.trait2aas_fg.keys())
-    c = set(processed_position.trait2aas_bg.keys())
+    valid_traits = sorted(
+        set(list_of_traits)
+        .intersection(processed_position.trait2aas_fg)
+        .intersection(processed_position.trait2aas_bg),
+        key=natural_key,
+    )
+    positive_hypotheses = []
+    for trait in valid_traits:
+        result = evaluate_bootstrap_hypothesis(
+            trait,
+            processed_position,
+            maxgaps_fg,
+            maxgaps_bg,
+            maxgaps_all,
+            maxmiss_fg,
+            maxmiss_bg,
+            maxmiss_all,
+            minobserved_fg,
+            minobserved_bg,
+            admitted_patterns,
+        )
+        if result is not None:
+            positive_hypotheses.append(result)
 
-    valid_traits = list(a.intersection(b).intersection(c))
-
-    def filter_trait(trait, the_processed_position, max_bg_gaps, max_fg_gaps, max_all_gaps, max_bg_miss, max_fg_miss, max_all_miss, min_observed_fg, min_observed_bg):
-
-        the_gfg = the_processed_position.trait2gaps_fg[trait]
-        the_gbg = processed_position.trait2gaps_bg[trait]
-
-        the_mfg = the_processed_position.trait2miss_fg[trait]
-        the_mbg = processed_position.trait2miss_bg[trait]
-
-        ### Minimum observed species filtering.
-
-        # Observed species are members of the resampled FG/BG group that are
-        # present in the alignment and do not carry a gap at this position.
-        if len(the_processed_position.trait2ungapped_fg[trait]) < int(min_observed_fg):
-            return False
-        if len(the_processed_position.trait2ungapped_bg[trait]) < int(min_observed_bg):
-            return False
-    
-
-        ### GAPS filtering.
-
-        if maxgaps_fg != "NO" and processed_position.trait2gaps_fg[trait] > int(maxgaps_fg):
-            return False
-        if maxgaps_bg != "NO" and processed_position.trait2gaps_bg[trait] > int(maxgaps_fg):
-            return False
-        if maxgaps_all != "NO" and processed_position.trait2gaps_fg[trait] + processed_position.trait2gaps_bg[trait] > int(maxgaps_all):
-           return False
-
-        ### Missings filtering.
-        
-        if maxmiss_fg != "NO" and processed_position.trait2miss_fg[trait] > int(maxmiss_fg):
-            return False
-        if maxmiss_bg != "NO" and processed_position.trait2miss_bg[trait] > int(maxmiss_fg):
-            return False
-        if maxmiss_all != "NO" and processed_position.trait2miss_fg[trait] + processed_position.trait2miss_bg[trait] > int(maxmiss_all):
-            return False
-
-        else:
-            aa_tag_fg_list = the_processed_position.trait2aas_fg[trait]
-            aa_tag_fg_list.sort()
-            aa_tag_fg = "".join(aa_tag_fg_list)
-
-            aa_tag_bg_list = the_processed_position.trait2aas_bg[trait]
-            aa_tag_bg_list.sort()
-            aa_tag_bg = "".join(aa_tag_bg_list)
-
-            tag = "/".join([aa_tag_fg, aa_tag_bg])
-
-            check = iscaas(tag)
-
-            if check.caas == True and check.pattern in admitted_patterns:
-                return True
-    
-    output_traits = filter(functools.partial(
-        filter_trait,
-        the_processed_position = processed_position,
-        max_bg_gaps = maxgaps_bg,
-        max_fg_gaps = maxgaps_fg,
-        max_all_gaps = maxgaps_all,
-
-        max_bg_miss = maxmiss_bg,
-        max_fg_miss = maxmiss_fg,
-        max_all_miss = maxmiss_all,
-
-        min_observed_fg = minobserved_fg,
-        min_observed_bg = minobserved_bg,
-    ),
-                    valid_traits)
-
-
-
-    output_traits = list(output_traits)
+    output_traits = [result["hypothesis"] for result in positive_hypotheses]
 
     # Return the line
     
@@ -236,19 +267,19 @@ def caasboot(processed_position, genename, list_of_traits, maxgaps_fg, maxgaps_b
     pvalue_string = str(processed_position.hypergeometric_pvalue)
     outline = "\t".join([position_name, count, str(cycles), empval, traitline, pvalue_string])
 
-    return outline
+    return outline, positive_hypotheses
         
 
 # FUNCTION disco_bootstrap()
 # Launches the bootstrap in several lines. Returns a dictionary gene@position --> pvalue
 
-def boot_on_single_alignment(trait_config_file, resampled_traits, sliced_object, max_fg_gaps, max_bg_gaps, max_overall_gaps, max_fg_miss, max_bg_miss, max_overall_miss, min_fg_observed, min_bg_observed, the_admitted_patterns, output_file):
+def boot_on_single_alignment(trait_config_file, resampled_traits, sliced_object, max_fg_gaps, max_bg_gaps, max_overall_gaps, max_fg_miss, max_bg_miss, max_overall_miss, min_fg_observed, min_bg_observed, the_admitted_patterns, output_file, event_output_file=None):
 
 
     # Step 3: processes the positions from imported alignment (process_position() from caas_id.py)
     processed_positions = list(map(functools.partial(process_position, multiconfig = resampled_traits, species_in_alignment = sliced_object.species), sliced_object.d))
     the_genename = sliced_object.genename
-    print("caastools found", resampled_traits.cycles, "resamplings")
+    print("caastools found", resampled_traits.cycles, "phenotype hypotheses")
 
     # Calculate the same positional hypergeometric p-value used by
     # --filter_significant, including when that prefilter is disabled. The
@@ -264,34 +295,52 @@ def boot_on_single_alignment(trait_config_file, resampled_traits, sliced_object,
 
     # Step 4: extract the raw caas
 
-    output_lines = map(
-        functools.partial(
-            caasboot,
-            list_of_traits = resampled_traits.alltraits,
-            genename = the_genename,
-            maxgaps_fg = max_fg_gaps,
-            maxgaps_bg = max_bg_gaps,
-            maxgaps_all = max_overall_gaps,
+    discovery_fg = None
+    discovery_bg = None
+    event_handle = None
+    if event_output_file is not None:
+        discovery_fg, discovery_bg = infer_fixed_discovery_groups(resampled_traits)
+        event_handle = open(event_output_file, "w")
+        print("\t".join(EVENT_HEADER), file=event_handle)
 
-            maxmiss_fg = max_fg_miss,
-            maxmiss_bg = max_bg_miss,
-            maxmiss_all = max_overall_miss,
+    with open(output_file, "w") as output_handle:
+        for processed_position in processed_positions:
+            line, positive_hypotheses = caasboot(
+                processed_position=processed_position,
+                list_of_traits=resampled_traits.alltraits,
+                genename=the_genename,
+                maxgaps_fg=max_fg_gaps,
+                maxgaps_bg=max_bg_gaps,
+                maxgaps_all=max_overall_gaps,
+                maxmiss_fg=max_fg_miss,
+                maxmiss_bg=max_bg_miss,
+                maxmiss_all=max_overall_miss,
+                minobserved_fg=min_fg_observed,
+                minobserved_bg=min_bg_observed,
+                admitted_patterns=the_admitted_patterns,
+                cycles=resampled_traits.cycles,
+            )
+            print(line + "\t" + trait_config_file, file=output_handle)
 
-            minobserved_fg = min_fg_observed,
-            minobserved_bg = min_bg_observed,
+            if event_handle is not None and positive_hypotheses:
+                events = summarize_position_events(
+                    processed_position,
+                    positive_hypotheses,
+                    discovery_fg,
+                    discovery_bg,
+                )
+                rows = serialize_position_events(
+                    gene=the_genename,
+                    position=processed_position.position,
+                    events=events,
+                    positional_pvalue=processed_position.hypergeometric_pvalue,
+                    trait_config=trait_config_file,
+                )
+                for row in rows:
+                    print("\t".join(row), file=event_handle)
 
-            admitted_patterns = the_admitted_patterns,
-            cycles = resampled_traits.cycles) ,processed_positions
-    )
-
-    output_lines = list(output_lines)
-
-    ooout = open(output_file, "w")
-
-    for line in output_lines:
-        print(line + "\t" + trait_config_file, file=ooout)
-    
-    ooout.close()
+    if event_handle is not None:
+        event_handle.close()
 
 # FUNCTION pval()
 # Returns a dictionary with the pvalue
