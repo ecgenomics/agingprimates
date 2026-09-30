@@ -35,8 +35,7 @@ della sessione di invio.
 Le sole modifiche ai file operativi sono:
 
 - `longevity.` diventa `fertility.` nei nomi del pool e dei metadati;
-- il percorso relativo degli allineamenti raggiunge la stessa raccolta LQ
-  dalla nuova directory;
+- il percorso degli allineamenti punta alla raccolta LQ sul cluster Correfoc;
 - il messaggio dello script Slurm indica la nuova directory;
 - il commento sul massimo numero di confronti indica 175 anziché 525.
 
@@ -50,8 +49,8 @@ il default resta 100, come in LQ.
 ## Lancio sul cluster
 
 In `conf/cluster.config` verificare il percorso della raccolta completa degli
-allineamenti e le impostazioni del cluster. Il percorso predefinito riutilizza
-la raccolta LQ locale, che qui contiene soltanto cinque allineamenti di esempio.
+allineamenti e le impostazioni del cluster. Il percorso configurato per Correfoc è
+`/homes/users/fbarteri2/scratch/science/comparative/260827.aging.update.2026/agingprimates/05.gen.phen/lq.table2.nextflow/inputs/alignments/*.phy`.
 Il codice CAAStools è incluso localmente in questa cartella.
 
 ```bash
