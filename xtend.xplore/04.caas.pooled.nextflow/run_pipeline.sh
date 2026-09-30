@@ -37,5 +37,6 @@ echo "Nextflow config: ${config_file}"
 
 cd "${script_dir}"
 exec nextflow -c "${config_file}" run main.nf \
+    -ansi-log false \
     --run_id "${run_id}" \
     "$@"

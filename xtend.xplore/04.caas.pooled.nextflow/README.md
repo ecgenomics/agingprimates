@@ -27,7 +27,10 @@ intestazione. I nomi delle specie sono conservati esattamente come nel grouping.
 `bin/caastools/` e `scripts/prepare_pooled_hypotheses.py` sono copie byte per
 byte del riferimento LQ; sono escluse solo le cache Python. Anche gli script
 di lancio/creazione ambiente e `environment.yml` sono copiati da LQ.
-`LQ_COPY_AUDIT.tsv` registra SHA-256 originali e locali.
+`LQ_COPY_AUDIT.tsv` registra SHA-256 originali e locali al momento della copia.
+Successivamente il driver FQ è stato adattato per usare `TERM=dumb` nei job
+batch e disabilitare il log ANSI di Nextflow, evitando dipendenze dal terminale
+della sessione di invio.
 
 Le sole modifiche ai file operativi sono:
 

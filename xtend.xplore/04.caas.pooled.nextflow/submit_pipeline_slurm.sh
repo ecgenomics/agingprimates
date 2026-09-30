@@ -15,6 +15,9 @@
 
 set -euo pipefail
 
+# Batch jobs write plain logs and do not need the submitting terminal's terminfo.
+export TERM=dumb
+
 if [[ -z "${SLURM_JOB_ID:-}" ]]; then
     echo "This is a SLURM batch script. Submit it with:" >&2
     echo "  sbatch submit_pipeline_slurm.sh" >&2
